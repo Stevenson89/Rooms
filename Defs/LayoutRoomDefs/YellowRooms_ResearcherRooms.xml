@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_PortalRoom</defName>
+    <areaSizeRange>36~300</areaSizeRange>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsPortal</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_CoreRoom</defName>
+    <areaSizeRange>30~250</areaSizeRange>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsCore</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_Bedroom</defName>
+    <areaSizeRange>25~160</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsBedroom</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_BarracksRoom</defName>
+    <areaSizeRange>25~160</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsBarracks</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>AncientTile</li>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_MessRoom</defName>
+    <areaSizeRange>25~200</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsMess</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>AncientTile</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_LabRoom</defName>
+    <areaSizeRange>30~220</areaSizeRange>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsLab</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>AncientTile</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_StorageRoom</defName>
+    <areaSizeRange>30~250</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsStorage</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_RustyLabRoom</defName>
+    <areaSizeRange>30~220</areaSizeRange>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsRustyLab</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>AncientTile</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_RustyStorageRoom</defName>
+    <areaSizeRange>30~250</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsRustyStorage</roomContentsWorkerType>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_SurfacePortalRoom</defName>
+    <areaSizeRange>36~300</areaSizeRange>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsSurfacePortal</roomContentsWorkerType>
+    <floorTypes>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_SurfaceBedroom</defName>
+    <areaSizeRange>25~160</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsBedroom</roomContentsWorkerType>
+    <floorTypes>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_SurfaceMessRoom</defName>
+    <areaSizeRange>25~200</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsMess</roomContentsWorkerType>
+    <floorTypes>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_SurfaceLabRoom</defName>
+    <areaSizeRange>30~220</areaSizeRange>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsLab</roomContentsWorkerType>
+    <floorTypes>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>YellowRooms_SurfaceStorageRoom</defName>
+    <areaSizeRange>30~250</areaSizeRange>
+    <roomContentsWorkerType>arsiy.Rooms.GenSteps.RoomContentsWorker_YellowRoomsStorage</roomContentsWorkerType>
+    <floorTypes>
+      <li>Concrete</li>
+    </floorTypes>
+  </LayoutRoomDef>
+
+</Defs>

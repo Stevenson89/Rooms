@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PlanetLayerDef>
+    <defName>YellowRooms</defName>
+    <label>Yellow Rooms</label>
+    <viewGizmoTooltip>View the Yellow Rooms dimension.</viewGizmoTooltip>
+    <viewGizmoTexPath>UI/Commands/YellowRooms_ViewPlanet</viewGizmoTexPath>
+    <viewGizmoOnlyVisibleWithDirectConnection>true</viewGizmoOnlyVisibleWithDirectConnection>
+    <layerType>SurfaceLayer</layerType>
+    <tileType>SurfaceTile</tileType>
+    <elevationString>-10m</elevationString>
+    <gerundLabel>in the</gerundLabel>
+    <backgroundBiome>YellowRooms</backgroundBiome>
+    <onlyAllowWhitelistedIncidents>true</onlyAllowWhitelistedIncidents>
+    <onlyAllowWhitelistedBiomes>true</onlyAllowWhitelistedBiomes>
+    <onlyAllowWhitelistedGameConditions>true</onlyAllowWhitelistedGameConditions>
+    <onlyAllowWhitelistedQuests>true</onlyAllowWhitelistedQuests>
+    <worldGenSteps>
+      <li>YellowRooms_Terrain</li>
+      <li>YellowRooms_Factions</li>
+    </worldGenSteps>
+    <worldDrawLayers>
+      <li>WorldDrawLayer_CurrentMapTile</li>
+      <li>WorldDrawLayer_SelectedTile</li>
+      <li>WorldDrawLayer_SettleTile</li>
+      <li>WorldDrawLayer_MouseTile</li>
+      <li>WorldDrawLayer_ClosestTile</li>
+      <li>WorldDrawLayer_WorldObjects_Expandable</li>
+      <li>WorldDrawLayer_WorldObjects_NonExpandable</li>
+      <li>WorldDrawLayer_Hills</li>
+      <li>WorldDrawLayer_Terrain</li>
+    </worldDrawLayers>
+    <worldTabs>
+      <li>WITab_Terrain</li>
+      <li>WITab_Planet</li>
+    </worldTabs>
+  </PlanetLayerDef>
+
+  <PlanetLayerSettingsDef>
+    <defName>YellowRooms</defName>
+    <label>Yellow Rooms</label>
+    <settings>
+      <radius>25</radius>
+      <subdivisions>6</subdivisions>
+      <useSurfaceViewAngle>true</useSurfaceViewAngle>
+      <extraCameraAltitude>-90</extraCameraAltitude>
+    </settings>
+  </PlanetLayerSettingsDef>
+</Defs>

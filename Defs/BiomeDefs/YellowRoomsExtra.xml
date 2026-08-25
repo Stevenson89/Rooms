@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <BiomeDef>
+    <defName>YellowRooms_PoolRooms</defName>
+    <label>pool rooms</label>
+    <description>An endless expanse of tiled pool rooms, shallow puddles and deep pools of still water stretching infinitely. The air is damp and echoes with the drip of condensation.</description>
+    <texture>World/Biomes/YellowRooms_PoolRooms</texture>
+    <generatesNaturally>false</generatesNaturally>
+    <canBuildBase>true</canBuildBase>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <impassable>false</impassable>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <diseaseMtbDays>9999</diseaseMtbDays>
+    <settlementSelectionWeight>0</settlementSelectionWeight>
+    <forageability>0</forageability>
+    <baseWeatherCommonalities>
+      <Clear>1</Clear>
+    </baseWeatherCommonalities>
+    <wildAnimals/>
+    <wildPlants/>
+    <terrainsByFertility>
+      <li>
+        <terrain>CeramicTile</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <maxFishPopulation>700</maxFishPopulation>
+    <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+      <freshwater_Common>
+        <Fish_Bass MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bass>
+        <Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish>
+        <Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+        <Fish_Guppy MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Guppy>
+      </freshwater_Common>
+      <freshwater_Uncommon>
+        <Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+        <Fish_Cod MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Cod>
+        <Fish_Frostfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Frostfish>
+        <Fish_Piranha MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Piranha>
+      </freshwater_Uncommon>
+      <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_YellowRooms</rareCatchesSetMaker>
+    </fishTypes>
+  </BiomeDef>
+
+  
+  <BiomeDef>
+    <defName>YellowRooms_Parking</defName>
+    <label>parking</label>
+    <description>A vast, empty parking structure stretching endlessly under humming ceiling lamps. Steel columns march in perfect grids across the bare concrete.</description>
+    <texture>World/Biomes/YellowRooms_Parking</texture>
+    <generatesNaturally>false</generatesNaturally>
+    <canBuildBase>true</canBuildBase>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <impassable>false</impassable>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <diseaseMtbDays>9999</diseaseMtbDays>
+    <settlementSelectionWeight>0</settlementSelectionWeight>
+    <forageability>0</forageability>
+    <baseWeatherCommonalities>
+      <Clear>1</Clear>
+    </baseWeatherCommonalities>
+    <wildAnimals/>
+    <wildPlants/>
+    <terrainsByFertility>
+      <li>
+        <terrain>Concrete</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+  </BiomeDef>
+
+</Defs>

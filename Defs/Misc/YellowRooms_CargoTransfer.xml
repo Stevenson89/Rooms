@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <WorkGiverDef>
+    <defName>YellowRooms_CarryToPortal</defName>
+    <label>carry to yellow rooms portals</label>
+    <giverClass>arsiy.Rooms.Things.WorkGiver_YRCarryToPortal</giverClass>
+    <workType>Hauling</workType>
+    <workTags>Hauling</workTags>
+    <priorityInType>105</priorityInType>
+    <verb>load</verb>
+    <gerund>loading</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    
+    <directOrderable>false</directOrderable>
+  </WorkGiverDef>
+
+  
+  <WorkGiverDef>
+    <defName>YellowRooms_CarryToPit</defName>
+    <label>carry to yellow rooms pits</label>
+    <giverClass>arsiy.Rooms.Things.WorkGiver_YRCarryToPit</giverClass>
+    <workType>Hauling</workType>
+    <workTags>Hauling</workTags>
+    <priorityInType>106</priorityInType>
+    <verb>load</verb>
+    <gerund>loading</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <directOrderable>false</directOrderable>
+  </WorkGiverDef>
+
+</Defs>

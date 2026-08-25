@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>EnterYellowRooms</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_EnterYellowRooms</driverClass>
+    <reportString>Entering Yellow Rooms.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>ReturnFromYellowRooms</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_ReturnFromYellowRooms</driverClass>
+    <reportString>Returning through the portal.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>YellowRooms_BreakLamp</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_BreakLamp</driverClass>
+    <reportString>Breaking a ceiling lamp.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>YellowRooms_BreakOutlet</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_BreakOutlet</driverClass>
+    <reportString>Breaking a wall outlet.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>YellowRooms_RepairPortal</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_YRRepairPortal</driverClass>
+    <reportString>Repairing the portal.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>CarryToYellowRoomsPortal</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_CarryToYellowRoomsPortal</driverClass>
+    <reportString>carrying TargetA to the portal.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <dropThingBeforeJob>false</dropThingBeforeJob>
+  </JobDef>
+
+  <JobDef>
+    <defName>CarryToPit</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_CarryToPit</driverClass>
+    <reportString>carrying TargetA to the pit.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <dropThingBeforeJob>false</dropThingBeforeJob>
+  </JobDef>
+
+  <JobDef>
+    <defName>EnterPit</defName>
+    <driverClass>arsiy.Rooms.Things.JobDriver_EnterPit</driverClass>
+    <reportString>Entering the pit.</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+</Defs>

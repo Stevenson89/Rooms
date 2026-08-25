@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignationDef>
+    <defName>YellowRooms_BreakOutlet</defName>
+    <label>break outlet</label>
+    <description>Order a colonist to smash this wall outlet.</description>
+    <targetType>Thing</targetType>
+    <texturePath>Designations/Deconstruct</texturePath>
+    <removeIfBuildingDespawned>true</removeIfBuildingDespawned>
+  </DesignationDef>
+
+  <WorkGiverDef>
+    <defName>YellowRooms_BreakOutlet</defName>
+    <label>break outlets</label>
+    <giverClass>arsiy.Rooms.Things.WorkGiver_BreakOutlet</giverClass>
+    <workType>Construction</workType>
+    <workTags>ManualSkilled</workTags>
+    <priorityInType>100</priorityInType>
+    <verb>breaking</verb>
+    <gerund>breaking</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <directOrderable>false</directOrderable>
+  </WorkGiverDef>
+</Defs>

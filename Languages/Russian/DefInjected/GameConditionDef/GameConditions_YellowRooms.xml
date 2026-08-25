@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  
+  <YellowRooms_HeatWaveIndoor.label>волна жара</YellowRooms_HeatWaveIndoor.label>
+  <YellowRooms_HeatWaveIndoor.description>Удушающая волна жара опускается на Жёлтые Комнаты. Потолок задерживает раскалённый воздух.</YellowRooms_HeatWaveIndoor.description>
+  <YellowRooms_HeatWaveIndoor.descriptionFuture>волна жара накроет Жёлтые Комнаты на [gameConditionDuration_duration], вредя посевам и возможно убивая людей или животных в неохлаждаемых помещениях</YellowRooms_HeatWaveIndoor.descriptionFuture>
+  <YellowRooms_HeatWaveIndoor.endMessage>Волна жара спадает.</YellowRooms_HeatWaveIndoor.endMessage>
+  <YellowRooms_HeatWaveIndoor.letterText>Удушающая волна жара опускается на комнаты.\n\nВолна жара может вызвать смертельный тепловой удар. Оставайтесь в прохладе — постройте пассивный или электрический охладитель, либо уйдите глубоко под землю, где скалы естественным образом прохладны.</YellowRooms_HeatWaveIndoor.letterText>
+
+  
+  <YellowRooms_ColdSnapIndoor.label>волна холода</YellowRooms_ColdSnapIndoor.label>
+  <YellowRooms_ColdSnapIndoor.description>Пронизывающий холод заползает в Жёлтые Комнаты. Потолок задерживает ледяной воздух.</YellowRooms_ColdSnapIndoor.description>
+  <YellowRooms_ColdSnapIndoor.descriptionFuture>волна холода заморозит Жёлтые Комнаты на [gameConditionDuration_duration], вредя посевам и возможно убивая людей или животных в неотапливаемых помещениях</YellowRooms_ColdSnapIndoor.descriptionFuture>
+  <YellowRooms_ColdSnapIndoor.endMessage>Волна холода спадает.</YellowRooms_ColdSnapIndoor.endMessage>
+  <YellowRooms_ColdSnapIndoor.letterText>Пронизывающий холод заползает в комнаты.\n\nВолна холода может вызвать смертельное переохлаждение. Оставайтесь в тепле — постройте пассивный или электрический обогреватель, либо уйдите глубоко под землю, где скалы естественным образом теплы.</YellowRooms_ColdSnapIndoor.letterText>
+
+</LanguageData>

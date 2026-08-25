@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_DoorToRooms</defName>
+    <label>door to rooms</label>
+    <description>A mysterious doorway that leads to the Yellow Rooms dimension. Each door connects to a different location within the endless yellow rooms.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_DoorToRooms</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+    </graphicData>
+    <size>(1, 1)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded IsNull="True" />
+    
+    <designationCategory Inherit="False" />
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="arsiy.Rooms.Things.CompProperties_DoorToRooms" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_ReturnDoor</defName>
+    <label>return door</label>
+    <description>A shimmering doorway that leads back to the world you came from.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_ReturnDoor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+    </graphicData>
+    <size>(1, 1)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded IsNull="True" />
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+      <deconstructible>false</deconstructible>
+    </building>
+    <comps>
+      <li Class="arsiy.Rooms.Things.CompProperties_YellowRoomsReturnDoor" />
+    </comps>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_Wall</defName>
+    <label>yellow wall</label>
+    <description>An indestructible wall of the Yellow Rooms.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowWall</uiIconPath>
+    <size>(1, 1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <holdsRoof>true</holdsRoof>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <selectable>true</selectable>
+    <rotatable>false</rotatable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <fertility>0</fertility>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <isEdifice>true</isEdifice>
+      <isInert>true</isInert>
+      <isWall>true</isWall>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps />
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_PortalToRooms</defName>
+    <label>portal to rooms</label>
+    <description>A portal leading into the Yellow Rooms dimension. Each portal links to a different location within the endless yellow rooms. Requires a portal core to build.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_PortalToRooms</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <drawRotated>false</drawRotated>
+      <drawOffsetSouth>(0, 0, 1.0)</drawOffsetSouth>
+      <drawOffsetNorth>(0, 0, 1.0)</drawOffsetNorth>
+      <drawOffsetEast>(0, 0, 0.5)</drawOffsetEast>
+      <drawOffsetWest>(0, 0, 0.5)</drawOffsetWest>
+    </graphicData>
+    <size>(3,2)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.5</fillPercent>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <blockLight>false</blockLight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>YellowRooms_StationaryTeleporter</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <YellowRooms_PortalCore>1</YellowRooms_PortalCore>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <isEdifice>true</isEdifice>
+    </building>
+    <placeWorkers>
+      <li>arsiy.Rooms.Things.PlaceWorker_YellowRoomsPortal</li>
+    </placeWorkers>
+    <comps>
+      <li Class="arsiy.Rooms.Things.CompProperties_DoorToRooms" />
+    </comps>
+  </ThingDef>
+
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_PortalFromRooms</defName>
+    <label>portal from rooms</label>
+    <description>A portal shimmering back to the world you came from. Built inside the Yellow Rooms, it links back to a colony portal on its first use.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_PortalFromRooms</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <drawRotated>false</drawRotated>
+      <drawOffsetSouth>(0, 0, 1.0)</drawOffsetSouth>
+      <drawOffsetNorth>(0, 0, 1.0)</drawOffsetNorth>
+      <drawOffsetEast>(0, 0, 0.5)</drawOffsetEast>
+      <drawOffsetWest>(0, 0, 0.5)</drawOffsetWest>
+    </graphicData>
+    <size>(3,2)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.5</fillPercent>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <blockLight>false</blockLight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>YellowRooms_StationaryTeleporter</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <YellowRooms_PortalCore>1</YellowRooms_PortalCore>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <isEdifice>true</isEdifice>
+    </building>
+    <placeWorkers>
+      <li>arsiy.Rooms.Things.PlaceWorker_YellowRoomsPortal</li>
+    </placeWorkers>
+    <comps>
+      <li Class="arsiy.Rooms.Things.CompProperties_YellowRoomsReturnDoor" />
+    </comps>
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_CeilingLamp</defName>
+    <label>ceiling lamp</label>
+    <description>A humming yellow ceiling lamp. It needs no power and cannot be destroyed, but it can be broken with the right orders.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_CeilingLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowRooms_CeilingLamp</uiIconPath>
+    <size>(1,1)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <fertility>0</fertility>
+    <canOverlapZones>true</canOverlapZones>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isInert>false</isInert>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="RimWorld.CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(255,228,110,0)</glowColor>
+      </li>
+      <li Class="arsiy.Rooms.Things.CompProperties_CeilingLamp" />
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_CeilingLampBroken</defName>
+    <label>broken ceiling lamp</label>
+    <description>A shattered ceiling lamp. It gives no light, but may spontaneously flicker back on.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_CeilingLampBroken</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowRooms_CeilingLampBroken</uiIconPath>
+    <size>(1,1)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <fertility>0</fertility>
+    <canOverlapZones>true</canOverlapZones>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isInert>true</isInert>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps />
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_Pit</defName>
+    <label>pit</label>
+    <description>A dark pit in the floor of the Yellow Rooms. Something may yet crawl out of it. It is too wide to cross. Drop your items into the pit for a chance to receive something of equal or greater value in return. But tread carefully; who knows what might happen if you disturb the pit.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_Pit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowRooms_Pit</uiIconPath>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <blockLight>false</blockLight>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <fertility>0</fertility>
+    <canOverlapZones>false</canOverlapZones>
+    
+    <tickerType>Rare</tickerType>
+    <building>
+      <isEdifice>true</isEdifice>
+      <isInert>true</isInert>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+    </building>
+    <comps>
+      <li Class="arsiy.Rooms.Things.CompProperties_Pit" />
+    </comps>
+  </ThingDef>
+
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_CeilingHole</defName>
+    <label>ceiling hole</label>
+    <description>A gaping hole in the ceiling of the Yellow Rooms. Things sometimes fall through it.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_CeilingHole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowRooms_CeilingHole</uiIconPath>
+    <size>(2,2)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <fertility>0</fertility>
+    <canOverlapZones>true</canOverlapZones>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isInert>true</isInert>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+    </building>
+    <comps />
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_MushroomFarm</defName>
+    <label>carpet mushroom farm</label>
+    <description>A patch of yellow carpet cultivated to grow various mushrooms. Different mushrooms are unlocked by research. Only grows in darkness.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_MushroomFarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowRooms_MushroomFarm</uiIconPath>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.10</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+      <li>YellowRooms_BasicMushroomFarming</li>
+    </researchPrerequisites>
+    <costList>
+      <YellowRooms_CarpetMaterial>20</YellowRooms_CarpetMaterial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>0.6</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <fertility>1.2</fertility>
+    <building>
+      <defaultPlantToGrow>YellowRooms_Plant_EdibleMushroom</defaultPlantToGrow>
+      <sowTag>YellowRoomsCarpet</sowTag>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="RimWorld.CompProperties_Forbiddable" />
+    </comps>
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_ConcreteWall</defName>
+    <label>concrete wall</label>
+    <description>An indestructible wall of bare concrete, covered with ceramic tile.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/ConcreteWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/YellowRooms/YellowRooms_ConcreteWall</uiIconPath>
+    <size>(1, 1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <holdsRoof>true</holdsRoof>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <selectable>true</selectable>
+    <rotatable>false</rotatable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <fertility>0</fertility>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <isEdifice>true</isEdifice>
+      <isInert>true</isInert>
+      <isWall>true</isWall>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps />
+  </ThingDef>
+
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_WallOutlet</defName>
+    <label>wall outlet</label>
+    <description>A humming wall outlet that provides a steady stream of electricity. It can be broken to obtain industrial components.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_WallOutlet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,-0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,0.9)</drawOffsetSouth>
+      <drawOffsetWest>(0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(-0.9,0,0)</drawOffsetEast>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <fertility>0</fertility>
+    <canOverlapZones>true</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <building>
+      <isEdifice>false</isEdifice>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="RimWorld.CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-200</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="arsiy.Rooms.Things.CompProperties_WallOutlet" />
+    </comps>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>YellowRooms_WallOutletBroken</defName>
+    <label>broken wall outlet</label>
+    <description>A shattered wall outlet. It gives no power, but may spontaneously come back to life.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/YellowRooms/YellowRooms_WallOutletBroken</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,-0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,0.9)</drawOffsetSouth>
+      <drawOffsetWest>(0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(-0.9,0,0)</drawOffsetEast>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <fertility>0</fertility>
+    <canOverlapZones>true</canOverlapZones>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isInert>true</isInert>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps />
+  </ThingDef>
+</Defs>

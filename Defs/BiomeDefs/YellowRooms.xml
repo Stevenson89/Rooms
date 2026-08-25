@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BiomeDef>
+    <defName>YellowRooms</defName>
+    <label>yellow rooms</label>
+    <description>An endless expanse of yellow rooms, stretching infinitely in all directions. The air is stale, and a faint hum fills the silence.</description>
+    <texture>World/Biomes/YellowRooms</texture>
+    
+    <generatesNaturally>false</generatesNaturally>
+    <canBuildBase>true</canBuildBase>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <impassable>false</impassable>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0.1</plantDensity>
+    <diseaseMtbDays>9999</diseaseMtbDays>
+    <settlementSelectionWeight>0</settlementSelectionWeight>
+    <forageability>0.2</forageability>
+    <baseWeatherCommonalities>
+      <Clear>1</Clear>
+    </baseWeatherCommonalities>
+    <wildAnimals/>
+    <wildPlants/>
+    <terrainsByFertility>
+      <li>
+        <terrain>CarpetYellow</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+  </BiomeDef>
+</Defs>

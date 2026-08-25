@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  
+  
+  
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>YellowRooms_Plant_AntibioticMushroom</defName>
+    <label>antibiotic mushroom</label>
+    <description>A pale mushroom that grows on the yellow carpet of the rooms. When harvested it yields a dose of herbal medicine.</description>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Beauty>1</Beauty>
+      <Nutrition>0.15</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/YellowRooms/YellowRooms_Plant_AntibioticMushroom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutPlant</shaderType>
+    </graphicData>
+    <plant>
+      <immatureGraphicPath>Things/Plant/YellowRooms/YellowRooms_Plant_AntibioticMushroom</immatureGraphicPath>
+      <harvestedThingDef>MedicineHerbal</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>600</sowWork>
+      <sowMinSkill>4</sowMinSkill>
+      <sowTags>
+        <li>YellowRoomsCarpet</li>
+      </sowTags>
+      <growDays>6</growDays>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <topWindExposure>0</topWindExposure>
+      <dieIfLeafless>false</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <visualSizeRange>0.4~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Health</purpose>
+      <sowResearchPrerequisites>
+        <li>YellowRooms_AdvancedMushroomFarming</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>YellowRooms_Plant_EdibleMushroom</defName>
+    <label>carpet mushroom</label>
+    <description>A fleshy mushroom that thrives in the damp darkness of the yellow rooms. When harvested it yields raw fungus — a staple food of the deep underground.</description>
+    
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/YellowRooms/YellowRooms_Plant_EdibleMushroom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutPlant</shaderType>
+    </graphicData>
+    <plant>
+      <immatureGraphicPath>Things/Plant/YellowRooms/YellowRooms_Plant_EdibleMushroom</immatureGraphicPath>
+      <harvestedThingDef>RawFungus</harvestedThingDef>
+      <harvestYield>12</harvestYield>
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>300</sowWork>
+      <sowMinSkill>0</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>YellowRoomsCarpet</li>
+      </sowTags>
+      <growDays>5.5</growDays>
+      <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <topWindExposure>0</topWindExposure>
+      <dieIfLeafless>false</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      
+      <visualSizeRange>0.6~1.4</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <HediffDef>
+    <defName>YellowRooms_StillLife</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>still life</label>
+    <labelNoun>still life affliction</labelNoun>
+    <description>A failed attempt by the Yellow Rooms to copy a human. The result is a corrupted mimicry of life. The body moves but the soul is gone.</description>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <tendable>false</tendable>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.70</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.70</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.70</setMax>
+          </li>
+        </capMods>
+        
+        <disablesNeeds>
+          <li>Food</li>
+          <li>Rest</li>
+          <li>Mood</li>
+          <li>Joy</li>
+          <li>Beauty</li>
+          <li>Comfort</li>
+          <li>RoomSize</li>
+          <li>Outdoors</li>
+        </disablesNeeds>
+        
+      </li>
+    </stages>
+    <comps>
+      <li Class="arsiy.Rooms.HediffCompProperties_NeedSuppressor" />
+    </comps>
+  </HediffDef>
+
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>YellowRooms_ExtraEyes</defName>
+    <label>extra eyes</label>
+    <labelNoun>a pair of extra eyes</labelNoun>
+    <description>A second pair of eyes sprouting from the head. They improve vision but look deeply unsettling.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <Beauty>-5</Beauty>
+        </statOffsets>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/YellowRooms/ExtraEyes</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>57</layer>
+            <offset>(0, 0.2, -0.3)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>YellowRooms_FusedArms</defName>
+    <label>fused arms</label>
+    <labelNoun>fused arms</labelNoun>
+    <description>The arms are partially fused together, improving raw grip strength at the cost of aesthetics.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <Beauty>-5</Beauty>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  
+
+  
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>YellowRooms_DisfiguredFace</defName>
+    <label>disfigured face</label>
+    <labelNoun>a disfigured face</labelNoun>
+    <description>The face is grotesquely warped — one eye sits lower than the other, deep folds and wrinkles twist the features into something barely human.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <SocialImpact>-0.10</SocialImpact>
+        </statOffsets>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/YellowRooms/DisfiguredFace</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawSize>1.0</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>60</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>YellowRooms_BetrayalTimer</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>latent corruption</label>
+    <labelNoun>latent corruption</labelNoun>
+    <description>This pawn carries a hidden corruption that will eventually trigger betrayal.</description>
+    <isBad>true</isBad>
+    <makesAlert>false</makesAlert>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="arsiy.Rooms.HediffCompProperties_BetrayalTimer" />
+    </comps>
+  </HediffDef>
+
+  
+  <HediffDef>
+    <defName>YellowRooms_InorganicFusion</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>inorganic fusion</label>
+    <labelNoun>inorganic fusion</labelNoun>
+    <description>Pieces of drywall, yellow wallpaper, and ceiling tile have fused into the body, providing natural armor but making the pawn highly vulnerable to fire.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </statOffsets>
+        <damageFactors>
+          <Flame>1.5</Flame>
+          <Burn>1.5</Burn>
+        </damageFactors>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li>
+        <workerClass>arsiy.Rooms.PawnRenderNodeWorker_BodyTypeVariant</workerClass>
+        <baseLayer>55</baseLayer>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="arsiy.Rooms.InorganicFusionExtension">
+        <texBasePath>Things/Pawn/YellowRooms/InorganicFusion</texBasePath>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  
+  <HediffDef>
+    <defName>YellowRooms_DistortedVocalCords</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>distorted vocal cords</label>
+    <labelNoun>distorted vocal cords</labelNoun>
+    <description>The pawn's vocal cords have been grotesquely distorted, producing unsettling sounds that disturb nearby colonists.</description>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>10</range>
+        <onlyPawnsInSameFaction>false</onlyPawnsInSameFaction>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>YellowRooms_DistortedSoundEffect</hediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  
+  <HediffDef>
+    <defName>YellowRooms_DistortedSoundEffect</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>distorted sound</label>
+    <labelNoun>distorted sound</labelNoun>
+    <description>An unsettling distorted noise emanating from a nearby still life entity.</description>
+    <isBad>true</isBad>
+    <makesAlert>false</makesAlert>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>distorted sound</label>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_ThoughtSetter">
+        <thought>YellowRooms_DistortedSound</thought>
+      </li>
+    </comps>
+  </HediffDef>
+
+  
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>YellowRooms_ElongatedLimbs</defName>
+    <label>elongated limbs</label>
+    <labelNoun>elongated limbs</labelNoun>
+    <description>The arms are unnaturally long and twisted, functioning like natural power claws. They hit harder and more often, but the awkward length makes dodging difficult.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeHitChance>0.12</MeleeHitChance>
+          <MeleeDodgeChance>-0.10</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>elongated limbs</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>14</power>
+            <cooldownTime>2.0</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+      </li>
+    </comps>
+  </HediffDef>
+
+  
+  <HediffDef>
+    <defName>YellowRooms_Hypertrophy</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>hypertrophy</label>
+    <labelNoun>hypertrophy</labelNoun>
+    <description>The pawn's body has grotesquely hypertrophied — twice the size, sluggish movement, but hits much harder.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.70</MoveSpeed>
+          <MeleeDamageFactor>1.25</MeleeDamageFactor>
+          <IncomingDamageFactor>0.75</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="arsiy.Rooms.HediffCompProperties_HypertrophyGfx" />
+    </comps>
+  </HediffDef>
+
+  
+  <HediffDef>
+    <defName>YellowRooms_Runner</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>runner</label>
+    <labelNoun>runner affliction</labelNoun>
+    <description>The legs and spine have been warped into a sprinter's frame — the pawn moves with unnatural speed, but its body has become fragile, taking twice the damage.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>1.5</MoveSpeed>
+          <IncomingDamageFactor>2.0</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>YellowRooms_Faceless</defName>
+    <label>faceless</label>
+    <labelNoun>faceless</labelNoun>
+    <description>The face is a smooth, featureless expanse — no eyes, no nose, no jaw. Sight is gone, but hearing has sharpened to compensate.</description>
+    <skinColorTint>(0.5, 0.5, 0.5)</skinColorTint>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.0</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <setMax>0</setMax>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <offset>1.0</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

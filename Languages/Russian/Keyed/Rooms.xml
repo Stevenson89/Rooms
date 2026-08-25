@@ -1,0 +1,201 @@
+?<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  
+  <BreakLamp>Разбить лампу</BreakLamp>
+  <BreakLampDesc>Пометить потолочную лампу для разрушения. Поселенец со включённым строительством разобьёт её в рамках обычной работы.</BreakLampDesc>
+
+  <BreakLampCancel>Отменить разрушение</BreakLampCancel>
+  <BreakLampCancelDesc>Отменить приказ разбить эту потолочную лампу.</BreakLampCancelDesc>
+
+  <BreakLampNow>Разбить лампу сейчас</BreakLampNow>
+
+  
+  <BreakOutlet>Разбить розетку</BreakOutlet>
+  <BreakOutletDesc>Пометить настенную розетку для разрушения. Поселенец со включённым строительством разобьёт её в рамках обычной работы.</BreakOutletDesc>
+
+  <BreakOutletCancel>Отменить разрушение</BreakOutletCancel>
+  <BreakOutletCancelDesc>Отменить приказ разбить эту настенную розетку.</BreakOutletCancelDesc>
+
+  <BreakOutletNow>Разбить розетку сейчас</BreakOutletNow>
+
+  
+  <YellowRooms_Enter>Войти в Жёлтые Комнаты</YellowRooms_Enter>
+  <YellowRooms_Return>Вернуться</YellowRooms_Return>
+  <YellowRooms_ConnectionLost>Связь потеряна.</YellowRooms_ConnectionLost>
+
+  
+  <LampRegenerated>Потолочная лампа снова зажглась.</LampRegenerated>
+  <LampRegeneratedTitle>Лампа восстановлена</LampRegeneratedTitle>
+
+  
+  <OutletRegenerated>Настенная розетка снова зажужжала.</OutletRegenerated>
+  <OutletRegeneratedTitle>Розетка восстановлена</OutletRegeneratedTitle>
+
+  
+  <StrangePassageLabel>Странный проход</StrangePassageLabel>
+  <StrangePassageDesc>Дверной проём в Жёлтые Комнаты материализовался у одной из ваших стен. Он пульсирует нестабильной энергией — через день он исчезнет, забрав с собой путь назад.</StrangePassageDesc>
+  <StrangePassageClosedLabel>Проход закрывается</StrangePassageClosedLabel>
+  <StrangePassageClosedDesc>Странный проход в Жёлтые Комнаты исчезает. Люди, оставшиеся внутри, теперь отрезаны.</StrangePassageClosedDesc>
+  <StrangePassageYellowDesc>В Жёлтых Комнатах материализовалась нестабильная дверь возврата. Проход сквозь неё прорвёт новый путь к свежему лагерю на поверхности планеты.</StrangePassageYellowDesc>
+
+  
+  <RefugeeRoomsQuestName>{PAWN_nameDef} — беженец в комнатах</RefugeeRoomsQuestName>
+  <RefugeeRoomsQuestDesc>В Жёлтых Комнатах появился беженец {PAWN_nameDef}, просящий убежища. {PAWN_pronounCap} присоединится к вашей колонии, если вы примете {PAWN_objective}.</RefugeeRoomsQuestDesc>
+
+  
+  <YellowRooms_ReturnToPlanet>Вернуться на планету</YellowRooms_ReturnToPlanet>
+  <YellowRooms_ReturnToPlanetDesc>Вернуться к виду поверхности.</YellowRooms_ReturnToPlanetDesc>
+  <YellowRooms_ViewDimension>Жёлтые Комнаты</YellowRooms_ViewDimension>
+  <YellowRooms_ViewDimensionDesc>Посмотреть на Жёлтые Комнаты.</YellowRooms_ViewDimensionDesc>
+
+  
+  <PortablePortalNoDestination>Нет доступного места назначения для портативного портала.</PortablePortalNoDestination>
+  <PortablePortalTravelling>Путешествие...</PortablePortalTravelling>
+  <YellowRooms_ActivatePortal>Активировать портал</YellowRooms_ActivatePortal>
+  <YellowRooms_ActivatePortalDesc>Разорвать проход на другую сторону: телепортироваться к случайному колонисту на другой стороне. Устройство при этом уничтожается.</YellowRooms_ActivatePortalDesc>
+
+  
+  <YellowRooms_Letter_HostileClone_Title>Враждебный клон</YellowRooms_Letter_HostileClone_Title>
+  <YellowRooms_Letter_HostileClone_Text>{0}, искажённое эхо вашего колониста, выходит из комнат и атакует.</YellowRooms_Letter_HostileClone_Text>
+  <YellowRooms_Letter_PassiveClone_Title>Блуждающее эхо</YellowRooms_Letter_PassiveClone_Title>
+  <YellowRooms_Letter_PassiveClone_Text>Пустое эхо {0} заходит в комнаты. Оно будет бродить день, а затем уйдёт само — но если вы попытаетесь арестовать его или ранить, оно станет враждебным.</YellowRooms_Letter_PassiveClone_Text>
+  <YellowRooms_Letter_Stranded_Title>Потерявшийся путник</YellowRooms_Letter_Stranded_Title>
+  <YellowRooms_Letter_Stranded_Text>{0} упал в Жёлтые Комнаты без пути назад. Найдите им портал.</YellowRooms_Letter_Stranded_Text>
+
+  
+  <YellowRooms_Letter_Betrayal_Title>Предательство!</YellowRooms_Letter_Betrayal_Title>
+  <YellowRooms_Letter_Betrayal_Text>{0} показал свою истинную сущность и стал враждебным!</YellowRooms_Letter_Betrayal_Text>
+
+  
+  <YellowRooms_Letter_EchoFades_Title>Эхо исчезает</YellowRooms_Letter_EchoFades_Title>
+  <YellowRooms_Letter_EchoFades_Text>{0}, блуждающее эхо, уходит прочь из комнат.</YellowRooms_Letter_EchoFades_Text>
+  <YellowRooms_Letter_EchoHostile_Title>Эхо становится враждебным</YellowRooms_Letter_EchoHostile_Title>
+  <YellowRooms_Letter_EchoHostile_Text>{0}, блуждающее эхо, стало враждебным и атакует!</YellowRooms_Letter_EchoHostile_Text>
+
+  
+  <YellowRooms_Letter_SupplyStash_Title>Тайник с припасами</YellowRooms_Letter_SupplyStash_Title>
+  <YellowRooms_Letter_Stash_Food>Скрытый склад провизии обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Food>
+  <YellowRooms_Letter_Stash_Materials>Скрытый склад стройматериалов обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Materials>
+  <YellowRooms_Letter_Stash_Chemfuel>Скрытый склад топлива обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Chemfuel>
+  <YellowRooms_Letter_Stash_Weapons>Скрытый склад оружия обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Weapons>
+  <YellowRooms_Letter_Stash_Default>Скрытый склад обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Default>
+  <YellowRooms_Letter_Stash_Send> Отправьте караван, чтобы забрать его.</YellowRooms_Letter_Stash_Send>
+
+  
+  <YellowRooms_Letter_ResearcherRaid_Title>Рейд исследователей</YellowRooms_Letter_ResearcherRaid_Title>
+  <YellowRooms_Letter_ResearcherRaid_Text>Вооружённый отряд исследователей Жёлтых Комнат ворвался в комнаты и атакует вашу базу.</YellowRooms_Letter_ResearcherRaid_Text>
+  <YellowRooms_Letter_AbandonedBase_Title>Заброшенная база</YellowRooms_Letter_AbandonedBase_Title>
+  <YellowRooms_Letter_AbandonedBase_Text>Руины старой исследовательской базы найдены неподалёку. Сломанный телепорт может содержать ядро портала.</YellowRooms_Letter_AbandonedBase_Text>
+
+  
+  <YellowRooms_Letter_SurvivorCamp_Title>Лагерь выживших</YellowRooms_Letter_SurvivorCamp_Title>
+  <YellowRooms_Letter_SurvivorCamp_Text>Враждебная группа выживших разбила лагерь в Жёлтых Комнатах. Отправьте караван для атаки.</YellowRooms_Letter_SurvivorCamp_Text>
+
+  
+  <YellowRooms_Letter_SurvivorRaid_Title>Рейд выживших</YellowRooms_Letter_SurvivorRaid_Title>
+  <YellowRooms_Letter_SurvivorRaid_Text>Враждебная группа выживших атакует из глубин Жёлтых Комнат!</YellowRooms_Letter_SurvivorRaid_Text>
+
+  
+  <YellowRooms_Letter_StillLifeRaid_Title>Нашествие натюрмортов</YellowRooms_Letter_StillLifeRaid_Title>
+  <YellowRooms_Letter_StillLifeRaid_Text>Натюрморты прибывают из краёв комнат!</YellowRooms_Letter_StillLifeRaid_Text>
+
+  
+  <YellowRooms_Letter_HiveFromCeiling_Title>Улей из потолка</YellowRooms_Letter_HiveFromCeiling_Title>
+  <YellowRooms_Letter_HiveFromCeiling_Text>Рой насекомых выливается из дыры в потолке.</YellowRooms_Letter_HiveFromCeiling_Text>
+  <YellowRooms_Letter_BirdFromCeiling_Title>Птица из потолка</YellowRooms_Letter_BirdFromCeiling_Title>
+  <YellowRooms_Letter_BirdFromCeiling_Text>{0} вываливается из дыры в потолке.</YellowRooms_Letter_BirdFromCeiling_Text>
+  <YellowRooms_Letter_OreFromCeiling_Title>Руда из дыры в потолке</YellowRooms_Letter_OreFromCeiling_Title>
+  <YellowRooms_Letter_OreFromCeiling_Text>Руда падает из потолочной дыры: {0} залежей. Добывайте их.</YellowRooms_Letter_OreFromCeiling_Text>
+
+  
+  <YellowRooms_Letter_FoundStructure_Title>Найденное строение</YellowRooms_Letter_FoundStructure_Title>
+  <YellowRooms_Letter_FoundStructure_Text>Ваш караван обнаружил заброшенное строение в Жёлтых Комнатах. Внутри {0}, а также немного ресурсов.</YellowRooms_Letter_FoundStructure_Text>
+
+  
+  <YellowRooms_Letter_WorldSite_Text>\n\nНовая локация появилась на слое Жёлтых Комнат.</YellowRooms_Letter_WorldSite_Text>
+
+  
+  <YellowRooms_TradeSettlement_Name>Лагерь торговцев</YellowRooms_TradeSettlement_Name>
+  <YellowRooms_Letter_TradeSettlement_Title>Выжившие-торговцы</YellowRooms_Letter_TradeSettlement_Title>
+  <YellowRooms_Letter_TradeSettlement_Text>Отряд выживших-торговцев устроил временное торговое поселение в Жёлтых Комнатах. Отправьте туда караван, чтобы торговать с ними. Примерно через {0} дней лагерь бесследно исчезнет.</YellowRooms_Letter_TradeSettlement_Text>
+  <YellowRooms_Letter_AbandonedResearcher_Desc>Найдены руины старой исследовательской базы. Остались трупы в химзащите и сломанное ядро портала.</YellowRooms_Letter_AbandonedResearcher_Desc>
+  <YellowRooms_Letter_ActiveResearcher_Desc>Вооружённая исследовательская база с активным порталом. Атакуйте, пока они не укрепились.</YellowRooms_Letter_ActiveResearcher_Desc>
+  <YellowRooms_Letter_SurfaceBase_Title>Поверхностная база исследователей</YellowRooms_Letter_SurfaceBase_Title>
+  <YellowRooms_Letter_SurfaceBase_Text>База исследователей Жёлтых Комнат обнаружена на поверхности. Она содержит вооружённых исследователей и активный портал. Устраните их, чтобы захватить портал.</YellowRooms_Letter_SurfaceBase_Text>
+
+  
+  <YellowRooms_Letter_StillLifePit_Title>Натюрморт из ямы</YellowRooms_Letter_StillLifePit_Title>
+  <YellowRooms_Letter_StillLifePit_Text>{0} натюрмортов вылезают из ямы.</YellowRooms_Letter_StillLifePit_Text>
+  <YellowRooms_Letter_StillLifeCeiling_Title>Натюрморт из потолка</YellowRooms_Letter_StillLifeCeiling_Title>
+  <YellowRooms_Letter_StillLifeCeiling_Text>{0} натюрмортов падают из дыры в потолке.</YellowRooms_Letter_StillLifeCeiling_Text>
+
+  
+  <YellowRooms_Letter_WeatherShift>Погода в комнатах меняется.</YellowRooms_Letter_WeatherShift>
+  <YellowRooms_Letter_ConditionSettles>Погодная аномалия устанавливается над комнатами.</YellowRooms_Letter_ConditionSettles>
+
+  
+  <RefugeeRoomsTitle>Беженец в комнатах: {PAWN_nameDef}</RefugeeRoomsTitle>
+  <RefugeeRoomsLetterDesc>В Жёлтых Комнатах появился путешественник {PAWN_nameDef}, просящий убежища. {PAWN_pronounCap} обещает присоединиться к вашей колонии, если вы примете {PAWN_objective}.</RefugeeRoomsLetterDesc>
+
+  
+  <YellowRooms_NoDimension>Жёлтые Комнаты недоступны.</YellowRooms_NoDimension>
+  <YellowRooms_Returning>Возвращение...</YellowRooms_Returning>
+  <YellowRooms_CannotRecruitStillLife>Натюрморты не поддаются вербовке.</YellowRooms_CannotRecruitStillLife>
+  <YellowRooms_NoDestination>Не удалось найти место назначения в Жёлтых Комнатах.</YellowRooms_NoDestination>
+  <YellowRooms_FailedGeneration>Не удалось сгенерировать карту Жёлтых Комнат.</YellowRooms_FailedGeneration>
+  <YellowRooms_FailedWayBack>Не удалось открыть путь назад.</YellowRooms_FailedWayBack>
+  <YellowRooms_Travelling>Путешествие в Жёлтые Комнаты...</YellowRooms_Travelling>
+
+  
+  <YellowRooms_RepairPortal>Починить портал</YellowRooms_RepairPortal>
+  <YellowRooms_RepairPortalDesc>Приказать колонисту починить сломанный портал. Путь через портал утерян, и его нужно восстановить, прежде чем портал снова заработает.</YellowRooms_RepairPortalDesc>
+  <YellowRooms_CancelRepair>Отменить ремонт</YellowRooms_CancelRepair>
+  <YellowRooms_CancelRepairDesc>Перестать приказывать чинить портал.</YellowRooms_CancelRepairDesc>
+  <YellowRooms_NeedsRepair>Путь через портал сломан. Сначала почините портал.</YellowRooms_NeedsRepair>
+  <YellowRooms_NoEntrancePortal>Не найден входной портал, к которому можно привязать эту дверь.</YellowRooms_NoEntrancePortal>
+  <YellowRooms_PortalRepaired>Портал отремонтирован.</YellowRooms_PortalRepaired>
+  <YellowRooms_RepairNoResources>Недостаточно стали или соединительных деталей для ремонта портала.</YellowRooms_RepairNoResources>
+  <YellowRooms_RepairNeeds>Ремонт требует: {0} стали и {1} соединительных деталей.</YellowRooms_RepairNeeds>
+  <YellowRooms_RepairDelivered>Доставлено: {0}/{1} стали, {2}/{3} деталей.</YellowRooms_RepairDelivered>
+
+  
+  <YellowRooms_PlaceFromRoomsOnlyInRooms>Можно строить только внутри Жёлтых Комнат.</YellowRooms_PlaceFromRoomsOnlyInRooms>
+  <YellowRooms_PlaceToRoomsNotInRooms>Нельзя строить внутри Жёлтых Комнат.</YellowRooms_PlaceToRoomsNotInRooms>
+  <YellowRooms_PlaceBlockedByYellowWall>Нельзя строить поверх стен Жёлтых Комнат.</YellowRooms_PlaceBlockedByYellowWall>
+
+  
+  <YellowRooms_CargoGizmo>Перенести груз...</YellowRooms_CargoGizmo>
+  <YellowRooms_CargoEnterTitle>Перенос в Жёлтые Комнаты</YellowRooms_CargoEnterTitle>
+  <YellowRooms_CargoEnterDesc>Выберите вещи и колонистов для отправки в Жёлтые Комнаты. Колонисты донесут вещи до портала, а когда всё будет доставлено, выбранных колонистов можно будет отправить через портал.</YellowRooms_CargoEnterDesc>
+  <YellowRooms_CargoReturnTitle>Перенос обратно в колонию</YellowRooms_CargoReturnTitle>
+  <YellowRooms_CargoReturnDesc>Выберите вещи и колонистов для отправки обратно в колонию. Колонисты донесут вещи до этого портала, а когда всё будет доставлено, выбранных колонистов можно будет отправить через портал.</YellowRooms_CargoReturnDesc>
+  <YellowRooms_CargoCancel>Отменить перенос</YellowRooms_CargoCancel>
+  <YellowRooms_CargoCancelDesc>Прекратить перенос. Не донесённые вещи останутся на месте.</YellowRooms_CargoCancelDesc>
+  <YellowRooms_CargoSend>Отправить</YellowRooms_CargoSend>
+  <YellowRooms_CargoSendDesc>Всё доставлено. Отправить выбранных колонистов через портал.</YellowRooms_CargoSendDesc>
+  <YellowRooms_CargoLeft>Загрузка переноса: осталось донести {0} предмет(ов).</YellowRooms_CargoLeft>
+  <YellowRooms_CargoReady>Перенос загружен. Готов к отправке.</YellowRooms_CargoReady>
+  <YellowRooms_TransferReady>{0} — всё доставлено к порталу. Отправьте перенос.</YellowRooms_TransferReady>
+  <YellowRooms_TransferCancelled>Перенос отменён.</YellowRooms_TransferCancelled>
+<YellowRooms_ReturnDoorNoLink>У этого портала нет связанного входа на поверхности. Пройдите через него один раз, чтобы установить связь.</YellowRooms_ReturnDoorNoLink>
+  <ReportCarryToYellowRoomsPortal>несёт {0} к порталу.</ReportCarryToYellowRoomsPortal>
+
+  
+  <YellowRooms_PitGizmo>Сбросить в яму...</YellowRooms_PitGizmo>
+  <YellowRooms_PitTitle>Сброс в яму</YellowRooms_PitTitle>
+  <YellowRooms_PitDesc>Выберите предметы и колонистов для сброса в яму. Колонисты донесут выбранные предметы до ямы, и каждый принесённый предмет будет поглощён ею. Когда всё будет донесено, выбранных колонистов можно будет бросить в яму.</YellowRooms_PitDesc>
+  <YellowRooms_PitThrow>Бросить их в яму</YellowRooms_PitThrow>
+  <YellowRooms_PitThrowDesc>Всё донесено до ямы. Бросить выбранных колонистов внутрь.</YellowRooms_PitThrowDesc>
+  <YellowRooms_PitCarried>{0} — всё донесено и поглощено ямой.</YellowRooms_PitCarried>
+  <YellowRooms_PitPawnsReady>{0} колонист(ов) готовы к броску в яму.</YellowRooms_PitPawnsReady>
+  <YellowRooms_Letter_FellFromCeiling_Title>Выпало из потолка</YellowRooms_Letter_FellFromCeiling_Title>
+  <YellowRooms_Letter_FellFromCeiling_Text>{0} выпадает из дыры в потолке.</YellowRooms_Letter_FellFromCeiling_Text>
+  <YellowRooms_Letter_PitCrawler_Title>Что-то вылезает из ямы</YellowRooms_Letter_PitCrawler_Title>
+  <YellowRooms_Letter_PitCrawler_Text>{0} вылезает из ямы!</YellowRooms_Letter_PitCrawler_Text>
+  <YellowRooms_PitClotLurks>Враждебное эхо возвращается со дна ямы.</YellowRooms_PitClotLurks>
+  <YellowRooms_Letter_PitRevenge_Title>Месть из ямы</YellowRooms_Letter_PitRevenge_Title>
+  <YellowRooms_Letter_PitRevenge_Text>{0} вылезает из ямы, чтобы отомстить!</YellowRooms_Letter_PitRevenge_Text>
+  <ReportCarryToPit>несёт {0} к яме.</ReportCarryToPit>
+
+</LanguageData>

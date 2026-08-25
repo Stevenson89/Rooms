@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  
+  <BreakLamp>Break lamp</BreakLamp>
+  <BreakLampDesc>Mark this ceiling lamp to be smashed. A colonist with Construction enabled will break it as part of their normal work.</BreakLampDesc>
+
+  <BreakLampCancel>Cancel break</BreakLampCancel>
+  <BreakLampCancelDesc>Remove the order to break this ceiling lamp.</BreakLampCancelDesc>
+
+  <BreakLampNow>Break lamp now</BreakLampNow>
+
+  
+  <YellowRooms_Enter>Enter Yellow Rooms</YellowRooms_Enter>
+  <YellowRooms_Return>Return</YellowRooms_Return>
+  <YellowRooms_ConnectionLost>The connection back is lost.</YellowRooms_ConnectionLost>
+
+  
+  <BreakOutlet>Break outlet</BreakOutlet>
+  <BreakOutletDesc>Mark this wall outlet to be smashed. A colonist with Construction enabled will break it as part of their normal work.</BreakOutletDesc>
+
+  <BreakOutletCancel>Cancel break</BreakOutletCancel>
+  <BreakOutletCancelDesc>Remove the order to break this wall outlet.</BreakOutletCancelDesc>
+
+  <BreakOutletNow>Break outlet now</BreakOutletNow>
+
+  
+  <LampRegenerated>A ceiling lamp flickers back to life.</LampRegenerated>
+  <LampRegeneratedTitle>Lamp restored</LampRegeneratedTitle>
+
+  
+  <OutletRegenerated>A wall outlet hums back to life.</OutletRegenerated>
+  <OutletRegeneratedTitle>Outlet restored</OutletRegeneratedTitle>
+
+  
+  <StrangePassageLabel>Strange passage</StrangePassageLabel>
+  <StrangePassageDesc>A doorway leading into the Yellow Rooms has materialized against one of your walls on its own. It hums with an unstable energy вЂ” it will collapse and vanish in about a day, taking the way back with it.</StrangePassageDesc>
+  <StrangePassageClosedLabel>The passage closes</StrangePassageClosedLabel>
+  <StrangePassageClosedDesc>The strange doorway to the Yellow Rooms fades and seals shut. Any pawns still inside are now stranded there.</StrangePassageClosedDesc>
+  <StrangePassageYellowDesc>An unstable return door has materialized inside the Yellow Rooms. Passing through it will tear open a new passage to a fresh camp on the surface of the planet.</StrangePassageYellowDesc>
+
+  
+  <RefugeeRoomsQuestName>{PAWN_nameDef} - refugee in the rooms</RefugeeRoomsQuestName>
+  <RefugeeRoomsQuestDesc>{PAWN_nameDef} appeared in the Yellow Rooms and asks for shelter. {PAWN_pronounCap} will join your colony if you accept {PAWN_objective}.</RefugeeRoomsQuestDesc>
+
+  
+  <YellowRooms_ReturnToPlanet>Return to planet</YellowRooms_ReturnToPlanet>
+  <YellowRooms_ReturnToPlanetDesc>Return to the surface view.</YellowRooms_ReturnToPlanetDesc>
+  <YellowRooms_ViewDimension>Yellow Rooms</YellowRooms_ViewDimension>
+  <YellowRooms_ViewDimensionDesc>View the Yellow Rooms dimension.</YellowRooms_ViewDimensionDesc>
+
+  
+  <PortablePortalNoDestination>No destination available for the portable portal.</PortablePortalNoDestination>
+  <PortablePortalTravelling>Travelling...</PortablePortalTravelling>
+  <YellowRooms_ActivatePortal>Activate portal</YellowRooms_ActivatePortal>
+  <YellowRooms_ActivatePortalDesc>Tear open a doorway to the other side: teleport to a random colonist on the other side. The device is consumed.</YellowRooms_ActivatePortalDesc>
+
+  
+  <YellowRooms_Letter_HostileClone_Title>Hostile clone</YellowRooms_Letter_HostileClone_Title>
+  <YellowRooms_Letter_HostileClone_Text>{0}, a corrupted echo of your colonist, emerges from the rooms and attacks.</YellowRooms_Letter_HostileClone_Text>
+  <YellowRooms_Letter_PassiveClone_Title>Wandering echo</YellowRooms_Letter_PassiveClone_Title>
+  <YellowRooms_Letter_PassiveClone_Text>A hollow echo of {0} drifts into the rooms. It will wander for a day and then leave on its own вЂ” but if you try to arrest it or hurt it, it will turn hostile.</YellowRooms_Letter_PassiveClone_Text>
+  <YellowRooms_Letter_Stranded_Title>Stranded traveler</YellowRooms_Letter_Stranded_Title>
+  <YellowRooms_Letter_Stranded_Text>{0} has tumbled into the Yellow Rooms with no way back. Find them a portal.</YellowRooms_Letter_Stranded_Text>
+
+  
+  <YellowRooms_Letter_Betrayal_Title>Betrayal!</YellowRooms_Letter_Betrayal_Title>
+  <YellowRooms_Letter_Betrayal_Text>{0} has revealed their true nature and turned hostile!</YellowRooms_Letter_Betrayal_Text>
+
+  
+  <YellowRooms_Letter_EchoFades_Title>Echo fades</YellowRooms_Letter_EchoFades_Title>
+  <YellowRooms_Letter_EchoFades_Text>{0}, the wandering echo, drifts away and leaves the rooms.</YellowRooms_Letter_EchoFades_Text>
+  <YellowRooms_Letter_EchoHostile_Title>Echo turns hostile</YellowRooms_Letter_EchoHostile_Title>
+  <YellowRooms_Letter_EchoHostile_Text>{0}, the wandering echo, has become hostile and attacks!</YellowRooms_Letter_EchoHostile_Text>
+
+  
+  <YellowRooms_Letter_SupplyStash_Title>Supply stash</YellowRooms_Letter_SupplyStash_Title>
+  <YellowRooms_Letter_Stash_Food>A hidden cache of supplies has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Food>
+  <YellowRooms_Letter_Stash_Materials>A hidden cache of building materials has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Materials>
+  <YellowRooms_Letter_Stash_Chemfuel>A hidden cache of chemfuel has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Chemfuel>
+  <YellowRooms_Letter_Stash_Weapons>A hidden cache of weapons has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Weapons>
+  <YellowRooms_Letter_Stash_Default>A hidden cache has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Default>
+  <YellowRooms_Letter_Stash_Send> Send a caravan to claim it.</YellowRooms_Letter_Stash_Send>
+
+  
+  <YellowRooms_Letter_ResearcherRaid_Title>Researcher raid</YellowRooms_Letter_ResearcherRaid_Title>
+  <YellowRooms_Letter_ResearcherRaid_Text>An armed Yellow Rooms researcher squad has breached the rooms and is assaulting your base.</YellowRooms_Letter_ResearcherRaid_Text>
+  <YellowRooms_Letter_AbandonedBase_Title>Abandoned base</YellowRooms_Letter_AbandonedBase_Title>
+  <YellowRooms_Letter_AbandonedBase_Text>The ruins of an old researcher base have been found nearby. A broken teleport may still yield a portal core.</YellowRooms_Letter_AbandonedBase_Text>
+
+  
+  <YellowRooms_Letter_SurvivorCamp_Title>Survivor camp</YellowRooms_Letter_SurvivorCamp_Title>
+  <YellowRooms_Letter_SurvivorCamp_Text>A hostile group of survivors has set up a camp in the Yellow Rooms. Send a caravan to assault it.</YellowRooms_Letter_SurvivorCamp_Text>
+
+  
+  <YellowRooms_Letter_SurvivorRaid_Title>Survivor raid</YellowRooms_Letter_SurvivorRaid_Title>
+  <YellowRooms_Letter_SurvivorRaid_Text>A hostile group of survivors is attacking from the depths of the Yellow Rooms!</YellowRooms_Letter_SurvivorRaid_Text>
+
+  
+  <YellowRooms_Letter_StillLifeRaid_Title>Still life incursion</YellowRooms_Letter_StillLifeRaid_Title>
+  <YellowRooms_Letter_StillLifeRaid_Text>Still life entities are pouring in from the edges of the rooms!</YellowRooms_Letter_StillLifeRaid_Text>
+
+  
+  <YellowRooms_Letter_HiveFromCeiling_Title>Hive from ceiling</YellowRooms_Letter_HiveFromCeiling_Title>
+  <YellowRooms_Letter_HiveFromCeiling_Text>A swarm of insects pours out of a hole in the ceiling.</YellowRooms_Letter_HiveFromCeiling_Text>
+  <YellowRooms_Letter_BirdFromCeiling_Title>Bird from ceiling</YellowRooms_Letter_BirdFromCeiling_Title>
+  <YellowRooms_Letter_BirdFromCeiling_Text>A {0} tumbles out of a hole in the ceiling.</YellowRooms_Letter_BirdFromCeiling_Text>
+  <YellowRooms_Letter_OreFromCeiling_Title>Ore from ceiling</YellowRooms_Letter_OreFromCeiling_Title>
+  <YellowRooms_Letter_OreFromCeiling_Text>Ore falls from a ceiling hole: {0} ore deposits. Mine them.</YellowRooms_Letter_OreFromCeiling_Text>
+
+  
+  <YellowRooms_Letter_FoundStructure_Title>Found structure</YellowRooms_Letter_FoundStructure_Title>
+  <YellowRooms_Letter_FoundStructure_Text>Your caravan discovers an abandoned structure in the Yellow Rooms. There is a {0} inside, along with some salvageable resources.</YellowRooms_Letter_FoundStructure_Text>
+
+  
+  <YellowRooms_Letter_WorldSite_Text>\n\nA new location has appeared on the Yellow Rooms layer.</YellowRooms_Letter_WorldSite_Text>
+
+  
+  <YellowRooms_TradeSettlement_Name>Survivor Trading Camp</YellowRooms_TradeSettlement_Name>
+  <YellowRooms_Letter_TradeSettlement_Title>Survivor traders</YellowRooms_Letter_TradeSettlement_Title>
+  <YellowRooms_Letter_TradeSettlement_Text>A band of survivor traders has set up a temporary trading settlement in the Yellow Rooms. Send a caravan to trade with them. The camp will disappear without a trace in about {0} days.</YellowRooms_Letter_TradeSettlement_Text>
+  <YellowRooms_Letter_AbandonedResearcher_Desc>The ruins of an old researcher base have been found. Corpses in hazmat suits and a broken portal core remain.</YellowRooms_Letter_AbandonedResearcher_Desc>
+  <YellowRooms_Letter_ActiveResearcher_Desc>An armed researcher base with an active portal. Assault it before they entrench further.</YellowRooms_Letter_ActiveResearcher_Desc>
+  <YellowRooms_Letter_SurfaceBase_Title>Surface researcher base</YellowRooms_Letter_SurfaceBase_Title>
+  <YellowRooms_Letter_SurfaceBase_Text>A Yellow Rooms researcher base has been detected on the surface. It contains armed researchers and an active portal to the Yellow Rooms dimension. Eliminate them to secure the portal.</YellowRooms_Letter_SurfaceBase_Text>
+
+  
+  <YellowRooms_Letter_StillLifePit_Title>Still life from pit</YellowRooms_Letter_StillLifePit_Title>
+  <YellowRooms_Letter_StillLifePit_Text>{0} still life crawl out of a pit.</YellowRooms_Letter_StillLifePit_Text>
+  <YellowRooms_Letter_StillLifeCeiling_Title>Still life from ceiling</YellowRooms_Letter_StillLifeCeiling_Title>
+  <YellowRooms_Letter_StillLifeCeiling_Text>{0} still life drop from a hole in the ceiling.</YellowRooms_Letter_StillLifeCeiling_Text>
+
+  
+  <YellowRooms_Letter_WeatherShift>The weather in the rooms shifts.</YellowRooms_Letter_WeatherShift>
+  <YellowRooms_Letter_ConditionSettles>A weather anomaly settles over the rooms.</YellowRooms_Letter_ConditionSettles>
+
+  
+  <RefugeeRoomsTitle>Refugee in the rooms: {PAWN_nameDef}</RefugeeRoomsTitle>
+  <RefugeeRoomsLetterDesc>{PAWN_nameDef} appeared in the Yellow Rooms and asks for shelter. {PAWN_pronounCap} promises to join your colony if you take {PAWN_objective} in.</RefugeeRoomsLetterDesc>
+
+  
+  <YellowRooms_NoDimension>Yellow Rooms dimension not available.</YellowRooms_NoDimension>
+  <YellowRooms_Returning>Returning...</YellowRooms_Returning>
+  <YellowRooms_CannotRecruitStillLife>Still life entities cannot be recruited.</YellowRooms_CannotRecruitStillLife>
+  <YellowRooms_NoDestination>Could not find a destination in the Yellow Rooms.</YellowRooms_NoDestination>
+  <YellowRooms_FailedGeneration>Failed to generate Yellow Rooms map.</YellowRooms_FailedGeneration>
+  <YellowRooms_FailedWayBack>Failed to open a way back.</YellowRooms_FailedWayBack>
+  <YellowRooms_Travelling>Traveling to Yellow Rooms...</YellowRooms_Travelling>
+
+  
+  <YellowRooms_RepairPortal>Repair portal</YellowRooms_RepairPortal>
+  <YellowRooms_RepairPortalDesc>Order a colonist to repair this broken portal. The way through the portal was lost and must be restored before it can be used again.</YellowRooms_RepairPortalDesc>
+  <YellowRooms_CancelRepair>Cancel repair</YellowRooms_CancelRepair>
+  <YellowRooms_CancelRepairDesc>Stop ordering the portal to be repaired.</YellowRooms_CancelRepairDesc>
+  <YellowRooms_NeedsRepair>The way through the portal is broken. Repair the portal first.</YellowRooms_NeedsRepair>
+  <YellowRooms_NoEntrancePortal>No entrance portal found to link this door to.</YellowRooms_NoEntrancePortal>
+  <YellowRooms_PortalRepaired>The portal has been repaired.</YellowRooms_PortalRepaired>
+  <YellowRooms_RepairNoResources>Not enough steel or component spacers to repair the portal.</YellowRooms_RepairNoResources>
+  <YellowRooms_RepairNeeds>Repair needs: {0} steel and {1} component spacers.</YellowRooms_RepairNeeds>
+  <YellowRooms_RepairDelivered>Delivered: {0}/{1} steel, {2}/{3} spacers.</YellowRooms_RepairDelivered>
+
+  
+  <YellowRooms_PlaceFromRoomsOnlyInRooms>Can only be built inside the Yellow Rooms.</YellowRooms_PlaceFromRoomsOnlyInRooms>
+  <YellowRooms_PlaceToRoomsNotInRooms>Cannot be built inside the Yellow Rooms.</YellowRooms_PlaceToRoomsNotInRooms>
+  <YellowRooms_PlaceBlockedByYellowWall>Cannot be built over the walls of the Yellow Rooms.</YellowRooms_PlaceBlockedByYellowWall>
+
+  
+  <YellowRooms_CargoGizmo>Transfer cargo...</YellowRooms_CargoGizmo>
+  <YellowRooms_CargoEnterTitle>Transfer into Yellow Rooms</YellowRooms_CargoEnterTitle>
+  <YellowRooms_CargoEnterDesc>Choose things and colonists to send into the Yellow Rooms. Colonists will carry the things to this portal, and when everything has been delivered the chosen colonists can be sent through.</YellowRooms_CargoEnterDesc>
+  <YellowRooms_CargoReturnTitle>Transfer back to the colony</YellowRooms_CargoReturnTitle>
+  <YellowRooms_CargoReturnDesc>Choose things and colonists to send back to the colony. Colonists will carry the things to this portal, and when everything has been delivered the chosen colonists can be sent through.</YellowRooms_CargoReturnDesc>
+  <YellowRooms_CargoCancel>Cancel transfer</YellowRooms_CargoCancel>
+  <YellowRooms_CargoCancelDesc>Stop this portal's transfer. Anything not yet carried will stay where it is.</YellowRooms_CargoCancelDesc>
+  <YellowRooms_CargoSend>Send through</YellowRooms_CargoSend>
+  <YellowRooms_CargoSendDesc>Everything has been delivered. Transport the chosen colonists through the portal.</YellowRooms_CargoSendDesc>
+  <YellowRooms_CargoLeft>Transfer loading: {0} item(s) left to carry.</YellowRooms_CargoLeft>
+  <YellowRooms_CargoReady>Transfer loaded. Ready to send through.</YellowRooms_CargoReady>
+  <YellowRooms_TransferReady>{0} вЂ” everything has been carried to the portal. Send the transfer through.</YellowRooms_TransferReady>
+  <YellowRooms_TransferCancelled>Transfer cancelled.</YellowRooms_TransferCancelled>
+<YellowRooms_ReturnDoorNoLink>This portal has no linked entrance on the surface. Use it once by walking through to establish the link.</YellowRooms_ReturnDoorNoLink>
+  <ReportCarryToYellowRoomsPortal>carrying {0} to the portal.</ReportCarryToYellowRoomsPortal>
+
+  
+  <YellowRooms_PitGizmo>Throw into pit...</YellowRooms_PitGizmo>
+  <YellowRooms_PitTitle>Throw into the pit</YellowRooms_PitTitle>
+  <YellowRooms_PitDesc>Choose things and colonists to throw into the pit. Colonists will carry the chosen things to the pit, and each item is swallowed as it arrives. When everything has been carried, the chosen colonists can be thrown in.</YellowRooms_PitDesc>
+  <YellowRooms_PitThrow>Throw them in</YellowRooms_PitThrow>
+  <YellowRooms_PitThrowDesc>Everything has been carried to the pit. Throw the chosen colonists in.</YellowRooms_PitThrowDesc>
+  <YellowRooms_PitCarried>{0} вЂ” everything has been carried into the pit.</YellowRooms_PitCarried>
+  <YellowRooms_PitPawnsReady>{0} colonist(s) ready to be thrown in.</YellowRooms_PitPawnsReady>
+  <YellowRooms_Letter_FellFromCeiling_Title>Fell from the ceiling</YellowRooms_Letter_FellFromCeiling_Title>
+  <YellowRooms_Letter_FellFromCeiling_Text>{0} falls out of a hole in the ceiling.</YellowRooms_Letter_FellFromCeiling_Text>
+  <YellowRooms_Letter_PitCrawler_Title>Something crawls out of the pit</YellowRooms_Letter_PitCrawler_Title>
+  <YellowRooms_Letter_PitCrawler_Text>{0} crawls out of the pit!</YellowRooms_Letter_PitCrawler_Text>
+  <YellowRooms_PitClotLurks>A hostile echo returns from the bottom of the pit.</YellowRooms_PitClotLurks>
+  <YellowRooms_Letter_PitRevenge_Title>Revenge from the pit</YellowRooms_Letter_PitRevenge_Title>
+  <YellowRooms_Letter_PitRevenge_Text>{0} crawls out of the pit, seeking revenge!</YellowRooms_Letter_PitRevenge_Text>
+  <ReportCarryToPit>carrying {0} to the pit.</ReportCarryToPit>
+
+</LanguageData>

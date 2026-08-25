@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>RareFishingCatches_YellowRooms</defName>
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_Pawn">
+            <pawnKind>Pirate</pawnKind>
+            <alive>false</alive>
+            <corpseAgeRangeDays>5~10</corpseAgeRangeDays>
+          </thingSetMaker>
+        </li>
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_Pawn">
+            <pawnKind>Drifter</pawnKind>
+            <alive>false</alive>
+            <corpseAgeRangeDays>5~10</corpseAgeRangeDays>
+          </thingSetMaker>
+        </li>
+
+        <li MayRequire="Ludeon.RimWorld.Odyssey">
+          <weight>3</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Fish_Marlin</li>
+                  <li>Fish_Tuna</li>
+                </thingDefs>
+              </filter>
+              <countRange>2~4</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <weight>4</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>YellowRooms_Rubber</li>
+                </thingDefs>
+              </filter>
+              <countRange>15~30</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+        <li>
+          <weight>2</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>YellowRooms_BrokenLamp</li>
+                </thingDefs>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <weight>2</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <qualityGenerator>Reward</qualityGenerator>
+              <filter>
+                <thingDefs>
+                  <li>Skull</li>
+                  <li>Heart</li>
+                  <li>Kidney</li>
+                </thingDefs>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li MayRequire="Ludeon.RimWorld.Odyssey">
+          <weight>2</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>GravlitePanel</li>
+                </thingDefs>
+              </filter>
+              <countRange>15~35</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">
+          <weight>2</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>BlocksVacstone</li>
+                </thingDefs>
+              </filter>
+              <countRange>30~60</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li MayRequire="Ludeon.RimWorld.Odyssey">
+          <weight>4</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <qualityGenerator>Reward</qualityGenerator>
+              <filter>
+                <thingDefs>
+                  <li>Map</li>
+                  <li>Schematic</li>
+                  <li>Novel</li>
+                </thingDefs>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <weight>3</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Luciferium</li>
+                  <li>GoJuice</li>
+                  <li>WakeUp</li>
+                </thingDefs>
+              </filter>
+              <countRange>5~12</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <qualityGenerator>Reward</qualityGenerator>
+              <filter>
+                <thingDefs>
+                  <li>TechprofSubpersonaCore</li>
+                  <li>MechSerumHealer</li>
+                </thingDefs>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

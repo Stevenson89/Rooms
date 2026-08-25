@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef ParentName="Outpost">
+    <defName>YellowRooms_BanditCamp</defName>
+    <label>survivor camp</label>
+    <description>A hostile camp of survivors in the Yellow Rooms. Guards attack anyone who approaches.</description>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <tags Inherit="False">
+      <li>YellowRoomsBanditCamp</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_BanditCamp</defName>
+    <linkWithSite>YellowRooms_BanditCamp</linkWithSite>
+    <order>1200</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsCamp" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_BanditCampPower</defName>
+    <linkWithSite>YellowRooms_BanditCamp</linkWithSite>
+    <order>1201</order>
+    <genStep Class="GenStep_Power" />
+  </GenStepDef>
+
+  <SitePartDef>
+    <defName>YellowRooms_SupplyStash</defName>
+    <label>supply stash</label>
+    <description>A hidden cache of supplies in the Yellow Rooms. Send a caravan to claim it.</description>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <siteTexture>World/WorldObjects/YellowRooms_settlement</siteTexture>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_SupplyStash</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>false</showFactionInInspectString>
+    <requiresFaction>false</requiresFaction>
+    <tags>
+      <li>YellowRoomsSupplyStash</li>
+    </tags>
+  </SitePartDef>
+
+  <SitePartDef>
+    <defName>YellowRooms_AbandonedResearcherBase</defName>
+    <label>abandoned researcher base</label>
+    <description>An abandoned Yellow Rooms researcher base. Contains a portal core in a sealed building, along with the remains of the research team.</description>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <siteTexture>World/WorldObjects/YellowRooms_settlement</siteTexture>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_AbandonedResearcherBase_SP</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>false</showFactionInInspectString>
+    <requiresFaction>false</requiresFaction>
+    <tags>
+      <li>YellowRoomsAbandonedBase</li>
+    </tags>
+  </SitePartDef>
+
+  <SitePartDef>
+    <defName>YellowRooms_ResearcherBase</defName>
+    <label>researcher base</label>
+    <description>An active Yellow Rooms researcher base. Contains a portal guarded by hostile researchers.</description>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <siteTexture>World/WorldObjects/YellowRooms_settlement</siteTexture>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_ResearcherBaseSite</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>false</showFactionInInspectString>
+    <requiresFaction>false</requiresFaction>
+    <tags>
+      <li>YellowRoomsResearcherBase</li>
+    </tags>
+  </SitePartDef>
+
+  <SitePartDef>
+    <defName>YellowRooms_AbandonedResearcherBaseSite</defName>
+    <label>abandoned researcher base</label>
+    <description>An abandoned researcher base in the Yellow Rooms. Contains a sealed building with a portal core, researcher corpses in hazmat suits, and hostile Still Life guardians.</description>
+    <workerClass>arsiy.Rooms.GenSteps.SitePartWorker_AbandonedResearcherBase</workerClass>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <siteTexture>World/WorldObjects/YellowRooms_settlement</siteTexture>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_AbandonedResearcherBaseSite_SP</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>false</showFactionInInspectString>
+    <requiresFaction>false</requiresFaction>
+    <tags>
+      <li>YellowRoomsAbandonedBase</li>
+    </tags>
+  </SitePartDef>
+
+  <SitePartDef>
+    <defName>YellowRooms_SurfaceResearcherBase</defName>
+    <label>surface researcher base</label>
+    <description>A surface base of the Yellow Rooms researchers. Contains a portal to the Yellow Rooms dimension in its center.</description>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <siteTexture>World/WorldObjects/YellowRooms_settlement</siteTexture>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_SurfaceResearcherBase</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>false</showFactionInInspectString>
+    <requiresFaction>false</requiresFaction>
+    <tags>
+      <li>YellowRoomsSurfaceResearcherBase</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_SupplyStash</defName>
+    <linkWithSite>YellowRooms_SupplyStash</linkWithSite>
+    <order>400</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_SupplyStash" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_AbandonedResearcherBase</defName>
+    <linkWithSite>YellowRooms_AbandonedResearcherBase</linkWithSite>
+    <order>400</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_AbandonedResearcherBase" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_ResearcherBase</defName>
+    <linkWithSite>YellowRooms_ResearcherBase</linkWithSite>
+    <order>400</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_ResearcherBase" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_SurfaceResearcherBase</defName>
+    <linkWithSite>YellowRooms_SurfaceResearcherBase</linkWithSite>
+    <order>400</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_SurfaceResearcherBase" />
+  </GenStepDef>
+</Defs>

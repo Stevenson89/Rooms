@@ -1,0 +1,9 @@
+# Build artifacts
+Source/obj/
+Source/bin/
+*.user
+
+# IDE
+.vs/
+.idea/
+*.suo

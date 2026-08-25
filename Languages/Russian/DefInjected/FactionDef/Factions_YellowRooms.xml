@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <YellowRooms_Researchers.label>Исследователи желтых комнат</YellowRooms_Researchers.label>
+  <YellowRooms_Researchers.fixedName>Исследователи желтых комнат</YellowRooms_Researchers.fixedName>
+  <YellowRooms_Researchers.description>Скрытая фракция вооружённых исследователей, которые изучают — и эксплуатируют — измерение желтых комнат. Они навсегда враждебны всем и похищают любого упавшего бойца, которого смогут утащить с карты.</YellowRooms_Researchers.description>
+  <YellowRooms_Researchers.pawnSingular>исследователь</YellowRooms_Researchers.pawnSingular>
+  <YellowRooms_Researchers.pawnsPlural>исследователи</YellowRooms_Researchers.pawnsPlural>
+  <YellowRooms_Researchers.leaderTitle>директор</YellowRooms_Researchers.leaderTitle>
+
+  <YellowRooms_StillLifeFaction.label>Порождения Желтых комнат</YellowRooms_StillLifeFaction.label>
+  <YellowRooms_StillLifeFaction.fixedName>Порождения Желтых комнат</YellowRooms_StillLifeFaction.fixedName>
+  <YellowRooms_StillLifeFaction.description>Скрытая фракция испорченных имитаций людей, бродящих по желтым комнатам. Они враждебны всему, кроме себе подобных.</YellowRooms_StillLifeFaction.description>
+  <YellowRooms_StillLifeFaction.pawnSingular>порождение</YellowRooms_StillLifeFaction.pawnSingular>
+  <YellowRooms_StillLifeFaction.pawnsPlural>порождения</YellowRooms_StillLifeFaction.pawnsPlural>
+  <YellowRooms_StillLifeFaction.leaderTitle>эхо</YellowRooms_StillLifeFaction.leaderTitle>
+
+  <YellowRooms_Survivors.label>Враждебные выжившие</YellowRooms_Survivors.label>
+  <YellowRooms_Survivors.fixedName>Враждебные выжившие</YellowRooms_Survivors.fixedName>
+  <YellowRooms_Survivors.description>Скрытая фракция выживших, сведённых с ума желтыми комнатами. Они враждебны чужакам и иногда устраивают временные лагеря.</YellowRooms_Survivors.description>
+  <YellowRooms_Survivors.pawnSingular>выживший</YellowRooms_Survivors.pawnSingular>
+  <YellowRooms_Survivors.pawnsPlural>выжившие</YellowRooms_Survivors.pawnsPlural>
+  <YellowRooms_Survivors.leaderTitle>вождь</YellowRooms_Survivors.leaderTitle>
+
+  <YellowRooms_SurvivorTraders.label>Выжившие-торговцы</YellowRooms_SurvivorTraders.label>
+  <YellowRooms_SurvivorTraders.fixedName>Выжившие-торговцы</YellowRooms_SurvivorTraders.fixedName>
+  <YellowRooms_SurvivorTraders.description>Бродячие группы выживших, которые часто торгуют с чужаками. В отличие от своих обезумевших собратьев, они встречают незнакомцев настороженно, но без враждебности — пока что.</YellowRooms_SurvivorTraders.description>
+  <YellowRooms_SurvivorTraders.pawnSingular>торговец-выживший</YellowRooms_SurvivorTraders.pawnSingular>
+  <YellowRooms_SurvivorTraders.pawnsPlural>торговцы-выжившие</YellowRooms_SurvivorTraders.pawnsPlural>
+  <YellowRooms_SurvivorTraders.leaderTitle>предводитель торговцев</YellowRooms_SurvivorTraders.leaderTitle>
+
+</LanguageData>

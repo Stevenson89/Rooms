@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GenStepDef>
+    <defName>YellowRooms_Floor</defName>
+    <order>100</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsFloor" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_Walls</defName>
+    <order>200</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsWalls" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_ForeignSiteFix</defName>
+    <order>300</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsForeignSiteFix" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_Environment</defName>
+    <order>1000</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsEnvironment" />
+  </GenStepDef>
+
+  
+  <GenStepDef>
+    <defName>YellowRooms_SpecialSpots</defName>
+    <order>1100</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsSpecialSpots" />
+  </GenStepDef>
+
+  
+  <GenStepDef>
+    <defName>YellowRooms_StartSpot</defName>
+    <order>850</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_YellowRoomsStartSpot" />
+  </GenStepDef>
+
+  <MapGeneratorDef>
+    <defName>YellowRooms</defName>
+    <genSteps>
+      <li>YellowRooms_Floor</li>
+      <li>YellowRooms_Walls</li>
+      <li>YellowRooms_ForeignSiteFix</li>
+      <li>Settlement</li>
+      <li>YellowRooms_StartSpot</li>
+      <li>Fog</li>
+      <li>ScenParts</li>
+      <li>YellowRooms_Environment</li>
+      <li>YellowRooms_SpecialSpots</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef ParentName="MapCommonBase">
+    <defName>YellowRooms_SurfaceBase</defName>
+    <genSteps>
+      <li>RocksFromGrid</li>
+    </genSteps>
+  </MapGeneratorDef>
+</Defs>

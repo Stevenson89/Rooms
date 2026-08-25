@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <GameConditionDef>
+    <defName>YellowRooms_HeatWaveIndoor</defName>
+    <label>heat wave (indoor)</label>
+    <description>A suffocating wave of heat settles over the Yellow Rooms. The ceiling traps the blistering air.</description>
+    <descriptionFuture>a heat wave will bake the Yellow Rooms for [gameConditionDuration_duration], harming crops and possibly killing people or animals in uncooled areas</descriptionFuture>
+    <endMessage>The heat wave subsides.</endMessage>
+    <letterText>A wave of suffocating heat settles over the rooms.\n\nHeat waves can induce deadly heatstroke. Stay cool by building either a passive or electric cooler, or by getting deep underground where the rocks are naturally cool.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <conditionClass>arsiy.Rooms.Incidents.GameCondition_HeatWaveIndoor</conditionClass>
+    <exclusiveConditions>
+      <li>ColdSnap</li>
+      <li>VolcanicWinter</li>
+    </exclusiveConditions>
+    <allowUnderground>false</allowUnderground>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </GameConditionDef>
+
+  
+  <GameConditionDef>
+    <defName>YellowRooms_ColdSnapIndoor</defName>
+    <label>cold snap (indoor)</label>
+    <description>A biting cold creeps into the Yellow Rooms. The ceiling traps the freezing air.</description>
+    <descriptionFuture>a cold snap will freeze the Yellow Rooms for [gameConditionDuration_duration], harming crops and possibly killing people or animals in unheated areas</descriptionFuture>
+    <endMessage>The cold snap subsides.</endMessage>
+    <letterText>A biting cold creeps into the rooms.\n\nCold snaps can induce deadly hypothermia. Stay warm by building either a passive or electric heater, or by getting deep underground where the rocks are naturally warm.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <conditionClass>arsiy.Rooms.Incidents.GameCondition_ColdSnapIndoor</conditionClass>
+    <exclusiveConditions>
+      <li>HeatWave</li>
+      <li>VolcanicWinter</li>
+    </exclusiveConditions>
+    <allowUnderground>false</allowUnderground>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </GameConditionDef>
+
+</Defs>

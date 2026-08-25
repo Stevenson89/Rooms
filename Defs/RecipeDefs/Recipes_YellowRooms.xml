@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  
+  
+  
+  <RecipeDef>
+    <defName>YellowRooms_SmeltBrokenLamp</defName>
+    <label>break down broken lamp</label>
+    <description>Break down a broken ceiling lamp into steel.</description>
+    <jobString>Breaking down broken lamp.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.4</workSkillLearnFactor>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YellowRooms_BrokenLamp</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>YellowRooms_BrokenLamp</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Steel>5</Steel>
+    </products>
+  </RecipeDef>
+
+  
+  
+  
+  
+  
+  <RecipeDef>
+    <defName>YellowRooms_MakePortablePortal</defName>
+    <label>make portable portal</label>
+    <description>Make a portable portal.</description>
+    <jobString>Making portable portal.</jobString>
+    <workAmount>6000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>YellowRooms_PortableTeleporter</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YellowRooms_PortalCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>YellowRooms_PortalCore</li>
+        <li>ComponentSpacer</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <YellowRooms_PortablePortal>1</YellowRooms_PortablePortal>
+    </products>
+  </RecipeDef>
+
+  
+  
+  
+  
+  <RecipeDef>
+    <defName>YellowRooms_MakeRubber</defName>
+    <label>make rubber from chemfuel</label>
+    <description>Polymerize chemfuel into tough, flexible rubber sheets.</description>
+    <jobString>Making rubber from chemfuel.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.4</workSkillLearnFactor>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <YellowRooms_Rubber>15</YellowRooms_Rubber>
+    </products>
+  </RecipeDef>
+
+</Defs>

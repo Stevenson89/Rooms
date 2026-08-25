@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RoofDef>
+    <defName>YellowRoomsRoof</defName>
+    <label>yellow rooms roof</label>
+    <isThickRoof>false</isThickRoof>
+    <isNatural>true</isNatural>
+    <canCollapse>false</canCollapse>
+  </RoofDef>
+</Defs>

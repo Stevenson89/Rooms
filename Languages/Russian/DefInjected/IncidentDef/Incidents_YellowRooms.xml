@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  
+  <YellowRooms_OreFromCeiling.label>руда из дыры в потолке</YellowRooms_OreFromCeiling.label>
+
+  
+  <YellowRooms_SurvivorTradeSettlement.label>торговое поселение выживших</YellowRooms_SurvivorTradeSettlement.label>
+
+  
+  <YellowRooms_Caravan_StillLife.label>засада натюрмортов</YellowRooms_Caravan_StillLife.label>
+  <YellowRooms_Caravan_StillLife.letterLabel>Караван попал в засаду</YellowRooms_Caravan_StillLife.letterLabel>
+  <YellowRooms_Caravan_StillLife.letterText>{0} попал в засаду, устроенную {1} из {2}!</YellowRooms_Caravan_StillLife.letterText>
+
+  
+  <YellowRooms_Caravan_Researchers.label>засада исследователей</YellowRooms_Caravan_Researchers.label>
+  <YellowRooms_Caravan_Researchers.letterLabel>Караван попал в засаду</YellowRooms_Caravan_Researchers.letterLabel>
+  <YellowRooms_Caravan_Researchers.letterText>{0} попал в засаду, устроенную {1} из {2}!</YellowRooms_Caravan_Researchers.letterText>
+
+</LanguageData>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorldObjectDef>
+    <defName>YellowRoomsSite</defName>
+    <label>Yellow Rooms location</label>
+    <description>A location in the Yellow Rooms dimension.</description>
+    <worldObjectClass>arsiy.Rooms.Things.YellowRoomsMapParent</worldObjectClass>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <texture>World/WorldObjects/YellowRooms_settlement</texture>
+    <expandingIconTexture>World/WorldObjects/YellowRoomsSite</expandingIconTexture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>50</expandingIconPriority>
+    <canBePlayerHome>true</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_Abandon" />
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef>
+    <defName>YellowRooms_FoundStructureSite</defName>
+    <label>found structure</label>
+    <description>An abandoned structure found while traveling. Contains a piece of machinery and a drained battery.</description>
+    <worldObjectClass>arsiy.Rooms.Things.YellowRoomsFoundStructure</worldObjectClass>
+    <selectable>true</selectable>
+    <texture>World/WorldObjects/YellowRooms_FoundStructureSite</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_FoundStructureSite</expandingIconTexture>
+    <expandingIconPriority>80</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <isTempIncidentMapOwner>true</isTempIncidentMapOwner>
+    <IncidentTargetTags>
+      <li>Map_TempIncident</li>
+    </IncidentTargetTags>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef>
+    <defName>YellowRoomsSurfaceSite</defName>
+    <label>Yellow Rooms surface site</label>
+    <description>A surface location with Yellow Rooms activity.</description>
+    <worldObjectClass>arsiy.Rooms.Things.YellowRoomsMapParent</worldObjectClass>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <texture>World/WorldObjects/YellowRooms_settlement</texture>
+    <expandingIconTexture>World/WorldObjects/YellowRoomsSurfaceSite</expandingIconTexture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>50</expandingIconPriority>
+    <canBePlayerHome>true</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_Abandon" />
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef>
+    <defName>YellowRooms_AbandonedResearcherBaseSite</defName>
+    <label>abandoned researcher base</label>
+    <description>An abandoned researcher base in the Yellow Rooms. Contains a sealed building with a portal core, researcher corpses in hazmat suits, and hostile Still Life guardians.</description>
+    <worldObjectClass>arsiy.Rooms.Things.AbandonedResearcherBaseSite</worldObjectClass>
+    <canHaveFaction>false</canHaveFaction>
+    <selectable>true</selectable>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>50</expandingIconPriority>
+    <canBePlayerHome>false</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef>
+    <defName>YellowRooms_ResearcherBaseSite</defName>
+    <label>researcher base</label>
+    <description>An active researcher base in the Yellow Rooms. Contains a sealed building with a portal guarded by hostile researchers.</description>
+    <worldObjectClass>arsiy.Rooms.Things.ResearcherBaseSite</worldObjectClass>
+    <canHaveFaction>false</canHaveFaction>
+    <selectable>true</selectable>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>50</expandingIconPriority>
+    <canBePlayerHome>false</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+    </comps>
+  </WorldObjectDef>
+
+  
+  <WorldObjectDef>
+    <defName>YellowRooms_TradeSettlement</defName>
+    <label>survivor trading settlement</label>
+    <description>A temporary trading settlement of survivors. It will vanish without a trace after some time, so trade while you can.</description>
+    <worldObjectClass>arsiy.Rooms.Things.SurvivorTradeSettlement</worldObjectClass>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <texture>World/WorldObjects/YellowRooms_settlement</texture>
+    <expandingIconTexture>World/WorldObjects/YellowRooms_SurvivorTradeSite</expandingIconTexture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>90</expandingIconPriority>
+    <canBePlayerHome>false</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_Timeout" />
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef>
+    <defName>YellowRooms_SurfaceResearcherBase</defName>
+    <label>surface researcher base</label>
+    <description>A surface base of the Yellow Rooms researchers. Contains a portal to the Yellow Rooms dimension in its center.</description>
+    <worldObjectClass>arsiy.Rooms.Things.SurfaceResearcherBase</worldObjectClass>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>10</expandingIconPriority>
+    <canBePlayerHome>false</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+      <li Class="WorldObjectCompProperties_EnterCooldown" />
+    </comps>
+  </WorldObjectDef>
+</Defs>

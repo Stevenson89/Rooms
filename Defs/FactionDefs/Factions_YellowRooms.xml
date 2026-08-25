@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+
+
+  <FactionDef ParentName="FactionBase">
+    <defName>YellowRooms_Researchers</defName>
+    <label>Yellow Rooms researchers</label>
+    <description>A hidden faction of armed researchers who study — and exploit — the Yellow Rooms dimension. They are permanently hostile to everyone and will kidnap any downed pawn they can drag off the map.</description>
+    <pawnSingular>researcher</pawnSingular>
+    <pawnsPlural>researchers</pawnsPlural>
+    <leaderTitle>director</leaderTitle>
+    <fixedName>Yellow Rooms Researchers</fixedName>
+    <factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+    <colorSpectrum>
+      <li>(0.85, 0.78, 0.30)</li>
+    </colorSpectrum>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <techLevel>Spacer</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,100)</li>
+        <li>(10000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <arrivalLayerWhitelist>
+      <li>YellowRooms</li>
+    </arrivalLayerWhitelist>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_Researcher_Guard>100</YellowRooms_Researcher_Guard>
+          <YellowRooms_Researcher_Soldier>60</YellowRooms_Researcher_Soldier>
+          <YellowRooms_Researcher_Elite>10</YellowRooms_Researcher_Elite>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_Researcher_Guard>100</YellowRooms_Researcher_Guard>
+          <YellowRooms_Researcher_Soldier>60</YellowRooms_Researcher_Soldier>
+          <YellowRooms_Researcher_Elite>10</YellowRooms_Researcher_Elite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+
+  <FactionDef ParentName="FactionBase">
+    <defName>YellowRooms_SurvivorTraders</defName>
+    <label>survivor traders</label>
+    <description>Wandering groups of survivors that frequently trade with outsiders. Unlike their mad brothers, they greet strangers with caution but not with hostility — for now.</description>
+    <pawnSingular>survivor trader</pawnSingular>
+    <pawnsPlural>survivor traders</pawnsPlural>
+    <leaderTitle>leader</leaderTitle>
+    <fixedName>Survivor Traders</fixedName>
+    <factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+    <colorSpectrum>
+      <li>(0.45, 0.55, 0.30)</li>
+    </colorSpectrum>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,100)</li>
+        <li>(10000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <arrivalLayerWhitelist>
+      <li>YellowRooms</li>
+    </arrivalLayerWhitelist>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <baseTraderKinds>
+      <li>YellowRooms_SurvivorTrader</li>
+    </baseTraderKinds>
+    <caravanTraderKinds>
+      <li>YellowRooms_SurvivorTrader</li>
+    </caravanTraderKinds>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_Survivor_Crazed>100</YellowRooms_Survivor_Crazed>
+          <YellowRooms_Survivor_Scavenger>100</YellowRooms_Survivor_Scavenger>
+          <YellowRooms_Survivor_Brawler>60</YellowRooms_Survivor_Brawler>
+          <YellowRooms_Survivor_Veteran>20</YellowRooms_Survivor_Veteran>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_Survivor_Crazed>100</YellowRooms_Survivor_Crazed>
+          <YellowRooms_Survivor_Scavenger>100</YellowRooms_Survivor_Scavenger>
+          <YellowRooms_Survivor_Brawler>60</YellowRooms_Survivor_Brawler>
+          <YellowRooms_Survivor_Veteran>20</YellowRooms_Survivor_Veteran>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <YellowRooms_Survivor_Trader>1</YellowRooms_Survivor_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>3</Muffalo>
+          <Donkey>2</Donkey>
+        </carriers>
+        <guards>
+          <YellowRooms_Survivor_Scavenger>5</YellowRooms_Survivor_Scavenger>
+          <YellowRooms_Survivor_Brawler>3</YellowRooms_Survivor_Brawler>
+          <YellowRooms_Survivor_Veteran>2</YellowRooms_Survivor_Veteran>
+        </guards>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+
+  <FactionDef ParentName="FactionBase">
+    <defName>YellowRooms_StillLifeFaction</defName>
+    <label>still life</label>
+    <description>A hidden faction of corrupted human mimics that wander the Yellow Rooms. They are hostile to everything except each other.</description>
+    <pawnSingular>still life</pawnSingular>
+    <pawnsPlural>still life</pawnsPlural>
+    <leaderTitle>echo</leaderTitle>
+    <fixedName>Creations of the Yellow Rooms</fixedName>
+    <factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+    <colorSpectrum>
+      <li>(0.40, 0.36, 0.28)</li>
+    </colorSpectrum>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,100)</li>
+        <li>(10000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <arrivalLayerWhitelist>
+      <li>YellowRooms</li>
+    </arrivalLayerWhitelist>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_StillLife_Drifter>100</YellowRooms_StillLife_Drifter>
+          <YellowRooms_StillLife_Melee>80</YellowRooms_StillLife_Melee>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+
+  <FactionDef ParentName="FactionBase">
+    <defName>YellowRooms_PassiveStillLifeFaction</defName>
+    <label>still life</label>
+    <description>A hidden faction of corrupted human mimics that wander the Yellow Rooms. They are forever neutral to outsiders — unless provoked.</description>
+    <pawnSingular>still life</pawnSingular>
+    <pawnsPlural>still life</pawnsPlural>
+    <leaderTitle>echo</leaderTitle>
+    <fixedName>Creations of the Yellow Rooms</fixedName>
+    <factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+    <colorSpectrum>
+      <li>(0.40, 0.36, 0.28)</li>
+    </colorSpectrum>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,100)</li>
+        <li>(10000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <arrivalLayerWhitelist>
+      <li>YellowRooms</li>
+    </arrivalLayerWhitelist>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_StillLife_Drifter>100</YellowRooms_StillLife_Drifter>
+          <YellowRooms_StillLife_Melee>80</YellowRooms_StillLife_Melee>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+
+  <FactionDef ParentName="FactionBase">
+    <defName>YellowRooms_Survivors</defName>
+    <label>hostile survivors</label>
+    <description>A hidden faction of survivors driven mad by the Yellow Rooms. They are hostile to outsiders and sometimes set up temporary camps.</description>
+    <pawnSingular>survivor</pawnSingular>
+    <pawnsPlural>survivors</pawnsPlural>
+    <leaderTitle>leader</leaderTitle>
+    <fixedName>Hostile Survivors</fixedName>
+    <factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+    <colorSpectrum>
+      <li>(0.55, 0.45, 0.30)</li>
+    </colorSpectrum>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,100)</li>
+        <li>(10000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <arrivalLayerWhitelist>
+      <li>YellowRooms</li>
+    </arrivalLayerWhitelist>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_Survivor_Crazed>100</YellowRooms_Survivor_Crazed>
+          <YellowRooms_Survivor_Scavenger>100</YellowRooms_Survivor_Scavenger>
+          <YellowRooms_Survivor_Brawler>60</YellowRooms_Survivor_Brawler>
+          <YellowRooms_Survivor_Veteran>20</YellowRooms_Survivor_Veteran>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <YellowRooms_Survivor_Crazed>100</YellowRooms_Survivor_Crazed>
+          <YellowRooms_Survivor_Scavenger>100</YellowRooms_Survivor_Scavenger>
+          <YellowRooms_Survivor_Brawler>60</YellowRooms_Survivor_Brawler>
+          <YellowRooms_Survivor_Veteran>20</YellowRooms_Survivor_Veteran>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

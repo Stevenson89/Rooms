@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>YellowRooms_Rubber</defName>
+    <label>rubber</label>
+    <description>A tough, flexible rubber sheet. It insulates well against heat but offers little protection from blades or blows.</description>
+    <graphicData>
+      <texPath>Things/Item/YellowRooms/YellowRooms_Rubber</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <StuffPower_Armor_Sharp>0.10</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.04</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <statFactors>
+        <Flammability>0.6</Flammability>
+        <Beauty>0</Beauty>
+      </statFactors>
+      <categories>
+        <li>Fabric</li>
+        <li>YellowRoomsRubber</li>
+      </categories>
+      <color>(45,45,45,255)</color>
+      <commonality>0.4</commonality>
+      <allowColorGenerators>true</allowColorGenerators>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+
+  
+  
+  
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>YellowRooms_CarpetMaterial</defName>
+    <label>carpet</label>
+    <description>A swatch of yellow carpet stripped from the floor of the Yellow Rooms. Useless as armor or insulation, but it can be cultivated into a mushroom farm.</description>
+    <graphicData>
+      <texPath>Things/Item/YellowRooms/YellowRooms_CarpetMaterial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255,210,50)</color>
+    </graphicData>
+    <statBases>
+      <StuffPower_Armor_Sharp>0.04</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.02</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>0.8</MarketValue>
+      <Mass>0.03</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <statFactors>
+        <Flammability>1.0</Flammability>
+        <Beauty>0.8</Beauty>
+        <Comfort>0.8</Comfort>
+      </statFactors>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(255,210,50,255)</color>
+      <commonality>0.2</commonality>
+      <allowColorGenerators>true</allowColorGenerators>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+
+  
+  
+  
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>YellowRooms_PortalCore</defName>
+    <label>portal core</label>
+    <description>A dense, humming core torn from a portal mechanism. It is the key component needed to build a stationary portal into the Yellow Rooms.</description>
+    <graphicData>
+      <texPath>Things/Item/YellowRooms/YellowRooms_PortalCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>400</MarketValue>
+      <Mass>1.2</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  
+  
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>YellowRooms_BrokenLamp</defName>
+    <label>broken lamp</label>
+    <description>The shattered remains of a ceiling lamp. It can be broken down into steel at a crafting spot or machining table.</description>
+    <graphicData>
+      <texPath>Things/Item/YellowRooms/YellowRooms_BrokenLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+
+  
+  
+  
+  
+  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>YellowRooms_PortablePortal</defName>
+    <label>portable portal</label>
+    <description>A small, single-use device worn on the belt. It tears open a doorway between the surface and the Yellow Rooms. Using it inside the Yellow Rooms sends the wearer to a random colonist on the surface; using it on the surface sends the wearer to a random colonist inside the Yellow Rooms.</description>
+    <graphicData>
+      <texPath>Things/Item/YellowRooms/YellowRooms_PortablePortal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>800</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <wornGraphicPath>Things/Item/YellowRooms/YellowRooms_PortablePortal</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+      </wornGraphicData>
+    </apparel>
+    <comps>
+      <li Class="arsiy.Rooms.Things.CompProperties_ActivateWornPortal" />
+    </comps>
+    
+    <smeltProducts>
+      <Steel>15</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </smeltProducts>
+  </ThingDef>
+
+</Defs>

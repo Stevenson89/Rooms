@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Researcher_Guard</defName>
+    <label>researcher guard</label>
+    <defaultFactionDef>YellowRooms_Researchers</defaultFactionDef>
+    <combatPower>70</combatPower>
+    <initialResistanceRange>10~16</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <apparelRequired>
+      <li>YellowRooms_HazmatSuit</li>
+      <li>YellowRooms_HazmatHelmet</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>IndustrialMilitary</li>
+      <li>MilitaryMedium</li>
+    </apparelTags>
+    <apparelMoney>1200~3500</apparelMoney>
+    <weaponMoney>800~2000</weaponMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~10</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>3~6</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>50~200</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>1~3</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Researcher_Soldier</defName>
+    <label>researcher soldier</label>
+    <defaultFactionDef>YellowRooms_Researchers</defaultFactionDef>
+    <combatPower>110</combatPower>
+    <initialResistanceRange>14~22</initialResistanceRange>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelRequired>
+      <li>YellowRooms_HazmatSuit</li>
+      <li>YellowRooms_HazmatHelmet</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>IndustrialMilitary</li>
+      <li>MilitaryMedium</li>
+      <li>MilitaryHeavy</li>
+    </apparelTags>
+    <apparelMoney>2000~5000</apparelMoney>
+    <weaponMoney>1500~4000</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>4~8</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>100~400</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~4</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Researcher_Elite</defName>
+    <label>researcher elite</label>
+    <defaultFactionDef>YellowRooms_Researchers</defaultFactionDef>
+    <combatPower>180</combatPower>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <initialWillRange>3~6</initialWillRange>
+    <apparelRequired>
+      <li>YellowRooms_HazmatSuit</li>
+      <li>YellowRooms_HazmatHelmet</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>MilitaryHeavy</li>
+    </apparelTags>
+    <apparelMoney>4000~8000</apparelMoney>
+    <weaponMoney>3000~6000</weaponMoney>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~18</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>6~12</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>200~800</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>2~5</countRange>
+        </li>
+        <li>
+          <thingDef>ComponentSpacer</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_StillLife_Drifter</defName>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <label>still life drifter</label>
+    <defaultFactionDef>YellowRooms_StillLifeFaction</defaultFactionDef>
+    <combatPower>35</combatPower>
+    <initialResistanceRange>5~10</initialResistanceRange>
+    <initialWillRange>0~1</initialWillRange>
+    <apparelMoney>0~200</apparelMoney>
+    <apparelTags>
+      <li>Outlander</li>
+    </apparelTags>
+    <weaponMoney>100~300</weaponMoney>
+    <weaponTags>
+      <li>MeleeBasic</li>
+    </weaponTags>
+    <startingHediffs>
+      <li>
+        <def>YellowRooms_StillLife</def>
+      </li>
+    </startingHediffs>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>2~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_StillLife_Melee</defName>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <label>still life berserker</label>
+    <defaultFactionDef>YellowRooms_StillLifeFaction</defaultFactionDef>
+    <combatPower>60</combatPower>
+    <initialResistanceRange>8~14</initialResistanceRange>
+    <initialWillRange>0~2</initialWillRange>
+    <apparelMoney>0~400</apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <weaponMoney>100~500</weaponMoney>
+    <weaponTags>
+      <li>MeleeMedieval</li>
+      <li>MeleeAdvanced</li>
+    </weaponTags>
+    <startingHediffs>
+      <li>
+        <def>YellowRooms_StillLife</def>
+      </li>
+    </startingHediffs>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>4~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  
+
+  
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Survivor_Crazed</defName>
+    <label>survivor crazed</label>
+    <defaultFactionDef>YellowRooms_Survivors</defaultFactionDef>
+    <combatPower>35</combatPower>
+    <initialResistanceRange>8~14</initialResistanceRange>
+    <initialWillRange>0~1</initialWillRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>100~400</apparelMoney>
+    <weaponMoney>100~250</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>2~5</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~2</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>5~25</countRange>
+        </li>
+        <li>
+          <thingDef>Pemmican</thingDef>
+          <countRange>1~5</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Survivor_Scavenger</defName>
+    <label>survivor scavenger</label>
+    <defaultFactionDef>YellowRooms_Survivors</defaultFactionDef>
+    <combatPower>45</combatPower>
+    <initialResistanceRange>7~12</initialResistanceRange>
+    <initialWillRange>1~2</initialWillRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>300~800</apparelMoney>
+    <weaponMoney>100~400</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>3~7</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>1~3</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>10~50</countRange>
+        </li>
+        <li>
+          <thingDef>Pemmican</thingDef>
+          <countRange>3~10</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Survivor_Brawler</defName>
+    <label>survivor brawler</label>
+    <defaultFactionDef>YellowRooms_Survivors</defaultFactionDef>
+    <combatPower>70</combatPower>
+    <initialResistanceRange>10~16</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <apparelMoney>600~2000</apparelMoney>
+    <weaponMoney>300~1000</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~12</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>1~4</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>20~100</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Survivor_Veteran</defName>
+    <label>survivor veteran</label>
+    <defaultFactionDef>YellowRooms_Survivors</defaultFactionDef>
+    <combatPower>110</combatPower>
+    <initialResistanceRange>14~22</initialResistanceRange>
+    <initialWillRange>2~5</initialWillRange>
+    <apparelTags>
+      <li>SpacerMilitary</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelMoney>2000~5000</apparelMoney>
+    <weaponMoney>1000~3000</weaponMoney>
+    <weaponTags>
+      <li>UltratechMelee</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>8~16</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>2~6</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>100~300</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~3</countRange>
+        </li>
+        <li>
+          <thingDef>ComponentIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>YellowRooms_Survivor_Trader</defName>
+    <label>survivor trader</label>
+    <defaultFactionDef>YellowRooms_SurvivorTraders</defaultFactionDef>
+    <trader>true</trader>
+    <combatPower>45</combatPower>
+    <initialResistanceRange>7~12</initialResistanceRange>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>300~800</apparelMoney>
+    <weaponMoney>100~400</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Social</skill>
+        <range>4~10</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>1~3</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>30~150</countRange>
+        </li>
+        <li>
+          <thingDef>Pemmican</thingDef>
+          <countRange>5~15</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+</Defs>

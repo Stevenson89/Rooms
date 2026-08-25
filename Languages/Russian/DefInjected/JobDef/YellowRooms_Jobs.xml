@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  
+  <CarryToYellowRoomsPortal.reportString>несёт {0} к порталу.</CarryToYellowRoomsPortal.reportString>
+  <CarryToPit.reportString>несёт {0} к яме.</CarryToPit.reportString>
+  <EnterPit.reportString>прыгает в яму.</EnterPit.reportString>
+
+</LanguageData>

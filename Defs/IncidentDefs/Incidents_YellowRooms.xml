@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  
+  
+  
+  
+
+
+  <IncidentDef>
+    <defName>YellowRooms_StillLife_Edge</defName>
+    <label>still life emergence</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StillLifeRaid</workerClass>
+    <baseChance>20.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>35</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_StillLife_Pit</defName>
+    <label>still life from pit</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StillLifeFromPit</workerClass>
+    <baseChance>10.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>35</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_StillLife_Ceiling</defName>
+    <label>still life from ceiling</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StillLifeFromCeiling</workerClass>
+    <baseChance>8.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>35</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_Fog</defName>
+    <label>fog</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_YellowWeather</workerClass>
+    <baseChance>8.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_ColdSnap</defName>
+    <label>cold snap</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_YellowGameCondition</workerClass>
+    <baseChance>5.0</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <durationDays>1.5~3.5</durationDays>
+    <minThreatPoints>0</minThreatPoints>
+    <disabledWhen>
+      <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+    </disabledWhen>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_HeatWave</defName>
+    <label>heat wave</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_YellowGameCondition</workerClass>
+    <baseChance>5.0</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <durationDays>1.5~3.5</durationDays>
+    <minThreatPoints>0</minThreatPoints>
+    <disabledWhen>
+      <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+    </disabledWhen>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_RandomPawnStranded</defName>
+    <label>stranded traveler</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_RandomPawnStranded</workerClass>
+    <baseChance>0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+
+  <IncidentDef>
+    <defName>YellowRooms_HostileClone</defName>
+    <label>hostile clone</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_HostileClone</workerClass>
+    <baseChance>5.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>300</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_PassiveClone</defName>
+    <label>wandering echo</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_PassiveClone</workerClass>
+    <baseChance>4.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_SurvivorCampNearby</defName>
+    <label>survivor camp nearby</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SurvivorCampNearby</workerClass>
+    <baseChance>4.0</baseChance>
+    <minRefireDays>3</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>250</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+
+  <IncidentDef>
+    <defName>YellowRooms_Stash_Food</defName>
+    <label>supply stash</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SupplyStash</workerClass>
+    <baseChance>6.0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_Stash_Materials</defName>
+    <label>supply stash</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SupplyStash</workerClass>
+    <baseChance>6.0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_Stash_Chemfuel</defName>
+    <label>supply stash</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SupplyStash</workerClass>
+    <baseChance>4.0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_Stash_Weapons</defName>
+    <label>supply stash</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SupplyStash</workerClass>
+    <baseChance>4.0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+
+  <IncidentDef>
+    <defName>YellowRooms_ResearcherRaid</defName>
+    <label>researcher raid</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_ResearcherRaid</workerClass>
+    <baseChance>15.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>50</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_SurvivorRaid</defName>
+    <label>survivor raid</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SurvivorRaid</workerClass>
+    <baseChance>15.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>35</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_HiveFromCeiling</defName>
+    <label>hive from ceiling</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_HiveFromCeiling</workerClass>
+    <baseChance>8.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>300</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_OreFromCeiling</defName>
+    <label>ore from ceiling</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_OreFromCeiling</workerClass>
+    <baseChance>4.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_BirdFromCeiling</defName>
+    <label>fallen bird</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_BirdFromCeiling</workerClass>
+    <baseChance>5.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_WorldSite_AbandonedBase</defName>
+    <label>abandoned researcher base</label>
+    <category>Misc</category>
+    
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_WorldSite_AbandonedBase</workerClass>
+    <baseChance>2.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_WorldSite_ResearcherBase</defName>
+    <label>researcher base</label>
+    <category>ThreatBig</category>
+    
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_WorldSite_ResearcherBase</workerClass>
+    <baseChance>2.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>400</minThreatPoints>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_WorldSite_SurfaceBase</defName>
+    <label>surface researcher base</label>
+    <category>ThreatBig</category>
+    
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_WorldSite_SurfaceResearcherBase</workerClass>
+    <baseChance>2.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>500</minThreatPoints>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_RefugeeQuest</defName>
+    <label>refugee in the rooms</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_YellowRoomsGiveQuest</workerClass>
+    <questScriptDef>YellowRooms_RefugeeQuest</questScriptDef>
+    <baseChance>3.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_SurvivorTradeSettlement</defName>
+    <label>survivor trading settlement</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_SurvivorTradeSettlement</workerClass>
+    <baseChance>3.0</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_StrangePassage</defName>
+    <label>strange passage</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StrangePassage</workerClass>
+    <baseChance>2.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerBlacklist>
+      <li>YellowRooms</li>
+    </layerBlacklist>
+  </IncidentDef>
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_StrangePassageYellow</defName>
+    <label>strange passage</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StrangePassageYellowRooms</workerClass>
+    <baseChance>2.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+  </IncidentDef>
+
+  
+  
+  
+  
+  
+
+  
+  <IncidentDef>
+    <defName>YellowRooms_Caravan_StillLife</defName>
+    <label>still life ambush</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Caravan</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_CaravanStillLife</workerClass>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>35</minThreatPoints>
+    <minRefireDays>0</minRefireDays>
+    <letterText>{0} has been ambushed by {1} from {2}!</letterText>
+    <letterLabel>Caravan ambushed</letterLabel>
+    <letterDef>ThreatBig</letterDef>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <mtbDaysByBiome>
+      <YellowRooms>12</YellowRooms>
+      <YellowRooms_PoolRooms>12</YellowRooms_PoolRooms>
+      <YellowRooms_Parking>12</YellowRooms_Parking>
+    </mtbDaysByBiome>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_Caravan_Researchers</defName>
+    <label>researcher ambush</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Caravan</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_CaravanResearchers</workerClass>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>35</minThreatPoints>
+    <minRefireDays>0</minRefireDays>
+    <letterText>{0} has been ambushed by {1} from {2}!</letterText>
+    <letterLabel>Caravan ambushed</letterLabel>
+    <letterDef>ThreatBig</letterDef>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <mtbDaysByBiome>
+      <YellowRooms>16</YellowRooms>
+      <YellowRooms_PoolRooms>16</YellowRooms_PoolRooms>
+      <YellowRooms_Parking>16</YellowRooms_Parking>
+    </mtbDaysByBiome>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_Caravan_FoundBuilding</defName>
+    <label>found structure</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Caravan</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_CaravanFoundBuilding</workerClass>
+    <minThreatPoints>0</minThreatPoints>
+    <minRefireDays>0</minRefireDays>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <mtbDaysByBiome>
+      <YellowRooms>12</YellowRooms>
+      <YellowRooms_PoolRooms>12</YellowRooms_PoolRooms>
+      <YellowRooms_Parking>12</YellowRooms_Parking>
+    </mtbDaysByBiome>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_Caravan_Trader</defName>
+    <label>survivor trader camp</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Caravan</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_CaravanTrader</workerClass>
+    <minThreatPoints>0</minThreatPoints>
+    <minRefireDays>0</minRefireDays>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <mtbDaysByBiome>
+      <YellowRooms>22</YellowRooms>
+      <YellowRooms_PoolRooms>22</YellowRooms_PoolRooms>
+      <YellowRooms_Parking>22</YellowRooms_Parking>
+    </mtbDaysByBiome>
+  </IncidentDef>
+
+</Defs>

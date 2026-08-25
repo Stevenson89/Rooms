@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>YellowRooms_RefugeeQuest</defName>
+    <autoAccept>true</autoAccept>
+    <defaultHidden>false</defaultHidden>
+    <isRootSpecial>true</isRootSpecial>
+    <sendAvailableLetter>false</sendAvailableLetter>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <root Class="arsiy.Rooms.Quests.QuestNode_Root_RefugeeQuest" />
+  </QuestScriptDef>
+
+</Defs>

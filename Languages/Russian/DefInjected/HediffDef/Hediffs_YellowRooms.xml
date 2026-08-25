@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <YellowRooms_StillLife.label>натюрморт</YellowRooms_StillLife.label>
+  <YellowRooms_StillLife.labelNoun>натюрморт</YellowRooms_StillLife.labelNoun>
+  <YellowRooms_StillLife.description>Неудачная попытка жёлтых комнат скопировать человека. Получилась испорченная имитация жизни. Тело движется, но души в нём больше нет.</YellowRooms_StillLife.description>
+
+  <YellowRooms_ExtraEyes.label>дополнительные глаза</YellowRooms_ExtraEyes.label>
+  <YellowRooms_ExtraEyes.labelNoun>пара дополнительных глаз</YellowRooms_ExtraEyes.labelNoun>
+  <YellowRooms_ExtraEyes.description>Вторая пара глаз, растущая из головы. Она улучшает зрение, но выглядит глубоко тревожно.</YellowRooms_ExtraEyes.description>
+
+  <YellowRooms_FusedArms.label>сросшиеся руки</YellowRooms_FusedArms.label>
+  <YellowRooms_FusedArms.labelNoun>сросшиеся руки</YellowRooms_FusedArms.labelNoun>
+  <YellowRooms_FusedArms.description>Руки частично срослись вместе, усиливая хватку, но в ущерб внешности.</YellowRooms_FusedArms.description>
+
+  <YellowRooms_DisfiguredFace.label>обезображенное лицо</YellowRooms_DisfiguredFace.label>
+  <YellowRooms_DisfiguredFace.labelNoun>обезображенное лицо</YellowRooms_DisfiguredFace.labelNoun>
+  <YellowRooms_DisfiguredFace.description>Лицо гротескно искажено — один глаз сидит ниже другого, глубокие складки и морщины скрутили черты во что-то едва человеческое.</YellowRooms_DisfiguredFace.description>
+
+  <YellowRooms_BetrayalTimer.label>скрытая порча</YellowRooms_BetrayalTimer.label>
+  <YellowRooms_BetrayalTimer.labelNoun>скрытая порча</YellowRooms_BetrayalTimer.labelNoun>
+  <YellowRooms_BetrayalTimer.description>Эта пешка несёт в себе скрытую порчу, которая в конце концов приведёт к предательству.</YellowRooms_BetrayalTimer.description>
+
+  <YellowRooms_InorganicFusion.label>неорганическое сращение</YellowRooms_InorganicFusion.label>
+  <YellowRooms_InorganicFusion.labelNoun>неорганическое сращение</YellowRooms_InorganicFusion.labelNoun>
+  <YellowRooms_InorganicFusion.description>Кусочки гипсокартона, жёлтых обоев и потолочной плитки вросли в тело, давая естественную броню, но делая пешку крайне уязвимой к огню.</YellowRooms_InorganicFusion.description>
+
+  <YellowRooms_DistortedVocalCords.label>искажённые голосовые связки</YellowRooms_DistortedVocalCords.label>
+  <YellowRooms_DistortedVocalCords.labelNoun>искажённые голосовые связки</YellowRooms_DistortedVocalCords.labelNoun>
+  <YellowRooms_DistortedVocalCords.description>Голосовые связки пешки гротескно искажены, издавая тревожные звуки, которые беспокоят находящихся рядом колонистов.</YellowRooms_DistortedVocalCords.description>
+
+  <YellowRooms_DistortedSoundEffect.label>искажённый звук</YellowRooms_DistortedSoundEffect.label>
+  <YellowRooms_DistortedSoundEffect.labelNoun>искажённый звук</YellowRooms_DistortedSoundEffect.labelNoun>
+  <YellowRooms_DistortedSoundEffect.description>Тревожный искажённый шум, исходящий от находящейся рядом сущности натюрморта.</YellowRooms_DistortedSoundEffect.description>
+  <YellowRooms_DistortedSoundEffect.stages.0.label>искажённый звук</YellowRooms_DistortedSoundEffect.stages.0.label>
+
+  <YellowRooms_ElongatedLimbs.label>удлинённые конечности</YellowRooms_ElongatedLimbs.label>
+  <YellowRooms_ElongatedLimbs.labelNoun>удлинённые конечности</YellowRooms_ElongatedLimbs.labelNoun>
+  <YellowRooms_ElongatedLimbs.description>Руки неестественно длинные и скрученные, действующие как природные силовые когти. Они бьют сильнее и чаще, но неловкая длина мешает уклоняться.</YellowRooms_ElongatedLimbs.description>
+
+  <YellowRooms_Hypertrophy.label>гипертрофия</YellowRooms_Hypertrophy.label>
+  <YellowRooms_Hypertrophy.labelNoun>гипертрофия</YellowRooms_Hypertrophy.labelNoun>
+  <YellowRooms_Hypertrophy.description>Тело пешки гротескно гипертрофировано — вдвое больше обычного, движения замедлены, зато удары намного тяжелее.</YellowRooms_Hypertrophy.description>
+
+  <YellowRooms_Runner.label>бегун</YellowRooms_Runner.label>
+  <YellowRooms_Runner.labelNoun>порча бегуна</YellowRooms_Runner.labelNoun>
+  <YellowRooms_Runner.description>Ноги и позвоночник искажены в беговой каркас — пешка движется с неестественной скоростью, но её тело стало хрупким и получает вдвое больше урона.</YellowRooms_Runner.description>
+
+  <YellowRooms_Faceless.label>безликий</YellowRooms_Faceless.label>
+  <YellowRooms_Faceless.labelNoun>безликий</YellowRooms_Faceless.labelNoun>
+  <YellowRooms_Faceless.description>Лицо — гладкая бесформенная пустота: ни глаз, ни носа, ни челюсти. Зрение утрачено, но слух обострился, чтобы это компенсировать.</YellowRooms_Faceless.description>
+
+</LanguageData>

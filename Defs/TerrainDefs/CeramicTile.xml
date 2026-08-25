@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CeramicTile</defName>
+    <label>ceramic tile</label>
+    <description>Ceramic tile flooring of the Yellow Rooms. Indestructible.</description>
+    <texturePath>Terrain/Surfaces/CeramicTile</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>250</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>0</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <designationCategory Inherit="False" />
+  </TerrainDef>
+</Defs>

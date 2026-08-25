@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <GenStepDef>
+    <defName>YellowRooms_PoolFloor</defName>
+    <order>100</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_PoolRoomsFloor" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_PoolWalls</defName>
+    <order>200</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_PoolRoomsWalls" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>YellowRooms_ParkingLayout</defName>
+    <order>100</order>
+    <genStep Class="arsiy.Rooms.GenSteps.GenStep_ParkingLayout" />
+  </GenStepDef>
+
+  
+  <MapGeneratorDef>
+    <defName>YellowRooms_PoolRooms</defName>
+    <genSteps>
+      <li>YellowRooms_PoolFloor</li>
+      <li>YellowRooms_PoolWalls</li>
+      <li>YellowRooms_ForeignSiteFix</li>
+      <li>Settlement</li>
+      <li>YellowRooms_StartSpot</li>
+      <li>Fog</li>
+      <li>ScenParts</li>
+      <li>YellowRooms_Environment</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  
+  <MapGeneratorDef>
+    <defName>YellowRooms_Parking</defName>
+    <genSteps>
+      <li>YellowRooms_ParkingLayout</li>
+      <li>YellowRooms_ForeignSiteFix</li>
+      <li>Settlement</li>
+      <li>YellowRooms_StartSpot</li>
+      <li>Fog</li>
+      <li>ScenParts</li>
+      <li>YellowRooms_Environment</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+</Defs>

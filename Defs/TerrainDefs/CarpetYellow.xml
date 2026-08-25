@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CarpetYellow</defName>
+    <label>carpet</label>
+    <description>Yellow carpet.</description>
+    <texturePath>Terrain/Surfaces/CarpetYellow</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>250</renderPrecedence>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0.4</Flammability>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    
+    <designationCategory Inherit="False" />
+  </TerrainDef>
+</Defs>

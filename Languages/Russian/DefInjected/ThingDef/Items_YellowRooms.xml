@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  
+  <YellowRooms_Rubber.label>резина</YellowRooms_Rubber.label>
+  <YellowRooms_Rubber.description>Прочный гибкий лист резины. Хорошо изолирует тепло, но почти не защищает от ударов и порезов.</YellowRooms_Rubber.description>
+
+  <YellowRooms_CarpetMaterial.label>ковёр</YellowRooms_CarpetMaterial.label>
+  <YellowRooms_CarpetMaterial.description>Кусок жёлтого ковра, содранный с пола Жёлтых Комнат. Бесполезен как броня или изоляция, но из него можно вырастить грибную ферму.</YellowRooms_CarpetMaterial.description>
+
+  <YellowRooms_PortalCore.label>ядро портала</YellowRooms_PortalCore.label>
+  <YellowRooms_PortalCore.description>Плотное гудящее ядро, извлечённое из механизма портала. Это ключевой компонент для постройки стационарного портала в Жёлтые Комнаты.</YellowRooms_PortalCore.description>
+
+  <YellowRooms_BrokenLamp.label>сломанная лампа</YellowRooms_BrokenLamp.label>
+  <YellowRooms_BrokenLamp.description>Разбитые остатки потолочной лампы. Можно разобрать на сталь на верстаке или крафтовом месте.</YellowRooms_BrokenLamp.description>
+
+  <YellowRooms_PortablePortal.label>портативный портал</YellowRooms_PortablePortal.label>
+  <YellowRooms_PortablePortal.description>Небольшое одноразовое устройство, носимое на поясе. Оно разрывает проход между поверхностью и Жёлтыми Комнатами. Активация внутри Жёлтых Комнат отправляет носителя к случайному колонисту на поверхности; активация на поверхности отправляет носителя в Жёлтые Комнаты.</YellowRooms_PortablePortal.description>
+
+  
+  <YellowRooms_DoorToRooms.label>дверь в комнаты</YellowRooms_DoorToRooms.label>
+  <YellowRooms_DoorToRooms.description>Таинственный дверной проём, ведущий в измерение Жёлтых Комнат. Каждая дверь соединяется с разным местом в бесконечных жёлтых комнатах.</YellowRooms_DoorToRooms.description>
+
+  <YellowRooms_ReturnDoor.label>дверь возврата</YellowRooms_ReturnDoor.label>
+  <YellowRooms_ReturnDoor.description>Перемещающий дверной проём, ведущий обратно в мир, из которого вы пришли.</YellowRooms_ReturnDoor.description>
+
+  <YellowRooms_PortalToRooms.label>портал в комнаты</YellowRooms_PortalToRooms.label>
+  <YellowRooms_PortalToRooms.description>Портал, ведущий в измерение Жёлтых Комнат. Каждый портал соединяется с разным местом в бесконечных жёлтых комнатах. Требует ядро портала для постройки.</YellowRooms_PortalToRooms.description>
+
+  <YellowRooms_PortalFromRooms.label>портал из комнат</YellowRooms_PortalFromRooms.label>
+  <YellowRooms_PortalFromRooms.description>Портал, перемещающий обратно в мир, из которого вы пришли.</YellowRooms_PortalFromRooms.description>
+
+  <YellowRooms_CeilingLamp.label>потолочная лампа</YellowRooms_CeilingLamp.label>
+  <YellowRooms_CeilingLamp.description>Гудящая жёлтая потолочная лампа. Не требует питания и не может быть разрушена, но её можно разбить.</YellowRooms_CeilingLamp.description>
+
+  <YellowRooms_CeilingLampBroken.label>сломанная потолочная лампа</YellowRooms_CeilingLampBroken.label>
+  <YellowRooms_CeilingLampBroken.description>Разбитая потолочная лампа. Не даёт света, но может спонтанно зажечься снова.</YellowRooms_CeilingLampBroken.description>
+
+  <YellowRooms_Wall.label>жёлтая стена</YellowRooms_Wall.label>
+  <YellowRooms_Wall.description>Неразрушимая стена Жёлтых Комнат.</YellowRooms_Wall.description>
+
+  <YellowRooms_ConcreteWall.label>бетонная стена</YellowRooms_ConcreteWall.label>
+  <YellowRooms_ConcreteWall.description>Неразрушимая стена из голого бетона, покрытая керамической плиткой.</YellowRooms_ConcreteWall.description>
+
+  <YellowRooms_MushroomFarm.label>грибная ферма на ковре</YellowRooms_MushroomFarm.label>
+  <YellowRooms_MushroomFarm.description>Участок жёлтого ковра, культивируемый для выращивания различных грибов. Разные грибы открываются через исследования. Растёт только в темноте.</YellowRooms_MushroomFarm.description>
+
+  <YellowRooms_Pit.label>яма</YellowRooms_Pit.label>
+  <YellowRooms_Pit.description>Тёмная яма в полу Жёлтых Комнат. Из неё может кто-то вылезти. Она слишком широкая, чтобы её перепрыгнуть. Сбросьте в бездну свои вещи, и у вас появится шанс получить взамен нечто равной или большей ценности. Но действуйте осторожно: кто знает, что случится, если потревожить яму</YellowRooms_Pit.description>
+
+  <YellowRooms_CeilingHole.label>дыра в потолке</YellowRooms_CeilingHole.label>
+  <YellowRooms_CeilingHole.description>Зияющая дыра в потолке Жёлтых Комнат. Иногда через неё что-то падает.</YellowRooms_CeilingHole.description>
+
+  
+  <YellowRooms_WallOutlet.label>настенная розетка</YellowRooms_WallOutlet.label>
+  <YellowRooms_WallOutlet.description>Гудящая настенная розетка, обеспечивающая постоянный поток электричества. Её можно разбить, чтобы получить промышленные компоненты.</YellowRooms_WallOutlet.description>
+
+  <YellowRooms_WallOutletBroken.label>сломанная розетка</YellowRooms_WallOutletBroken.label>
+  <YellowRooms_WallOutletBroken.description>Разбитая розетка. Не даёт электричества, но может спонтанно ожить снова.</YellowRooms_WallOutletBroken.description>
+
+</LanguageData>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <StructureLayoutDef>
+    <defName>YellowRooms_ResearcherBase</defName>
+    <workerClass>arsiy.Rooms.GenSteps.LayoutWorker_YellowRoomsBase</workerClass>
+    <clearRoomsEntirely>true</clearRoomsEntirely>
+    <minRoomWidth>8</minRoomWidth>
+    <minRoomHeight>8</minRoomHeight>
+
+    <wallStuffDef>Steel</wallStuffDef>
+    <doorStuffDef>Steel</doorStuffDef>
+    <terrainDef>AncientConcrete</terrainDef>
+    <surroundingTerrainDef>Concrete</surroundingTerrainDef>
+    <surroundingScatterRange>3~8</surroundingScatterRange>
+    <roomToExteriorDoorRatio>0.25</roomToExteriorDoorRatio>
+
+    <roomDefs>
+      <YellowRooms_PortalRoom>
+        <countRange>1</countRange>
+      </YellowRooms_PortalRoom>
+
+      <YellowRooms_Bedroom>1.5</YellowRooms_Bedroom>
+      <YellowRooms_MessRoom>1</YellowRooms_MessRoom>
+      <YellowRooms_LabRoom>0.75</YellowRooms_LabRoom>
+      <YellowRooms_StorageRoom>0.75</YellowRooms_StorageRoom>
+    </roomDefs>
+  </StructureLayoutDef>
+
+  <StructureLayoutDef>
+    <defName>YellowRooms_AbandonedResearcherBase</defName>
+    <workerClass>arsiy.Rooms.GenSteps.LayoutWorker_YellowRoomsBase</workerClass>
+    <clearRoomsEntirely>true</clearRoomsEntirely>
+    <minRoomWidth>8</minRoomWidth>
+    <minRoomHeight>8</minRoomHeight>
+
+    <wallStuffDef>Steel</wallStuffDef>
+    <doorStuffDef>Steel</doorStuffDef>
+    <terrainDef>AncientTile</terrainDef>
+    <roomToExteriorDoorRatio>0.33</roomToExteriorDoorRatio>
+
+    <roomDefs>
+      <YellowRooms_CoreRoom>
+        <countRange>1</countRange>
+      </YellowRooms_CoreRoom>
+
+      <YellowRooms_BarracksRoom>1</YellowRooms_BarracksRoom>
+      <YellowRooms_RustyStorageRoom>1</YellowRooms_RustyStorageRoom>
+      <YellowRooms_MessRoom>0.75</YellowRooms_MessRoom>
+      <YellowRooms_RustyLabRoom>0.75</YellowRooms_RustyLabRoom>
+    </roomDefs>
+
+    <junkScaterrers>
+      <Filth_Trash>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>2~4</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </Filth_Trash>
+      <Filth_MachineBits>
+        <groupsPerHundredCells>1~3</groupsPerHundredCells>
+        <itemsPerGroup>2~4</itemsPerGroup>
+        <groupDistRange>2~4</groupDistRange>
+      </Filth_MachineBits>
+      <Filth_BlastMark>
+        <groupsPerHundredCells>-2~1</groupsPerHundredCells>
+        <itemsPerGroup>1~1</itemsPerGroup>
+      </Filth_BlastMark>
+    </junkScaterrers>
+  </StructureLayoutDef>
+
+  <StructureLayoutDef>
+    <defName>YellowRooms_SurfaceResearcherBase</defName>
+    <workerClass>arsiy.Rooms.GenSteps.LayoutWorker_YellowRoomsBase</workerClass>
+    <clearRoomsEntirely>true</clearRoomsEntirely>
+    <minRoomWidth>7</minRoomWidth>
+    <minRoomHeight>7</minRoomHeight>
+
+    <wallStuffDef>Steel</wallStuffDef>
+    <doorStuffDef>Steel</doorStuffDef>
+    <terrainDef>Concrete</terrainDef>
+    <surroundingTerrainDef>Concrete</surroundingTerrainDef>
+    <surroundingScatterRange>1~3</surroundingScatterRange>
+
+    <roomDefs>
+      <YellowRooms_SurfacePortalRoom>
+        <countRange>1</countRange>
+      </YellowRooms_SurfacePortalRoom>
+
+      <YellowRooms_SurfaceBedroom>1.5</YellowRooms_SurfaceBedroom>
+      <YellowRooms_SurfaceMessRoom>1</YellowRooms_SurfaceMessRoom>
+      <YellowRooms_SurfaceLabRoom>0.75</YellowRooms_SurfaceLabRoom>
+      <YellowRooms_SurfaceStorageRoom>0.75</YellowRooms_SurfaceStorageRoom>
+    </roomDefs>
+  </StructureLayoutDef>
+
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <YellowRooms_HazmatSuit.label>костюм химзащиты</YellowRooms_HazmatSuit.label>
+  <YellowRooms_HazmatSuit.description>Резиновый костюм химзащиты. Обеспечивает отличную защиту от жары и токсичных сред. Носится вплотную к коже, поэтому поверх него можно надеть броню.</YellowRooms_HazmatSuit.description>
+
+  <YellowRooms_HazmatHelmet.label>шлем химзащиты</YellowRooms_HazmatHelmet.label>
+  <YellowRooms_HazmatHelmet.description>Герметичный резиновый шлем с фильтрующим визором. Сопротивляется токсичному газу и сильной жаре, функционируя как противогаз.</YellowRooms_HazmatHelmet.description>
+
+</LanguageData>

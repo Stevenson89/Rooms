@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <YellowRooms_StationaryTeleporter.label>стационарный телепортер</YellowRooms_StationaryTeleporter.label>
+  <YellowRooms_StationaryTeleporter.description>Постройте стационарный портал, открывающий стабильный проход в измерение Жёлтых Комнат. Для постройки каждого портала требуется ядро портала.</YellowRooms_StationaryTeleporter.description>
+
+  <YellowRooms_PortableTeleporter.label>портативный телепортер</YellowRooms_PortableTeleporter.label>
+  <YellowRooms_PortableTeleporter.description>Миниатюризируйте механизм портала в одноразовое устройство, открывающее проход между поверхностью и Жёлтыми Комнатами. Создаётся из ядра портала.</YellowRooms_PortableTeleporter.description>
+
+  <YellowRooms_BasicMushroomFarming.label>базовое грибоводство</YellowRooms_BasicMushroomFarming.label>
+  <YellowRooms_BasicMushroomFarming.description>Научитесь выращивать грибы на жёлтом ковре. Открывает грибную ферму на ковре и базовые съедобные и лекарственные штаммы грибов.</YellowRooms_BasicMushroomFarming.description>
+
+  <YellowRooms_AdvancedMushroomFarming.label>продвинутое грибоводство</YellowRooms_AdvancedMushroomFarming.label>
+  <YellowRooms_AdvancedMushroomFarming.description>Освойте выращивание экзотических штаммов грибов. Открывает выращивание псилокапа и бумшрума на грибных фермах на ковре.</YellowRooms_AdvancedMushroomFarming.description>
+
+  <YellowRooms_TimbershroomFarming.label>тимбершрумоводство</YellowRooms_TimbershroomFarming.label>
+  <YellowRooms_TimbershroomFarming.description>С помощью биоинженерии тимбершрумы начинают расти на культивируемом ковре. Эти высокие грибы дают древесный материал при сборе.</YellowRooms_TimbershroomFarming.description>
+
+</LanguageData>

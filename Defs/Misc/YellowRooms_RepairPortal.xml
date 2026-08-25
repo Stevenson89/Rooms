@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <DesignationDef>
+    <defName>YellowRooms_RepairPortal</defName>
+    <label>repair portal</label>
+    <description>Order a colonist to repair this broken portal.</description>
+    <targetType>Thing</targetType>
+    
+    <texturePath>Designations/Deconstruct</texturePath>
+    <removeIfBuildingDespawned>true</removeIfBuildingDespawned>
+  </DesignationDef>
+
+  
+  <WorkGiverDef>
+    <defName>YellowRooms_RepairPortal</defName>
+    <label>repair portals</label>
+    <giverClass>arsiy.Rooms.Things.WorkGiver_YRRepairPortal</giverClass>
+    <workType>Construction</workType>
+    <workTags>ManualSkilled</workTags>
+    <priorityInType>100</priorityInType>
+    <verb>repairing</verb>
+    <gerund>repairing</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    
+    <directOrderable>false</directOrderable>
+  </WorkGiverDef>
+
+</Defs>

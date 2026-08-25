@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <ResearchProjectDef>
+    <defName>YellowRooms_StationaryTeleporter</defName>
+    <label>stationary teleporter</label>
+    <description>Construct a stationary portal that opens a stable doorway into the Yellow Rooms dimension. Requires a portal core to build each portal.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>14.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+  
+  <ResearchProjectDef>
+    <defName>YellowRooms_PortableTeleporter</defName>
+    <label>portable teleporter</label>
+    <description>Miniaturize the portal mechanism into a single-use device that opens a doorway between the surface and the Yellow Rooms. Built from a portal core.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>YellowRooms_StationaryTeleporter</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>16.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+  
+  
+  
+
+  
+  <ResearchProjectDef>
+    <defName>YellowRooms_BasicMushroomFarming</defName>
+    <label>basic mushroom farming</label>
+    <description>Learn to cultivate mushrooms on the yellow carpet. Unlocks the carpet mushroom farm and basic edible and medicinal mushroom strains.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites />
+    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+
+  
+  <ResearchProjectDef>
+    <defName>YellowRooms_AdvancedMushroomFarming</defName>
+    <label>advanced mushroom farming</label>
+    <description>Master the cultivation of exotic mushroom strains. Unlocks psilocap and boomshroom growth on carpet mushroom farms.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>YellowRooms_BasicMushroomFarming</li>
+    </prerequisites>
+    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+
+  
+  <ResearchProjectDef>
+    <defName>YellowRooms_TimbershroomFarming</defName>
+    <label>timbershroom farming</label>
+    <description>Bio-engineer timbershrooms to grow on cultivated carpet. These tall mushrooms yield wood-like material when harvested.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>YellowRooms_BasicMushroomFarming</li>
+    </prerequisites>
+    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorldGenStepDef>
+    <defName>YellowRooms_Terrain</defName>
+    <order>0</order>
+    <worldGenStep Class="arsiy.Rooms.WorldGen.WorldGenStep_YellowRoomsTerrain" />
+  </WorldGenStepDef>
+
+  <WorldGenStepDef>
+    <defName>YellowRooms_Factions</defName>
+    <order>100</order>
+    <worldGenStep Class="arsiy.Rooms.WorldGen.WorldGenStep_YellowRoomsFactions" />
+  </WorldGenStepDef>
+</Defs>
