@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using arsiy.Rooms.Incidents;
+using arsiy.Rooms.Things;
 using LudeonTK;
 using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using Verse.AI.Group;
-using arsiy.Rooms.Incidents;
-using arsiy.Rooms.Things;
 
 namespace arsiy.Rooms
 {
@@ -216,6 +217,23 @@ namespace arsiy.Rooms
             var next = validPlants[nextIdx];
             settable.SetPlantDefToGrow(next);
             RoomsLog.Message($"[Rooms] Debug: farm plant cycled from {(current?.defName ?? "none")} to {next.defName} ({nextIdx + 1}/{validPlants.Count})");
+        }
+
+        [DebugAction(category: "Rooms - Debug", name: "Spawn rooms", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void ForceSpawnRooms()
+        {
+            string seed = Find.World.info.seedString;
+            WorldGenStepDef[] stepDefs =
+            {
+                DefDatabase<WorldGenStepDef>.GetNamed("YellowRooms_Terrain"),
+                DefDatabase<WorldGenStepDef>.GetNamed("YellowRooms_Factions"),
+            };
+            PlanetLayerSettingsDef planetLayerSettings = DefDatabase<PlanetLayerSettingsDef>.GetNamed("YellowRooms");
+            PlanetLayer yellowRooms = Find.WorldGrid.RegisterPlanetLayer(DefDatabase<PlanetLayerDef>.GetNamed("YellowRooms"), planetLayerSettings.settings);
+            foreach (WorldGenStepDef stepDef in stepDefs)
+            {
+                stepDef.worldGenStep.GenerateFresh(seed, Find.WorldGrid.FirstLayerOfDef(DefDatabase<PlanetLayerDef>.GetNamed("YellowRooms")));
+            }
         }
     }
 }
