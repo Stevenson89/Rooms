@@ -176,13 +176,6 @@ namespace arsiy.Rooms
                     factionDef.arrivalLayerWhitelist.Add(layer);
             }
 
-            foreach (var arrivalModeDef in DefDatabase<PawnsArrivalModeDef>.AllDefsListForReading)
-            {
-                arrivalModeDef.layerWhitelist ??= new List<PlanetLayerDef>();
-                if (!arrivalModeDef.layerWhitelist.Contains(layer))
-                    arrivalModeDef.layerWhitelist.Add(layer);
-            }
-
             foreach (var factionDef in DefDatabase<FactionDef>.AllDefsListForReading)
             {
                 if (factionDef.defName.StartsWith("YellowRooms")) continue;
