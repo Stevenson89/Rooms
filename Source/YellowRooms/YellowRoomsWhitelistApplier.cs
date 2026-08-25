@@ -180,9 +180,9 @@ namespace arsiy.Rooms
             {
                 if (factionDef.defName.StartsWith("YellowRooms")) continue;
                 if (factionDef.defName == "Salvagers") continue;
-                factionDef.arrivalLayerWhitelist ??= new List<PlanetLayerDef>();
-                if (!factionDef.arrivalLayerWhitelist.Contains(layer))
-                    factionDef.arrivalLayerWhitelist.Add(layer);
+                factionDef.arrivalLayerBlacklist ??= new List<PlanetLayerDef>();
+                if (!factionDef.arrivalLayerBlacklist.Contains(layer))
+                    factionDef.arrivalLayerBlacklist.Add(layer);
             }
         }
     }
