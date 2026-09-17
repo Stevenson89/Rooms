@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>YellowRoomsStart</defName>
+    <label>Lost in the Yellow Rooms</label>
+    <description>You awaken in a vast, featureless complex of yellow-walled rooms stretching endlessly in every direction. The air is stale, the ceiling lamps cast their familiar glow, and strange sounds echo from distant corridors. Your group must survive in this hostile dimension — find resources, explore the rooms, and find a way back to the surface.</description>
+    <scenario>
+      <summary>Start in the Yellow Rooms dimension.</summary>
+      <playerFaction>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts Inherit="False">
+
+        <!-- Yellow Rooms layer -->
+        <li Class="ScenPart_PlanetLayerFixed">
+          <def>YellowRooms</def>
+          <tag>YellowRooms</tag>
+          <layer>YellowRooms</layer>
+          <settingsDef>YellowRooms</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomOut</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+
+        <!-- Orbit layer (same part as vanilla scenarios inherit from
+             ScenarioBase; our parts list is Inherit="False" so it must be
+             re-declared. Without Odyssey the node is skipped entirely.) -->
+        <li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+          <def>PlanetLayer</def>
+          <tag>Orbit</tag>
+          <layer>Orbit</layer>
+          <settingsDef>Orbit</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomIn</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+
+        <!-- Game start dialog (textKey -> translated via Languages/*/Keyed) -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>YellowRooms_GameStartDialog</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+        <!-- Pawn config -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>5</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+
+        <!-- Force map on YellowRooms layer in YellowRooms biome -->
+        <li Class="arsiy.Rooms.ScenParts.ScenPart_YellowRoomsForcedMap">
+          <def>YellowRooms_ForcedMap</def>
+          <mapGenerator>YellowRooms</mapGenerator>
+          <layerDef>YellowRooms</layerDef>
+        </li>
+
+        <!-- Pawns arrive by standing (they just wake up here) -->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <!-- Starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>45</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+
+        <!-- Scatter things near start (roofed allowed: the rooms are indoors) -->
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Silver</thingDef>
+          <count>400</count>
+          <allowRoofed>true</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>600</count>
+          <allowRoofed>true</allowRoofed>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

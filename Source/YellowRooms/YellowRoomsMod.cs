@@ -21,15 +21,12 @@ namespace arsiy.Rooms
     {
         private const string LayerDefName = "YellowRooms";
 
-        
-        private static readonly FieldInfo PartsField =
-            typeof(Scenario).GetField("parts", BindingFlags.Instance | BindingFlags.NonPublic);
-
         static YellowRoomsMod()
         {
             try
             {
                 InjectYellowRoomsLayerIntoScenarios();
+                LocalizeYellowRoomsScenario();
                 ApplyVisibilityPatches();
                 RoomsLog.Message("[Rooms] YellowRooms mod initialized (layer injected via ScenPart_PlanetLayerFixed)");
             }
@@ -39,9 +36,31 @@ namespace arsiy.Rooms
             }
         }
 
+        // ScenarioDef.PostLoad copies label/description into the Scenario object
+        // before DefInjected translations are applied, and the scenario list UI
+        // shows scenario.name directly — so DefInjected alone never localizes it.
+        // Overwrite the strings here from Keyed translations instead.
+        private static void LocalizeYellowRoomsScenario()
+        {
+            var scenarioDef = DefDatabase<ScenarioDef>.GetNamedSilentFail("YellowRoomsStart");
+            if (scenarioDef?.scenario == null)
+            {
+                RoomsLog.Warning("[Rooms] YellowRoomsStart scenario def not found; skipping localization.");
+                return;
+            }
+            var scen = scenarioDef.scenario;
+            scen.name = "YellowRooms_ScenarioName".Translate();
+            scen.summary = "YellowRooms_ScenarioSummary".Translate();
+            scen.description = "YellowRooms_ScenarioDescription".Translate();
+        }
+
+        // Covers everything alive at mod load: Def-based scenarios live as the
+        // same objects forever, but custom and Workshop scenarios are reloaded
+        // from disk on every ScenarioLister recache — those are kept correct at
+        // load time by Patch_ScenarioLayerInjection instead.
         private static void InjectYellowRoomsLayerIntoScenarios()
         {
-            if (PartsField == null)
+            if (YellowRoomsLayerInjector.PartsField == null)
             {
                 RoomsLog.Error("[Rooms] Could not reflect Scenario.parts field.");
                 return;
@@ -58,24 +77,7 @@ namespace arsiy.Rooms
 
             foreach (var scenario in ScenarioLister.AllScenarios())
             {
-                if (scenario == null) continue;
-                var parts = PartsField.GetValue(scenario) as List<ScenPart>;
-                if (parts == null) continue;
-
-                
-                if (parts.OfType<ScenPart_PlanetLayer>().Any(p => p.layer == layerDef))
-                    continue;
-
-                var part = new ScenPart_PlanetLayerFixed
-                {
-                    def = scenPartDef,
-                    layer = layerDef,
-                    settingsDef = settingsDef,
-                    tag = LayerDefName,
-                    hide = true,
-                    connections = new List<LayerConnection>()
-                };
-                parts.Add(part);
+                YellowRoomsLayerInjector.EnsureInjected(scenario);
             }
         }
 
@@ -129,6 +131,23 @@ namespace arsiy.Rooms
             Patch_NoFurnitureInYellowWalls.Apply(harmony);
 
             
+            // Keep the layer ScenPart present on scenarios reloaded from disk
+            // after boot (custom and Workshop ones — see Patch_ScenarioLayerInjection).
+            Patch_ScenarioLayerInjection.Apply(harmony);
+
+            // Scenario start: swap the temporary home Settlement for the mod's
+            // YellowRoomsSite before the map generates (see Patch_ScenarioStartOnSite).
+            var generateMap = AccessTools.Method(typeof(MapGenerator), nameof(MapGenerator.GenerateMap));
+            if (generateMap != null)
+            {
+                harmony.Patch(generateMap,
+                    prefix: new HarmonyMethod(typeof(Patch_ScenarioStartOnSite), nameof(Patch_ScenarioStartOnSite.Prefix)));
+            }
+            else
+            {
+                RoomsLog.Warning("[Rooms] MapGenerator.GenerateMap not found; scenario will start on a settlement.");
+            }
+
             var settleMethod = AccessTools.Method(typeof(SettleInEmptyTileUtility), "Settle", new[] { typeof(Caravan) });
             if (settleMethod == null)
             {

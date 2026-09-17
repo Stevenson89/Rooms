@@ -34,9 +34,9 @@
 
   
   <StrangePassageLabel>Strange passage</StrangePassageLabel>
-  <StrangePassageDesc>A doorway leading into the Yellow Rooms has materialized against one of your walls on its own. It hums with an unstable energy вЂ” it will collapse and vanish in about a day, taking the way back with it.</StrangePassageDesc>
+  <StrangePassageDesc>A sliver of light has split open along one of your walls on its own, humming with unstable energy. Whatever lies beyond it is hard to make out. It will collapse and vanish in about a day, taking the way back with it.</StrangePassageDesc>
   <StrangePassageClosedLabel>The passage closes</StrangePassageClosedLabel>
-  <StrangePassageClosedDesc>The strange doorway to the Yellow Rooms fades and seals shut. Any pawns still inside are now stranded there.</StrangePassageClosedDesc>
+  <StrangePassageClosedDesc>The strange doorway used to enter this space has faded and sealed shut. Any pawns still inside are now stranded there.</StrangePassageClosedDesc>
   <StrangePassageYellowDesc>An unstable return door has materialized inside the Yellow Rooms. Passing through it will tear open a new passage to a fresh camp on the surface of the planet.</StrangePassageYellowDesc>
 
   
@@ -44,7 +44,7 @@
   <RefugeeRoomsQuestDesc>{PAWN_nameDef} appeared in the Yellow Rooms and asks for shelter. {PAWN_pronounCap} will join your colony if you accept {PAWN_objective}.</RefugeeRoomsQuestDesc>
 
   
-  <YellowRooms_ReturnToPlanet>Return to planet</YellowRooms_ReturnToPlanet>
+  <YellowRooms_ReturnToPlanet>Exit yellow rooms view</YellowRooms_ReturnToPlanet>
   <YellowRooms_ReturnToPlanetDesc>Return to the surface view.</YellowRooms_ReturnToPlanetDesc>
   <YellowRooms_ViewDimension>Yellow Rooms</YellowRooms_ViewDimension>
   <YellowRooms_ViewDimensionDesc>View the Yellow Rooms dimension.</YellowRooms_ViewDimensionDesc>
@@ -59,9 +59,9 @@
   <YellowRooms_Letter_HostileClone_Title>Hostile clone</YellowRooms_Letter_HostileClone_Title>
   <YellowRooms_Letter_HostileClone_Text>{0}, a corrupted echo of your colonist, emerges from the rooms and attacks.</YellowRooms_Letter_HostileClone_Text>
   <YellowRooms_Letter_PassiveClone_Title>Wandering echo</YellowRooms_Letter_PassiveClone_Title>
-  <YellowRooms_Letter_PassiveClone_Text>A hollow echo of {0} drifts into the rooms. It will wander for a day and then leave on its own вЂ” but if you try to arrest it or hurt it, it will turn hostile.</YellowRooms_Letter_PassiveClone_Text>
+  <YellowRooms_Letter_PassiveClone_Text>A hollow echo of {0} drifts into the rooms. It will wander for a day and then leave on its own — but if you try to arrest it or hurt it, it will turn hostile.</YellowRooms_Letter_PassiveClone_Text>
   <YellowRooms_Letter_Stranded_Title>Stranded traveler</YellowRooms_Letter_Stranded_Title>
-  <YellowRooms_Letter_Stranded_Text>{0} has tumbled into the Yellow Rooms with no way back. Find them a portal.</YellowRooms_Letter_Stranded_Text>
+  <YellowRooms_Letter_Stranded_Text>{0} has tumbled into the Yellow Rooms with no way back.</YellowRooms_Letter_Stranded_Text>
 
   
   <YellowRooms_Letter_Betrayal_Title>Betrayal!</YellowRooms_Letter_Betrayal_Title>
@@ -81,6 +81,12 @@
   <YellowRooms_Letter_Stash_Weapons>A hidden cache of weapons has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Weapons>
   <YellowRooms_Letter_Stash_Default>A hidden cache has been detected in the Yellow Rooms.</YellowRooms_Letter_Stash_Default>
   <YellowRooms_Letter_Stash_Send> Send a caravan to claim it.</YellowRooms_Letter_Stash_Send>
+  <YellowRooms_SupplyStashSiteLabel>Supply stash ({0})</YellowRooms_SupplyStashSiteLabel>
+  <YellowRooms_StashRes_Food>food</YellowRooms_StashRes_Food>
+  <YellowRooms_StashRes_Materials>building materials</YellowRooms_StashRes_Materials>
+  <YellowRooms_StashRes_Chemfuel>chemfuel</YellowRooms_StashRes_Chemfuel>
+  <YellowRooms_StashRes_Weapons>weapons</YellowRooms_StashRes_Weapons>
+  <YellowRooms_StashRes_Default>mixed supplies</YellowRooms_StashRes_Default>
 
   
   <YellowRooms_Letter_ResearcherRaid_Title>Researcher raid</YellowRooms_Letter_ResearcherRaid_Title>
@@ -145,7 +151,7 @@
   <YellowRooms_NoDestination>Could not find a destination in the Yellow Rooms.</YellowRooms_NoDestination>
   <YellowRooms_FailedGeneration>Failed to generate Yellow Rooms map.</YellowRooms_FailedGeneration>
   <YellowRooms_FailedWayBack>Failed to open a way back.</YellowRooms_FailedWayBack>
-  <YellowRooms_Travelling>Traveling to Yellow Rooms...</YellowRooms_Travelling>
+  <YellowRooms_Travelling>Entering...</YellowRooms_Travelling>
 
   
   <YellowRooms_RepairPortal>Repair portal</YellowRooms_RepairPortal>
@@ -176,7 +182,7 @@
   <YellowRooms_CargoSendDesc>Everything has been delivered. Transport the chosen colonists through the portal.</YellowRooms_CargoSendDesc>
   <YellowRooms_CargoLeft>Transfer loading: {0} item(s) left to carry.</YellowRooms_CargoLeft>
   <YellowRooms_CargoReady>Transfer loaded. Ready to send through.</YellowRooms_CargoReady>
-  <YellowRooms_TransferReady>{0} вЂ” everything has been carried to the portal. Send the transfer through.</YellowRooms_TransferReady>
+  <YellowRooms_TransferReady>{0} — everything has been carried to the portal. Send the transfer through.</YellowRooms_TransferReady>
   <YellowRooms_TransferCancelled>Transfer cancelled.</YellowRooms_TransferCancelled>
 <YellowRooms_ReturnDoorNoLink>This portal has no linked entrance on the surface. Use it once by walking through to establish the link.</YellowRooms_ReturnDoorNoLink>
   <ReportCarryToYellowRoomsPortal>carrying {0} to the portal.</ReportCarryToYellowRoomsPortal>
@@ -187,7 +193,7 @@
   <YellowRooms_PitDesc>Choose things and colonists to throw into the pit. Colonists will carry the chosen things to the pit, and each item is swallowed as it arrives. When everything has been carried, the chosen colonists can be thrown in.</YellowRooms_PitDesc>
   <YellowRooms_PitThrow>Throw them in</YellowRooms_PitThrow>
   <YellowRooms_PitThrowDesc>Everything has been carried to the pit. Throw the chosen colonists in.</YellowRooms_PitThrowDesc>
-  <YellowRooms_PitCarried>{0} вЂ” everything has been carried into the pit.</YellowRooms_PitCarried>
+  <YellowRooms_PitCarried>{0} — everything has been carried into the pit.</YellowRooms_PitCarried>
   <YellowRooms_PitPawnsReady>{0} colonist(s) ready to be thrown in.</YellowRooms_PitPawnsReady>
   <YellowRooms_Letter_FellFromCeiling_Title>Fell from the ceiling</YellowRooms_Letter_FellFromCeiling_Title>
   <YellowRooms_Letter_FellFromCeiling_Text>{0} falls out of a hole in the ceiling.</YellowRooms_Letter_FellFromCeiling_Text>
@@ -197,5 +203,10 @@
   <YellowRooms_Letter_PitRevenge_Title>Revenge from the pit</YellowRooms_Letter_PitRevenge_Title>
   <YellowRooms_Letter_PitRevenge_Text>{0} crawls out of the pit, seeking revenge!</YellowRooms_Letter_PitRevenge_Text>
   <ReportCarryToPit>carrying {0} to the pit.</ReportCarryToPit>
+
+  <YellowRooms_ScenarioName>Lost in the Yellow Rooms</YellowRooms_ScenarioName>
+  <YellowRooms_ScenarioSummary>Start in the Yellow Rooms dimension.</YellowRooms_ScenarioSummary>
+  <YellowRooms_ScenarioDescription>You awaken in a vast, featureless complex of yellow-walled rooms stretching endlessly in every direction. The air is stale, the ceiling lamps cast their familiar glow, and strange sounds echo from distant corridors. Your group must survive in this hostile dimension — find resources, explore the rooms, and find a way back to the surface.</YellowRooms_ScenarioDescription>
+  <YellowRooms_GameStartDialog>You open your eyes to harsh yellow light. The walls stretch in every direction — identical, featureless, suffocating. There is no sky here, no wind, no day or night. Only the hum of ceiling lamps and the faint smell of old carpet.\n\nYou don't know how you got here. But you know one thing: you need to survive, explore, and find a way out.</YellowRooms_GameStartDialog>
 
 </LanguageData>

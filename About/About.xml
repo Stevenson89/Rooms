@@ -22,4 +22,8 @@ Survive and farm: Grow edible and medicinal mushrooms in the dark on carpet plot
 			<steamWorkshopUrl>steam://url/CommunityCommunityPage/2009463077</steamWorkshopUrl>
 		</li>
 	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>MrHydralisk.LayeredAtmosphereOrbit</li>
+	</loadAfter>
 </ModMetaData>

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -32,6 +32,10 @@ namespace arsiy.Rooms.GenSteps
 
         public override void Generate(Map map, GenStepParams parms)
         {
+            _floorCells.Clear();
+            _wallCells.Clear();
+            _generatedStructures.Clear();
+
             _wallDef = DefDatabase<ThingDef>.GetNamed("YellowRooms_Wall");
             if (_wallDef == null)
             {
@@ -41,8 +45,6 @@ namespace arsiy.Rooms.GenSteps
             _map = map;
             _mapSizeX = map.Size.x;
             _mapSizeZ = map.Size.z;
-
-            Rand.PushState(map.Tile);
 
             var structures = new List<Rect>();
 
@@ -156,7 +158,8 @@ namespace arsiy.Rooms.GenSteps
 
             PlaceRoof();
 
-            Rand.PopState();
+            _floorCells.Clear();
+            _wallCells.Clear();
         }
 
         

@@ -42,6 +42,9 @@ namespace arsiy.Rooms.Incidents
             sitePart.things = new ThingOwner<Thing>(sitePart, oneStackOnly: false);
             sitePart.things.TryAddRangeOrTransfer(GenStep_SupplyStash.GenerateLoot(stashType), canMergeWithExistingStacks: false);
 
+            site.customLabel = "YellowRooms_SupplyStashSiteLabel".Translate(
+                ("YellowRooms_StashRes_" + stashType).Translate());
+
             Find.WorldObjects.Add(site);
 
             var descKey = def.defName switch

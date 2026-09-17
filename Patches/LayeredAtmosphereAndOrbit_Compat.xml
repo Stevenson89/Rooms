@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Compatibility with "Layered Atmosphere and Orbit" (LAO).
+	     Gives the Yellow Rooms planet layer the LAO mod extension with its own layer
+	     group. The group intentionally has no planet: the Rooms are an isolated pocket
+	     dimension and must not be auto-connected to the surface layer chain.
+	     This silences LAO's "missing proper LayeredAtmosphereOrbitDefModExtension" error. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Layered Atmosphere and Orbit</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<LayeredAtmosphereOrbit.PlanetLayerGroupDef>
+							<defName>YellowRoomsLayerGroup</defName>
+							<label>Yellow Rooms</label>
+							<description>A pocket dimension beneath the world, reachable only through portals.</description>
+						</LayeredAtmosphereOrbit.PlanetLayerGroupDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/PlanetLayerDef[defName = "YellowRooms"]</xpath>
+					<value>
+						<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+							<elevation>-10</elevation>
+							<planetLayerGroup>YellowRoomsLayerGroup</planetLayerGroup>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

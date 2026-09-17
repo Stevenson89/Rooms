@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>YellowRooms_DoorToRooms</defName>
@@ -33,6 +33,10 @@
       <canPlaceOverWall>true</canPlaceOverWall>
     </building>
     <comps>
+      <li Class="RimWorld.CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(255,228,110,0)</glowColor>
+      </li>
       <li Class="arsiy.Rooms.Things.CompProperties_DoorToRooms" />
     </comps>
   </ThingDef>
@@ -70,6 +74,10 @@
       <deconstructible>false</deconstructible>
     </building>
     <comps>
+      <li Class="RimWorld.CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(255,228,110,0)</glowColor>
+      </li>
       <li Class="arsiy.Rooms.Things.CompProperties_YellowRoomsReturnDoor" />
     </comps>
   </ThingDef>
@@ -173,6 +181,10 @@
       <li>arsiy.Rooms.Things.PlaceWorker_YellowRoomsPortal</li>
     </placeWorkers>
     <comps>
+      <li Class="RimWorld.CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(255,228,110,0)</glowColor>
+      </li>
       <li Class="arsiy.Rooms.Things.CompProperties_DoorToRooms" />
     </comps>
   </ThingDef>
@@ -233,6 +245,10 @@
       <li>arsiy.Rooms.Things.PlaceWorker_YellowRoomsPortal</li>
     </placeWorkers>
     <comps>
+      <li Class="RimWorld.CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(255,228,110,0)</glowColor>
+      </li>
       <li Class="arsiy.Rooms.Things.CompProperties_YellowRoomsReturnDoor" />
     </comps>
   </ThingDef>

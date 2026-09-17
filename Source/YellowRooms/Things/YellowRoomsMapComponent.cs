@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using arsiy.Rooms;
 using RimWorld;
@@ -112,6 +112,9 @@ namespace arsiy.Rooms.Things
             base.MapComponentTick();
 
             if (Find.TickManager == null || Find.TickManager.TicksGame <= 0) return;
+
+            if (!YellowRoomsWorldComponent.HasVisited && YellowRoomsUtility.IsYellowRoomsMap(map))
+                YellowRoomsWorldComponent.HasVisited = true;
 
             if (Find.TickManager.TicksGame % KidnapCheckInterval == 0)
                 YellowRoomsUtility.TryForceNearestResearcherKidnap(map);

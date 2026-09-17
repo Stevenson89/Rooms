@@ -1,12 +1,12 @@
-﻿using arsiy.Rooms.Incidents;
-using arsiy.Rooms.Things;
-using LudeonTK;
-using RimWorld;
-using RimWorld.Planet;
 using System.Collections.Generic;
 using System.Linq;
+using LudeonTK;
+using RimWorld;
 using Verse;
 using Verse.AI.Group;
+using RimWorld.Planet;
+using arsiy.Rooms.Incidents;
+using arsiy.Rooms.Things;
 
 namespace arsiy.Rooms
 {
@@ -219,21 +219,22 @@ namespace arsiy.Rooms
             RoomsLog.Message($"[Rooms] Debug: farm plant cycled from {(current?.defName ?? "none")} to {next.defName} ({nextIdx + 1}/{validPlants.Count})");
         }
 
-        [DebugAction(category: "Rooms - Debug", name: "Spawn rooms", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        [DebugAction(category: Category, name: "Force spawn rooms", allowedGameStates = AllowedGameStates.PlayingOnWorld | AllowedGameStates.PlayingOnMap)]
         public static void ForceSpawnRooms()
         {
-            string seed = Find.World.info.seedString;
-            WorldGenStepDef[] stepDefs =
+            string seedString = Find.World.info.seedString;
+            WorldGenStepDef[] array = new WorldGenStepDef[2]
             {
-                DefDatabase<WorldGenStepDef>.GetNamed("YellowRooms_Terrain"),
-                DefDatabase<WorldGenStepDef>.GetNamed("YellowRooms_Factions"),
+                DefDatabase<WorldGenStepDef>.GetNamed("YellowRooms_Terrain", true),
+                DefDatabase<WorldGenStepDef>.GetNamed("YellowRooms_Factions", true)
             };
-            PlanetLayerSettingsDef planetLayerSettings = DefDatabase<PlanetLayerSettingsDef>.GetNamed("YellowRooms");
-            PlanetLayer yellowRooms = Find.WorldGrid.RegisterPlanetLayer(DefDatabase<PlanetLayerDef>.GetNamed("YellowRooms"), planetLayerSettings.settings);
-            foreach (WorldGenStepDef stepDef in stepDefs)
+            PlanetLayerSettingsDef named = DefDatabase<PlanetLayerSettingsDef>.GetNamed("YellowRooms", true);
+            Find.WorldGrid.RegisterPlanetLayer(DefDatabase<PlanetLayerDef>.GetNamed("YellowRooms", true), named.settings, null, null, null, null);
+            foreach (WorldGenStepDef step in array)
             {
-                stepDef.worldGenStep.GenerateFresh(seed, Find.WorldGrid.FirstLayerOfDef(DefDatabase<PlanetLayerDef>.GetNamed("YellowRooms")));
+                step.worldGenStep.GenerateFresh(seedString, Find.WorldGrid.FirstLayerOfDef(DefDatabase<PlanetLayerDef>.GetNamed("YellowRooms", true)));
             }
+            RoomsLog.Message("[Rooms] Debug: forced spawn of Yellow Rooms layer.");
         }
     }
 }

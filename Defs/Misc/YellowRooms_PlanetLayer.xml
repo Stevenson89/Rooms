@@ -11,6 +11,7 @@
     <elevationString>-10m</elevationString>
     <gerundLabel>in the</gerundLabel>
     <backgroundBiome>YellowRooms</backgroundBiome>
+    <settlementWorldObjectDef>YellowRoomsHomeSettlement</settlementWorldObjectDef>
     <onlyAllowWhitelistedIncidents>true</onlyAllowWhitelistedIncidents>
     <onlyAllowWhitelistedBiomes>true</onlyAllowWhitelistedBiomes>
     <onlyAllowWhitelistedGameConditions>true</onlyAllowWhitelistedGameConditions>

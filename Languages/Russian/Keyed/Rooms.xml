@@ -1,4 +1,4 @@
-?<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   
@@ -34,9 +34,9 @@
 
   
   <StrangePassageLabel>Странный проход</StrangePassageLabel>
-  <StrangePassageDesc>Дверной проём в Жёлтые Комнаты материализовался у одной из ваших стен. Он пульсирует нестабильной энергией — через день он исчезнет, забрав с собой путь назад.</StrangePassageDesc>
+  <StrangePassageDesc>Вдоль одной из ваших стен сама по себе раскололась узкая полоса света, гудящая нестабильной энергией. Что находится за ней, разглядеть невозможно. Примерно через день она схлопнется и исчезнет, забрав с собой путь назад.</StrangePassageDesc>
   <StrangePassageClosedLabel>Проход закрывается</StrangePassageClosedLabel>
-  <StrangePassageClosedDesc>Странный проход в Жёлтые Комнаты исчезает. Люди, оставшиеся внутри, теперь отрезаны.</StrangePassageClosedDesc>
+  <StrangePassageClosedDesc>Странный проход, через который вошли в это пространство, исчез и запечатался. Люди, оставшиеся внутри, теперь отрезаны.</StrangePassageClosedDesc>
   <StrangePassageYellowDesc>В Жёлтых Комнатах материализовалась нестабильная дверь возврата. Проход сквозь неё прорвёт новый путь к свежему лагерю на поверхности планеты.</StrangePassageYellowDesc>
 
   
@@ -44,7 +44,7 @@
   <RefugeeRoomsQuestDesc>В Жёлтых Комнатах появился беженец {PAWN_nameDef}, просящий убежища. {PAWN_pronounCap} присоединится к вашей колонии, если вы примете {PAWN_objective}.</RefugeeRoomsQuestDesc>
 
   
-  <YellowRooms_ReturnToPlanet>Вернуться на планету</YellowRooms_ReturnToPlanet>
+  <YellowRooms_ReturnToPlanet>Покинуть вид Жёлтых Комнат</YellowRooms_ReturnToPlanet>
   <YellowRooms_ReturnToPlanetDesc>Вернуться к виду поверхности.</YellowRooms_ReturnToPlanetDesc>
   <YellowRooms_ViewDimension>Жёлтые Комнаты</YellowRooms_ViewDimension>
   <YellowRooms_ViewDimensionDesc>Посмотреть на Жёлтые Комнаты.</YellowRooms_ViewDimensionDesc>
@@ -61,7 +61,7 @@
   <YellowRooms_Letter_PassiveClone_Title>Блуждающее эхо</YellowRooms_Letter_PassiveClone_Title>
   <YellowRooms_Letter_PassiveClone_Text>Пустое эхо {0} заходит в комнаты. Оно будет бродить день, а затем уйдёт само — но если вы попытаетесь арестовать его или ранить, оно станет враждебным.</YellowRooms_Letter_PassiveClone_Text>
   <YellowRooms_Letter_Stranded_Title>Потерявшийся путник</YellowRooms_Letter_Stranded_Title>
-  <YellowRooms_Letter_Stranded_Text>{0} упал в Жёлтые Комнаты без пути назад. Найдите им портал.</YellowRooms_Letter_Stranded_Text>
+  <YellowRooms_Letter_Stranded_Text>{0} упал в Жёлтые Комнаты без пути назад.</YellowRooms_Letter_Stranded_Text>
 
   
   <YellowRooms_Letter_Betrayal_Title>Предательство!</YellowRooms_Letter_Betrayal_Title>
@@ -81,6 +81,12 @@
   <YellowRooms_Letter_Stash_Weapons>Скрытый склад оружия обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Weapons>
   <YellowRooms_Letter_Stash_Default>Скрытый склад обнаружен в Жёлтых Комнатах.</YellowRooms_Letter_Stash_Default>
   <YellowRooms_Letter_Stash_Send> Отправьте караван, чтобы забрать его.</YellowRooms_Letter_Stash_Send>
+  <YellowRooms_SupplyStashSiteLabel>тайник с припасами ({0})</YellowRooms_SupplyStashSiteLabel>
+  <YellowRooms_StashRes_Food>еда</YellowRooms_StashRes_Food>
+  <YellowRooms_StashRes_Materials>стройматериалы</YellowRooms_StashRes_Materials>
+  <YellowRooms_StashRes_Chemfuel>химтопливо</YellowRooms_StashRes_Chemfuel>
+  <YellowRooms_StashRes_Weapons>оружие</YellowRooms_StashRes_Weapons>
+  <YellowRooms_StashRes_Default>смешанные припасы</YellowRooms_StashRes_Default>
 
   
   <YellowRooms_Letter_ResearcherRaid_Title>Рейд исследователей</YellowRooms_Letter_ResearcherRaid_Title>
@@ -145,7 +151,7 @@
   <YellowRooms_NoDestination>Не удалось найти место назначения в Жёлтых Комнатах.</YellowRooms_NoDestination>
   <YellowRooms_FailedGeneration>Не удалось сгенерировать карту Жёлтых Комнат.</YellowRooms_FailedGeneration>
   <YellowRooms_FailedWayBack>Не удалось открыть путь назад.</YellowRooms_FailedWayBack>
-  <YellowRooms_Travelling>Путешествие в Жёлтые Комнаты...</YellowRooms_Travelling>
+  <YellowRooms_Travelling>Вход...</YellowRooms_Travelling>
 
   
   <YellowRooms_RepairPortal>Починить портал</YellowRooms_RepairPortal>
@@ -197,5 +203,9 @@
   <YellowRooms_Letter_PitRevenge_Title>Месть из ямы</YellowRooms_Letter_PitRevenge_Title>
   <YellowRooms_Letter_PitRevenge_Text>{0} вылезает из ямы, чтобы отомстить!</YellowRooms_Letter_PitRevenge_Text>
   <ReportCarryToPit>несёт {0} к яме.</ReportCarryToPit>
+  <YellowRooms_ScenarioName>Потерянные в Жёлтых комнатах</YellowRooms_ScenarioName>
+  <YellowRooms_ScenarioSummary>Старт в измерении Жёлтых комнат.</YellowRooms_ScenarioSummary>
+  <YellowRooms_ScenarioDescription>Вы приходите в себя в бесконечном комплексе жёлтых комнат, простирающемся во все стороны. Воздух спёртый, потолочные лампы отбрасывают привычный свет, а из дальних коридоров доносятся странные звуки. Вашей группе предстоит выжить во враждебном измерении — искать ресурсы, исследовать комнаты и найти путь обратно на поверхность.</YellowRooms_ScenarioDescription>
+  <YellowRooms_GameStartDialog>Вы открываете глаза под резким жёлтым светом. Стены тянутся во все стороны — одинаковые, безликие, удушающие. Здесь нет неба, нет ветра, нет дня и ночи. Только гул потолочных ламп и слабый запах старого ковра.\n\nВы не знаете, как сюда попали. Но вы знаете одно: нужно выжить, исследовать эти комнаты и найти выход.</YellowRooms_GameStartDialog>
 
 </LanguageData>

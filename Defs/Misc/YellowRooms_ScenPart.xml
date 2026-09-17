@@ -10,4 +10,14 @@
     <canBeRandomlyAdded>false</canBeRandomlyAdded>
     <canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
   </ScenPartDef>
+
+  <ScenPartDef>
+    <defName>YellowRooms_ForcedMap</defName>
+    <label>start in the Yellow Rooms</label>
+    <scenPartClass>arsiy.Rooms.ScenParts.ScenPart_YellowRoomsForcedMap</scenPartClass>
+    <category>Fixed</category>
+    <summaryPriority>100</summaryPriority>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+    <canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+  </ScenPartDef>
 </Defs>

@@ -40,6 +40,7 @@
 
   <MapGeneratorDef>
     <defName>YellowRooms</defName>
+    <validScenarioMap>true</validScenarioMap>
     <genSteps>
       <li>YellowRooms_Floor</li>
       <li>YellowRooms_Walls</li>

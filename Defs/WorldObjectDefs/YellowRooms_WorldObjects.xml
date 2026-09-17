@@ -41,6 +41,25 @@
   </WorldObjectDef>
 
   <WorldObjectDef>
+    <defName>YellowRoomsHomeSettlement</defName>
+    <label>Yellow Rooms location</label>
+    <description>Your home location in the Yellow Rooms dimension.</description>
+    <worldObjectClass>arsiy.Rooms.Things.YellowRoomsSettlement</worldObjectClass>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <texture>World/WorldObjects/YellowRooms_settlement</texture>
+    <expandingIconTexture>World/WorldObjects/YellowRoomsSite</expandingIconTexture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>50</expandingIconPriority>
+    <canBePlayerHome>true</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_Abandon" />
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef>
     <defName>YellowRoomsSurfaceSite</defName>
     <label>Yellow Rooms surface site</label>
     <description>A surface location with Yellow Rooms activity.</description>

@@ -14,6 +14,8 @@ namespace arsiy.Rooms.Things
     
     public class JobDriver_BreakLamp : JobDriver
     {
+        private const int BreakTicks = 60;
+
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed);
@@ -25,15 +27,20 @@ namespace arsiy.Rooms.Things
 
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
 
+            Toil breakWait = Toils_General.Wait(BreakTicks, TargetIndex.A);
+            breakWait.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+            breakWait.WithProgressBarToilDelay(TargetIndex.A);
+            yield return breakWait;
+
             yield return new Toil
             {
                 initAction = () =>
                 {
                     var comp = TargetThingA.TryGetComp<Comp_CeilingLamp>();
                     comp?.DoBreak();
-                    
-                    
-                    
+
+
+
                     ClearBreakDesignation(TargetThingA);
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant

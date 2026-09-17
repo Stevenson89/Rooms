@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
@@ -58,7 +58,7 @@ namespace arsiy.Rooms
                     action = () => PlanetLayer.Selected = null
                 });
             }
-            else if (surfDef != null && selected.Def == surfDef)
+            else if (surfDef != null && selected.Def == surfDef && YellowRoomsWorldComponent.HasVisited)
             {
                 gizmos.Add(new Command_Action
                 {
@@ -67,6 +67,7 @@ namespace arsiy.Rooms
                     icon = ContentFinder<Texture2D>.Get("UI/Commands/YellowRooms_ViewPlanet"),
                     action = () =>
                     {
+                        YellowRoomsWorldComponent.HasVisited = true;
                         var layer = Find.WorldGrid.FirstLayerOfDef(yrDef);
                         if (layer != null)
                             PlanetLayer.Selected = layer;

@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using RimWorld.BaseGen;
 using RimWorld.Planet;
@@ -40,6 +40,7 @@ namespace arsiy.Rooms
             PatchPassiveCloneDamage();
             PatchDetectionRaidsStillLife();
             PatchStillLifeWeaponNoDrop();
+            LayeredAtmosphereOrbitCompat.PatchIfLoaded(harmony);
         }
 
         static void PatchStillLifeWeaponNoDrop()
@@ -120,6 +121,7 @@ namespace arsiy.Rooms
 
         static void PatchPoolRoomsFish()
         {
+            if (!ModsConfig.OdysseyActive) return;
             var setFishTypes = AccessTools.Method(typeof(WaterBody), nameof(WaterBody.SetFishTypes));
             if (setFishTypes == null)
             {
@@ -160,6 +162,7 @@ namespace arsiy.Rooms
 
         static void PatchPoolRoomsRareCatchCooldown()
         {
+            if (!ModsConfig.OdysseyActive) return;
             var getCatchesFor = AccessTools.Method(typeof(FishingUtility), nameof(FishingUtility.GetCatchesFor),
                 new[] { typeof(Pawn), typeof(IntVec3), typeof(bool), typeof(bool).MakeByRefType() });
             if (getCatchesFor == null)

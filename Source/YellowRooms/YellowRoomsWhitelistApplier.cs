@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -163,26 +163,6 @@ namespace arsiy.Rooms
                 biomeDef.layerWhitelist ??= new List<PlanetLayerDef>();
                 if (!biomeDef.layerWhitelist.Contains(layer))
                     biomeDef.layerWhitelist.Add(layer);
-            }
-
-            foreach (var factionDef in DefDatabase<FactionDef>.AllDefsListForReading)
-            {
-                if (!factionDef.defName.StartsWith("YellowRooms")) continue;
-                factionDef.layerWhitelist ??= new List<PlanetLayerDef>();
-                if (!factionDef.layerWhitelist.Contains(layer))
-                    factionDef.layerWhitelist.Add(layer);
-                factionDef.arrivalLayerWhitelist ??= new List<PlanetLayerDef>();
-                if (!factionDef.arrivalLayerWhitelist.Contains(layer))
-                    factionDef.arrivalLayerWhitelist.Add(layer);
-            }
-
-            foreach (var factionDef in DefDatabase<FactionDef>.AllDefsListForReading)
-            {
-                if (factionDef.defName.StartsWith("YellowRooms")) continue;
-                if (factionDef.defName == "Salvagers") continue;
-                factionDef.arrivalLayerBlacklist ??= new List<PlanetLayerDef>();
-                if (!factionDef.arrivalLayerBlacklist.Contains(layer))
-                    factionDef.arrivalLayerBlacklist.Add(layer);
             }
         }
     }
