@@ -2,6 +2,8 @@
 
 A RimWorld 1.6 mod inspired by liminal spaces. Adds a new planet layer — the Rooms — with its own biomes, factions, incidents, and survival loop.
 
+This is a fork maintained by DangerousJames, with adjustments for a horror-focused experience.
+
 ## Entering the Rooms
 
 Find or build a portal, or wait for the passageway to open.
@@ -19,10 +21,11 @@ Find or build a portal, or wait for the passageway to open.
 
 ## Installation
 
-**Steam Workshop** — subscribe to the mod (recommended).
+**~~Steam Workshop~~** — ~~subscribe to the mod (recommended).~~ This fork is not currently on the steam workshop. It may be added there in the future if the content significantly diverges from the original AND arsiy agrees to it.
 
-**Manual** — download/clone this repository into your `Mods` folder and enable *Rooms* in the mod list.
+**Manual** — download/clone this repository into your `Mods` folder and enable *Rooms (James's fork)* in the mod list.
 
 ## Credits
 
-Author: arsiy
+- Author: arsiy
+- Contributor: DangerousJames
