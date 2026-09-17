@@ -5,7 +5,7 @@
         <xpath>Defs/HediffGiverSetDef[defName="OrganicStandard"]/hediffGivers</xpath>
         <value>
             <li Class="arsiy.Rooms.YellowRooms.HediffGiver_MoldExposure">
-                <SeverityPerDayRooms>0.285</SeverityPerDayRooms>
+                <SeverityPerDayRooms>0.200</SeverityPerDayRooms>
             </li>
         </value>
     </Operation>
