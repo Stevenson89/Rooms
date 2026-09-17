@@ -112,8 +112,8 @@
     <neverOverlapFloors>true</neverOverlapFloors>
     <selectable>true</selectable>
     <rotatable>false</rotatable>
-    <useHitPoints>false</useHitPoints>
-    <destroyable>false</destroyable>
+    <useHitPoints>true</useHitPoints>
+    <destroyable>true</destroyable>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <fertility>0</fertility>
     <canOverlapZones>false</canOverlapZones>
@@ -121,7 +121,8 @@
       <isEdifice>true</isEdifice>
       <isInert>true</isInert>
       <isWall>true</isWall>
-      <deconstructible>false</deconstructible>
+      <deconstructible>true</deconstructible>
+      <alwaysDeconstructible>true</alwaysDeconstructible>
       <claimable>false</claimable>
       <ai_chillDestination>false</ai_chillDestination>
     </building>
@@ -488,8 +489,8 @@
     <neverOverlapFloors>true</neverOverlapFloors>
     <selectable>true</selectable>
     <rotatable>false</rotatable>
-    <useHitPoints>false</useHitPoints>
-    <destroyable>false</destroyable>
+    <useHitPoints>true</useHitPoints>
+    <destroyable>true</destroyable>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <fertility>0</fertility>
     <canOverlapZones>false</canOverlapZones>
@@ -497,7 +498,8 @@
       <isEdifice>true</isEdifice>
       <isInert>true</isInert>
       <isWall>true</isWall>
-      <deconstructible>false</deconstructible>
+      <deconstructible>true</deconstructible>
+      <alwaysDeconstructible>true</alwaysDeconstructible>
       <claimable>false</claimable>
       <ai_chillDestination>false</ai_chillDestination>
     </building>
