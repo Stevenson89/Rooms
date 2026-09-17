@@ -8,7 +8,7 @@
   
   
   
-  <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ArmorMachineableBase">
     <defName>YellowRooms_HazmatSuit</defName>
     <label>hazmat suit</label>
     <description>A rubber hazmat suit. It offers excellent protection against heat and toxic environments. Because it is worn close to the skin, body armor can still be worn over it.</description>
