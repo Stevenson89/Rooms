@@ -400,5 +400,21 @@ namespace arsiy.Rooms
                 thinkTree: null, tag: JobTag.Misc);
             return true;
         }
+
+
+        public static bool PawnInRooms(Pawn pawn)
+        {
+            if (pawn.Map == null) // Pawn is in caravan or not spawned
+            {
+                Caravan caravan = pawn.GetCaravan();
+                if (caravan == null) // Not spawned
+                    return false;
+                return IsYellowRoomsCaravan(caravan);
+            }
+            else
+            {
+                return IsYellowRoomsMap(pawn.Map);
+            }
+        }
     }
 }
