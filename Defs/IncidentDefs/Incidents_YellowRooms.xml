@@ -7,7 +7,7 @@
   
   
 
-
+  <!--
   <IncidentDef>
     <defName>YellowRooms_StillLife_Edge</defName>
     <label>still life emergence</label>
@@ -60,7 +60,7 @@
       <li>YellowRooms</li>
     </layerWhitelist>
   </IncidentDef>
-
+-->
   
   <IncidentDef>
     <defName>YellowRooms_Fog</defName>
