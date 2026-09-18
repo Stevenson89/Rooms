@@ -14,6 +14,35 @@
     <stages>
       <li>
         <painFactor>0</painFactor>
+        
+        <disablesNeeds>
+          <li>Rest</li>
+          <li>Joy</li>
+          <li>Beauty</li>
+          <li>Comfort</li>
+          <li>RoomSize</li>
+          <li>Outdoors</li>
+        </disablesNeeds>
+        
+      </li>
+    </stages>
+    <comps>
+      <li Class="arsiy.Rooms.HediffCompProperties_NeedSuppressor" />
+    </comps>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>YellowRooms_Soulless</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>soulless</label>
+    <labelNoun>soullessness</labelNoun>
+    <description>This still life has no thoughts or needs. It simply wanders from place to place, unthinking and unfeeling.</description>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <tendable>false</tendable>
+    <stages>
+      <li>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -31,20 +60,37 @@
         
         <disablesNeeds>
           <li>Food</li>
-          <li>Rest</li>
           <li>Mood</li>
-          <li>Joy</li>
-          <li>Beauty</li>
-          <li>Comfort</li>
-          <li>RoomSize</li>
-          <li>Outdoors</li>
         </disablesNeeds>
         
       </li>
     </stages>
-    <comps>
-      <li Class="arsiy.Rooms.HediffCompProperties_NeedSuppressor" />
-    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>YellowRooms_Hungry</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>hungry</label>
+    <labelNoun>hunger</labelNoun>
+    <description>This still life has a single feeling: An insatiable hunger for flesh. It will hunt down any living creature and eat them. It can eat other still lifes, but prefers real humans.</description>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <tendable>false</tendable>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.90</setMax>
+          </li>
+        </capMods>
+        
+        <disablesNeeds>
+          <li>Mood</li>
+        </disablesNeeds>
+        
+      </li>
+    </stages>
   </HediffDef>
 
 

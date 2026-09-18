@@ -14,7 +14,7 @@ namespace arsiy.Rooms
         
         private static readonly HashSet<string> SuppressedNeedDefNames = new HashSet<string>
         {
-            "Food", "Rest", "Joy", "Room", "Outdoor", "Beauty", "Comfort"
+            "Rest", "Joy", "Room", "Outdoor", "Beauty", "Comfort"
         };
 
         public override void CompPostTick(ref float severityAdjustment)
