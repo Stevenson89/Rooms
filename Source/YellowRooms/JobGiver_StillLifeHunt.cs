@@ -25,6 +25,7 @@ namespace arsiy.Rooms.YellowRooms
                 return null;
             Job job = JobMaker.MakeJob(JobDefOf.PredatorHunt, prey);
             job.killIncappedTarget = true;
+            job.overeat = true;
             return job;
         }
 
