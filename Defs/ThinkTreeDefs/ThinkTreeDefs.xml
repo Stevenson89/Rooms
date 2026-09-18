@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThinkTreeDef>
+        <defName>StillLifeHunt</defName>
+        <insertTag>Humanlike_PostMentalState</insertTag>
+        <insertPriority>100</insertPriority>
+        <thinkRoot Class="arsiy.Rooms.YellowRooms.JobGiver_StillLifeHunt" />
+    </ThinkTreeDef>
+
+    <ThinkTreeDef>
+        <defName>StillLifeWander</defName>
+        <insertTag>Humanlike_PostMain</insertTag>
+        <insertPriority>100</insertPriority>
+        <thinkRoot Class="arsiy.Rooms.YellowRooms.JobGiver_StillLifeWander" />
+    </ThinkTreeDef>
+</Defs>
