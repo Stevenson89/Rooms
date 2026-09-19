@@ -52,9 +52,4 @@ namespace arsiy.Rooms.Incidents
         protected override bool Hungry => true;
         protected override LetterDef LetterDef => LetterDefOf.ThreatSmall;
     }
-
-    public class IncidentWorker_StillLifeIntelligent : IncidentWorker_StillLife
-    {
-        protected override bool Soulless => false;
-    }
 }
