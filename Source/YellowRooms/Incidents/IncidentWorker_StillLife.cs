@@ -50,6 +50,7 @@ namespace arsiy.Rooms.Incidents
     public class IncidentWorker_StillLifeHungry : IncidentWorker_StillLife
     {
         protected override bool Hungry => true;
+        protected override bool Soulless => false;
         protected override LetterDef LetterDef => LetterDefOf.ThreatSmall;
     }
 }
