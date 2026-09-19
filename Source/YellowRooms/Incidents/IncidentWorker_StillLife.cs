@@ -11,9 +11,9 @@ namespace arsiy.Rooms.Incidents
 {
     public class IncidentWorker_StillLife : IncidentWorker_YellowRoomsBase
     {
-        protected bool Hungry => false;
-        protected bool Soulless => true;
-        protected LetterDef LetterDef => LetterDefOf.NeutralEvent;
+        protected virtual bool Hungry => false;
+        protected virtual bool Soulless => true;
+        protected virtual LetterDef LetterDef => LetterDefOf.NeutralEvent;
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map target = (Map)parms.target;
@@ -45,5 +45,16 @@ namespace arsiy.Rooms.Incidents
             }
             return true;
         }
+    }
+
+    public class IncidentWorker_StillLifeHungry : IncidentWorker_StillLife
+    {
+        protected override bool Hungry => true;
+        protected override LetterDef LetterDef => LetterDefOf.ThreatSmall;
+    }
+
+    public class IncidentWorker_StillLifeIntelligent : IncidentWorker_StillLife
+    {
+        protected override bool Soulless => false;
     }
 }

@@ -77,6 +77,23 @@
     <letterLabel>Still life</letterLabel>
     <letterText>A still life has wandered onto the map. These creatures are generally passive, but may become hostile if provoked or hungry.</letterText>
   </IncidentDef>
+
+  <IncidentDef>
+    <defName>YellowRooms_StillLife_Wander_Hungry</defName>
+    <label>still life</label>
+    <category>ThreatSmall</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StillLifeHungry</workerClass>
+    <baseChance>8.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <letterLabel>Still life</letterLabel>
+    <letterText>A still life has wandered onto the map. This one possesses an unusual hunger for flesh.</letterText>
+  </IncidentDef>
   
   <IncidentDef>
     <defName>YellowRooms_Fog</defName>
