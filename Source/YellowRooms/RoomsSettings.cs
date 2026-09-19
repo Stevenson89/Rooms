@@ -12,6 +12,7 @@ namespace arsiy.Rooms
         public int mapSize = 200;
         public int campMapSize = 75;
         public bool randomPawnStranded = false;
+        public bool announceIncidents = true;
         public bool debugLogs = false;
 
         public List<string> allowedIncidents = new List<string>();
@@ -44,6 +45,7 @@ namespace arsiy.Rooms
         public static int MapSize => _instance?.mapSize ?? 200;
         public static int CampMapSize => _instance?.campMapSize ?? 75;
         public static bool RandomPawnStranded => _instance?.randomPawnStranded ?? false;
+        public static bool AnnounceIncidents => _instance?.announceIncidents ?? false;
         public static bool DebugLogs => _instance?.debugLogs ?? false;
 
         public RoomsSettings()
@@ -97,6 +99,7 @@ namespace arsiy.Rooms
             Scribe_Values.Look(ref mapSize, "mapSize", 200);
             Scribe_Values.Look(ref campMapSize, "campMapSize", 75);
             Scribe_Values.Look(ref randomPawnStranded, "randomPawnStranded", false);
+            Scribe_Values.Look(ref announceIncidents, "announceIncidents", false);
             Scribe_Values.Look(ref debugLogs, "debugLogs", false);
             Scribe_Collections.Look(ref allowedIncidents, "allowedIncidents", LookMode.Value);
             Scribe_Collections.Look(ref allowedQuests, "allowedQuests", LookMode.Value);
@@ -154,6 +157,15 @@ namespace arsiy.Rooms
             if (rps != settings.randomPawnStranded)
             {
                 settings.randomPawnStranded = rps;
+                settings.Write();
+            }
+            y += LineHeight;
+
+            bool ai = settings.announceIncidents;
+            Widgets.CheckboxLabeled(new Rect(x, y, width, LineHeight), "Announce incidents", ref ai);
+            if (ai != settings.announceIncidents)
+            {
+                settings.announceIncidents = ai;
                 settings.Write();
             }
             y += LineHeight;

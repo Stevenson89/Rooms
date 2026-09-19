@@ -61,6 +61,22 @@
     </layerWhitelist>
   </IncidentDef>
 -->
+  <IncidentDef>
+    <defName>YellowRooms_StillLife_Wander</defName>
+    <label>still life</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>arsiy.Rooms.Incidents.IncidentWorker_StillLife</workerClass>
+    <baseChance>8.0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <layerWhitelist>
+      <li>YellowRooms</li>
+    </layerWhitelist>
+    <letterLabel>Still life</letterLabel>
+    <letterText>A still life has wandered onto the map. These creatures are generally passive, but may become hostile if provoked or hungry.</letterText>
+  </IncidentDef>
   
   <IncidentDef>
     <defName>YellowRooms_Fog</defName>

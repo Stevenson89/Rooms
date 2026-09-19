@@ -14,7 +14,7 @@ namespace arsiy.Rooms.Incidents
         private static HediffDef _stillLifeDef;
         private static bool _lookedUp;
 
-        private static HediffDef StillLifeDef
+        public static HediffDef StillLifeDef
         {
             get
             {
@@ -27,8 +27,28 @@ namespace arsiy.Rooms.Incidents
             }
         }
 
-        
-        
+        static HediffDef _soullessDef = null;
+        public static HediffDef SoullessDef
+        {
+            get
+            {
+                if (_soullessDef != null) return _soullessDef;
+                return _soullessDef = DefDatabase<HediffDef>.GetNamedSilentFail("YellowRooms_Soulless");
+            }
+        }
+
+        static HediffDef _hungryDef = null;
+        public static HediffDef HungryDef
+        {
+            get
+            {
+                if (_hungryDef != null) return _hungryDef;
+                return _hungryDef = DefDatabase<HediffDef>.GetNamedSilentFail("YellowRooms_Hungry");
+            }
+        }
+
+
+
         public static IEnumerable<Pawn> AllColonyPawns()
         {
             if (PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_FreeColonists != null)
@@ -310,10 +330,17 @@ namespace arsiy.Rooms.Incidents
         public static void ApplyStillLife(Pawn pawn)
         {
             var def = StillLifeDef;
+            var def2 = SoullessDef;
             if (def == null || pawn?.health?.hediffSet == null) return;
             if (!pawn.health.hediffSet.HasHediff(def))
             {
                 var h = HediffMaker.MakeHediff(def, pawn);
+                pawn.health.AddHediff(h);
+            }
+            if (def2 == null || pawn?.health?.hediffSet == null) return;
+            if (!pawn.health.hediffSet.HasHediff(def2))
+            {
+                var h = HediffMaker.MakeHediff(def2, pawn);
                 pawn.health.AddHediff(h);
             }
             ApplyMissingParts(pawn);
