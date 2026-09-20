@@ -84,7 +84,7 @@
             <setMax>0.90</setMax>
           </li>
         </capMods>
-        
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
         <disablesNeeds>
           <li>Mood</li>
         </disablesNeeds>

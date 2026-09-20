@@ -1,4 +1,5 @@
-﻿using System;
+﻿using arsiy.Rooms.Incidents;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace arsiy.Rooms.YellowRooms
         public float SeverityPerDayRooms;
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            if (YellowRoomsUtility.PawnInRooms(pawn) && GasUtility.IsAffectedByExposure(pawn))
+            if (YellowRoomsUtility.PawnInRooms(pawn) && GasUtility.IsAffectedByExposure(pawn) && pawn.health.hediffSet.GetFirstHediffOfDef(CloneHelper.StillLifeDef) == null)
             {
                 float num = SeverityPerDayRooms * (1f / 300f);
                 IEnumerable<BodyPartRecord> affectedBodyParts = GasUtility.GetLungRotAffectedBodyParts(pawn);
