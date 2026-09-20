@@ -113,7 +113,7 @@ namespace arsiy.Rooms.Incidents
                 RoomsLog.Warning("[Rooms] MakeHostileClone: GameComponent_PawnDuplicator.Duplicate returned null");
                 return null;
             }
-
+            CopyGearFrom(original, clone, true);
             clone.SetFaction(faction);
             ApplyStillLife(clone);
             return clone;
@@ -146,6 +146,7 @@ namespace arsiy.Rooms.Incidents
                 RoomsLog.Warning("[Rooms] MakeSurvivorClone: GameComponent_PawnDuplicator.Duplicate returned null");
                 return null;
             }
+            CopyGearFrom(original, clone, true);
             clone.SetFaction(faction);
             return clone;
         }
@@ -172,7 +173,7 @@ namespace arsiy.Rooms.Incidents
             }
 
             // Disarm clone
-            clone.equipment.Remove(clone.equipment.Primary);
+            CopyGearFrom(original, clone, false);
 
             clone.SetFaction(faction);
             ApplyStillLife(clone);
@@ -343,7 +344,55 @@ namespace arsiy.Rooms.Incidents
             }
         }
 
-        
+        private static void CopyGearFrom(Pawn original, Pawn clone, bool copyWeapons = true)
+        {
+            clone.apparel?.DestroyAll();
+            if (clone.equipment?.Primary != null)
+                clone.equipment.Remove(clone.equipment.Primary);
+            clone.inventory?.innerContainer?.Clear();
+
+            if (original.apparel != null && clone.apparel != null)
+            {
+                foreach (var ap in original.apparel.WornApparel)
+                {
+                    var copy = (Apparel)ThingMaker.MakeThing(ap.def, ap.Stuff);
+                    CopyThingState(ap, copy);
+                    clone.apparel.Wear(copy, dropReplacedApparel: false);
+                }
+            }
+
+            if (copyWeapons)
+            {
+                if (original.equipment?.Primary != null)
+                {
+                    var w = original.equipment.Primary;
+                    var copy = ThingMaker.MakeThing(w.def, w.Stuff);
+                    CopyThingState(w, copy);
+                    clone.equipment?.AddEquipment((ThingWithComps)copy);
+                }
+
+                if (original.inventory?.innerContainer != null && clone.inventory?.innerContainer != null)
+                {
+                    foreach (var thing in original.inventory.innerContainer)
+                    {
+                        var copy = ThingMaker.MakeThing(thing.def, thing.Stuff);
+                        copy.stackCount = thing.stackCount;
+                        CopyThingState(thing, copy);
+                        clone.inventory.innerContainer.TryAdd(copy);
+                    }
+                }
+            }
+        }
+        private static void CopyThingState(Thing source, Thing made)
+        {
+            var srcQ = source.TryGetComp<CompQuality>();
+            var dstQ = made.TryGetComp<CompQuality>();
+            if (srcQ != null && dstQ != null)
+                dstQ.SetQuality(srcQ.Quality, ArtGenerationContext.Outsider);
+            if (source.def.useHitPoints && made.def.useHitPoints)
+                made.HitPoints = source.HitPoints;
+        }
+
         private static void ApplyFacePartsRemoval(Pawn pawn)
         {
             string[] facePartNames = { "Eye", "Jaw", "Nose" };
