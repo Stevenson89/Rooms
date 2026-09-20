@@ -107,20 +107,13 @@ namespace arsiy.Rooms.Incidents
         public static Pawn MakeHostileClone(Pawn original, Faction faction)
         {
             if (original == null || faction == null) return null;
-            var kind = PawnKindDef.Named("YellowRooms_StillLife_Melee");
-            var req = new PawnGenerationRequest(
-                kind, null, PawnGenerationContext.NonPlayer,
-                tile: original.Tile, forceGenerateNewPawn: true,
-                fixedGender: original.gender, colonistRelationChanceFactor: 0f,
-                forceNoGear: true, forceNoIdeo: true, forceNoBackstory: true);
-            var clone = PawnGenerator.GeneratePawn(req);
+            var clone = Current.Game.GetComponent<GameComponent_PawnDuplicator>().Duplicate(original);
             if (clone == null)
             {
-                RoomsLog.Warning("[Rooms] MakeHostileClone: PawnGenerator returned null");
+                RoomsLog.Warning("[Rooms] MakeHostileClone: GameComponent_PawnDuplicator.Duplicate returned null");
                 return null;
             }
 
-            CopyIdentityFrom(original, clone);
             clone.SetFaction(faction);
             ApplyStillLife(clone);
             return clone;
@@ -147,144 +140,15 @@ namespace arsiy.Rooms.Incidents
                 RoomsLog.Warning("[Rooms] MakeSurvivorClone: PawnKindDef YellowRooms_Survivor_Crazed not found");
                 return null;
             }
-            var req = new PawnGenerationRequest(
-                kind, null, PawnGenerationContext.NonPlayer,
-                tile: original.Tile, forceGenerateNewPawn: true,
-                fixedGender: original.gender, colonistRelationChanceFactor: 0f,
-                forceNoGear: true, forceNoIdeo: true, forceNoBackstory: true);
-            var clone = PawnGenerator.GeneratePawn(req);
+            var clone = Current.Game.GetComponent<GameComponent_PawnDuplicator>().Duplicate(original);
             if (clone == null)
             {
-                RoomsLog.Warning("[Rooms] MakeSurvivorClone: PawnGenerator.GeneratePawn returned null");
+                RoomsLog.Warning("[Rooms] MakeSurvivorClone: GameComponent_PawnDuplicator.Duplicate returned null");
                 return null;
             }
-
-            CopyIdentityFrom(original, clone, copyWeapons: false);
             clone.SetFaction(faction);
             return clone;
         }
-
-        
-        
-        
-        
-        private static void CopyIdentityFrom(Pawn original, Pawn clone, bool copyWeapons = true)
-        {
-            
-            
-            clone.Name = original.Name is NameTriple nt
-                ? new NameTriple(nt.First, nt.Nick, nt.Last)
-                : original.Name;
-            clone.ageTracker?.DebugSetAge(original.ageTracker?.AgeBiologicalTicks ?? clone.ageTracker.AgeBiologicalTicks);
-
-            
-            if (clone.story?.traits != null && original.story?.traits != null)
-            {
-                clone.story.traits.allTraits.Clear();
-                foreach (var t in original.story.traits.allTraits)
-                    clone.story.traits.GainTrait(new Trait(t.def, t.Degree, t.ScenForced), suppressConflicts: true);
-            }
-
-
-            if (clone.story != null && original.story != null)
-            {
-                clone.story.Childhood = original.story.Childhood;
-                clone.story.Adulthood = original.story.Adulthood;
-            }
-
-
-            if (clone.story != null && original.story != null)
-            {
-                clone.story.skinColorOverride = original.story.skinColorOverride;
-            }
-
-            
-            if (ModsConfig.BiotechActive && clone.genes != null && original.genes != null)
-            {
-                
-                clone.genes.SetXenotype(original.genes.Xenotype);
-                clone.genes.ClearXenogenes();
-                foreach (var g in original.genes.Xenogenes)
-                    clone.genes.AddGene(g.def, xenogene: true);
-            }
-
-            
-            if (ModsConfig.IdeologyActive && clone.ideo != null && original.ideo?.Ideo != null)
-                clone.ideo.SetIdeo(original.ideo.Ideo);
-
-            
-            if (clone.skills != null && original.skills != null)
-            {
-                foreach (SkillDef sd in DefDatabase<SkillDef>.AllDefs)
-                {
-                    var src = original.skills.GetSkill(sd);
-                    var dst = clone.skills.GetSkill(sd);
-                    if (src != null && dst != null)
-                    {
-                        dst.Level = src.Level;
-                        dst.passion = src.passion;
-                    }
-                }
-            }
-
-            
-            CopyGearFrom(original, clone, copyWeapons);
-        }
-
-        
-        
-        
-        private static void CopyGearFrom(Pawn original, Pawn clone, bool copyWeapons = true)
-        {
-            clone.apparel?.DestroyAll();
-            if (clone.equipment?.Primary != null)
-                clone.equipment.Remove(clone.equipment.Primary);
-            clone.inventory?.innerContainer?.Clear();
-
-            if (original.apparel != null && clone.apparel != null)
-            {
-                foreach (var ap in original.apparel.WornApparel)
-                {
-                    var copy = (Apparel)ThingMaker.MakeThing(ap.def, ap.Stuff);
-                    CopyThingState(ap, copy);
-                    clone.apparel.Wear(copy, dropReplacedApparel: false);
-                }
-            }
-
-            if (copyWeapons)
-            {
-                if (original.equipment?.Primary != null)
-                {
-                    var w = original.equipment.Primary;
-                    var copy = ThingMaker.MakeThing(w.def, w.Stuff);
-                    CopyThingState(w, copy);
-                    clone.equipment?.AddEquipment((ThingWithComps)copy);
-                }
-
-                if (original.inventory?.innerContainer != null && clone.inventory?.innerContainer != null)
-                {
-                    foreach (var thing in original.inventory.innerContainer)
-                    {
-                        var copy = ThingMaker.MakeThing(thing.def, thing.Stuff);
-                        copy.stackCount = thing.stackCount;
-                        CopyThingState(thing, copy);
-                        clone.inventory.innerContainer.TryAdd(copy);
-                    }
-                }
-            }
-        }
-
-        
-        private static void CopyThingState(Thing source, Thing made)
-        {
-            var srcQ = source.TryGetComp<CompQuality>();
-            var dstQ = made.TryGetComp<CompQuality>();
-            if (srcQ != null && dstQ != null)
-                dstQ.SetQuality(srcQ.Quality, ArtGenerationContext.Outsider);
-            if (source.def.useHitPoints && made.def.useHitPoints)
-                made.HitPoints = source.HitPoints;
-        }
-
 
         
         public static Pawn MakePassiveClone(Pawn original)
@@ -300,25 +164,16 @@ namespace arsiy.Rooms.Incidents
                 RoomsLog.Warning("[Rooms] MakePassiveClone: PassiveStillLifeFaction is null");
                 return null;
             }
-            var kind = PawnKindDef.Named("YellowRooms_StillLife_Drifter");
-            if (kind == null)
-            {
-                RoomsLog.Warning("[Rooms] MakePassiveClone: PawnKindDef YellowRooms_StillLife_Drifter not found");
-                return null;
-            }
-            var req = new PawnGenerationRequest(
-                kind, null, PawnGenerationContext.NonPlayer,
-                tile: original.Tile, forceGenerateNewPawn: true,
-                fixedGender: original.gender, colonistRelationChanceFactor: 0f,
-                forceNoGear: true, forceNoIdeo: true, forceNoBackstory: true);
-            var clone = PawnGenerator.GeneratePawn(req);
+            var clone = Current.Game.GetComponent<GameComponent_PawnDuplicator>().Duplicate(original);
             if (clone == null)
             {
-                RoomsLog.Warning("[Rooms] MakePassiveClone: PawnGenerator.GeneratePawn returned null");
+                RoomsLog.Warning("[Rooms] MakePassiveClone: GameComponent_PawnDuplicator.Duplicate returned null");
                 return null;
             }
 
-            CopyIdentityFrom(original, clone, copyWeapons: false);
+            // Disarm clone
+            clone.equipment.Remove(clone.equipment.Primary);
+
             clone.SetFaction(faction);
             ApplyStillLife(clone);
             RoomsLog.Message($"[Rooms] MakePassiveClone: Successfully created clone {clone.LabelShort} from {original.LabelShort}");
